@@ -31,24 +31,17 @@ class MyDocument extends Document {
           <meta name="twitter:description" content={SiteConfig.description} />
 
           {/* pwa */}
+          <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#fff" />
           <meta name="application-name" content={SiteConfig.title} />
           <meta name="apple-mobile-web-app-title" content={SiteConfig.title} />
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="default"
-          />
-          <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/icons/apple-touch-icon.png"
-          />
-          <link
-            rel="icon"
-            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤯</text></svg>"
-          />
+          <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+          <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16"></link>
+          <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32"></link>
+          <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+          <meta name="msapplication-config" content="/icons/browserconfig.xml"></meta>
 
           {/* analytic */}
           {SiteConfig.googleAnalytic && (
