@@ -1,0 +1,6 @@
+{
+  "h1": "Basit bir örnek",
+  "change-locale": "Yerel ayarı değiştir",
+  "error-with-status": "Sunucuda {{statusCode}} hatası oluştu",
+  "error-without-status": "Sunucuda bir hata oluştu"
+}

@@ -11,7 +11,12 @@
     "[javascript]": {
       "editor.formatOnSave": true
     },
+    "[json]": {
+      "editor.formatOnSave": true
+    },
     "editor.codeActionsOnSave": {
+          // For ESLint
+    "source.fixAll.eslint": true,
       "source.fixAll.stylelint": true,
     },
     "files.autoSaveDelay": 500,

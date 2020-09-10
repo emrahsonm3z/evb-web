@@ -1,0 +1,6 @@
+{
+  "change-locale": "Wechseln Locale",
+  "h1": "Ein einfaches Beispiel",
+  "error-with-status": "Auf dem Server ist ein Fehler ({{statusCode}}) aufgetreten",
+  "error-without-status": "Auf dem Server ist ein Fehler aufgetreten"
+}

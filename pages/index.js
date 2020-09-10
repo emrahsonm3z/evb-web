@@ -1,5 +1,29 @@
-import Head from 'next/head'
+import PropTypes from 'prop-types'
+import { i18n, withTranslation } from '../i18n'
 
-export default function Home() {
-  return <div>Home</div>
+const Homepage = ({ t }) => (
+  <>
+    <main>
+      <div>
+        <button
+          type="button"
+          onClick={() =>
+            i18n.changeLanguage(i18n.language === 'de' ? 'tr' : 'de')
+          }
+        >
+          {t('change-locale')}
+        </button>
+      </div>
+    </main>
+  </>
+)
+
+Homepage.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+Homepage.propTypes = {
+  t: PropTypes.func.isRequired
 }
+
+export default withTranslation('common')(Homepage)
