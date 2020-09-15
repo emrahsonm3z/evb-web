@@ -1,10 +1,10 @@
 import React from 'react'
-import Navigation from '../navigation'
+import Header from '../header'
 
 function Layout({ children }) {
   return (
     <div>
-      <Navigation />
+      <Header />
       <main>{children}</main>
     </div>
   )

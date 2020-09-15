@@ -2,5 +2,13 @@
   "change-locale": "Wechseln Locale",
   "h1": "Ein einfaches Beispiel",
   "error-with-status": "Auf dem Server ist ein Fehler ({{statusCode}}) aufgetreten",
-  "error-without-status": "Auf dem Server ist ein Fehler aufgetreten"
+  "error-without-status": "Auf dem Server ist ein Fehler aufgetreten",
+  "Menu": {
+    "AboutUs": "Uber Uns",
+    "OurServices": "Unsere Dıenstleıstungen",
+    "Team": "Team",
+    "Faqs": "Häufıg Gestellte Fragen",
+    "Contact": "Kontakt",
+    "Apply": "Bewerbe"
+  }
 }

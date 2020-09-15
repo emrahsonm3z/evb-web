@@ -13,6 +13,7 @@
     "icon": "svgr icons -d components/icons --icon  --replace-attr-values \"#fff=currentColor\""
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "next": "9.5.3",
     "next-i18next": "^6.0.2",
     "prettier": "^2.1.1",
@@ -30,6 +31,8 @@
     "@storybook/react": "^6.0.21",
     "@svgr/cli": "^5.4.0",
     "babel-loader": "^8.1.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-loader": "^4.0.1",
     "postcss-nested": "^4.2.3",
     "react-is": "^16.13.1"
   }
