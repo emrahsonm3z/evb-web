@@ -3,6 +3,7 @@ import cn from 'classnames'
 import styles from './index.module.css'
 import Logo from '../logo'
 import Navigation from '../navigation'
+import LanguageSelect from '../languageSelect'
 
 function Header() {
   return (
@@ -12,7 +13,9 @@ function Header() {
           <Logo />
           <Navigation />
         </div>
-        <div className={styles.topbar}></div>
+        <div className={styles.topbar}>
+          <LanguageSelect />
+        </div>
       </div>
     </div>
   )

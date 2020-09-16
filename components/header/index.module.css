@@ -21,3 +21,14 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
+
+.topbar {
+  display: flex;
+  align-items: stretch;
+  padding: 0;
+}
+
+.topbarItem {
+  display: flex;
+  align-items: center;
+}

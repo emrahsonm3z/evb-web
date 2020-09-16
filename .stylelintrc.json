@@ -3,8 +3,11 @@
   "rules": {
     "declaration-colon-newline-after": "always-multi-line",
     "value-list-comma-newline-after": "always-multi-line",
-    "selector-pseudo-class-no-unknown": [true, {
-      "ignorePseudoClasses": ["global"]
-    }]
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
   }
 }
