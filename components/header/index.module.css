@@ -14,7 +14,7 @@
   .header {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 65px;
     box-shadow: none;
     position: relative;
     z-index: 2;

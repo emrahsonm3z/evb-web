@@ -1,4 +1,5 @@
 .dropdown {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -9,7 +10,23 @@
     padding: 0;
     height: calc(1.5em + 1.65rem + 2px);
     width: calc(1.5em + 1.65rem + 2px);
+    transition: all 0.3s ease;
     cursor: pointer;
+
+    &:hover,
+    &.selected {
+      background-color: #f3f6f9;
+      border-color: transparent;
+      border-radius: 0.28rem;
+    }
+
+    svg {
+      height: 20px;
+      width: 20px;
+      border-radius: 0.28rem;
+      vertical-align: middle;
+      border-style: none;
+    }
   }
 
   .dropdownMenu {
@@ -30,6 +47,12 @@
     border: 0 solid rgba(0, 0, 0, 0.15);
     border-radius: 0.42rem;
     box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.15);
+  }
+
+  .active {
+    display: block;
+    transform: translateY(0);
+    top: 65px;
   }
 
   .dropdownMenuRight {
@@ -54,27 +77,44 @@
     list-style: none;
 
     .naviLink {
-      -webkit-transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
       transition: all 0.15s ease;
       color: #3f4254;
+
+      .dropdownItemSymbol {
+        display: flex;
+        flex-shrink: 0;
+        position: relative;
+        margin-right: 0.75rem;
+
+        svg {
+          height: 20px;
+          width: 20px;
+          border-radius: 0.28rem;
+        }
+      }
+
+      .dropdownItemText {
+        color: #3f4254;
+        transition: all 0.15s ease;
+        font-size: 1rem;
+        flex-grow: 1;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #f3f6f9;
+        transition: all 0.15s ease;
+
+        .dropdownItemText {
+          color: var(--c-theme);
+        }
+      }
     }
   }
-}
-
-.dropdownItemSymbol {
-  display: inline-block;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  position: relative;
-  border-radius: 0.42rem;
-  margin-right: 0.75rem;
-}
-
-.dropdownItemText {
-  color: #3f4254;
-  transition: all 0.15s ease;
-  font-size: 1rem;
-  flex-grow: 1;
 }
 
 @keyframes animation-dropdown-menu-fade-in {

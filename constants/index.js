@@ -6,15 +6,18 @@ const Menu = ['AboutUs', 'OurServices', 'Team', 'Faqs', 'Contact', 'Apply']
 
 const Languages = [
   {
+    lang: 'tr',
     text: 'Turkish',
     icon: <Icons.Turkey />
   },
+  // {
+  //   lang: 'en',
+  //   text: 'English',
+  //   icon: <Icons.Us />
+  // },
   {
-    text: 'English',
-    icon: <Icons.Us />
-  },
-  {
-    text: 'Germany',
+    lang: 'de',
+    text: 'German',
     icon: <Icons.Germany />
   }
 ]

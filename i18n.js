@@ -7,5 +7,12 @@ module.exports = new NextI18Next({
   otherLanguages: ['de'],
   defaultNS: 'common',
   localeSubpaths,
-  localePath: path.resolve('./public/static/locales')
+  localePath: path.resolve('./public/static/locales'),
+  serverLanguageDetection: false,
+  detection: {
+    lookupCookie: 'lang',
+    caches: ['cookie'],
+    cookieExpirationDate: new Date().setMonth(new Date().getMonth() + 12),
+    cookieSameSite: 'strict'
+  }
 })
