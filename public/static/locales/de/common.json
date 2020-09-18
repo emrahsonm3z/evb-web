@@ -13,5 +13,12 @@
   },
   "Turkish": "Türkisch",
   "English": "Englisch",
-  "German": "Deutsche"
+  "German": "Deutsche",
+  "Hero": {
+    "Text": "<1>MEHR</1> ALS EIN <1>JOB</1>",
+    "Apply": "WILLST DU AUCH MITMACHEN?"
+  },
+  "Vision": "Vision",
+  "QualityPromise": "Qualitätsverspreche ",
+  "Values": "Werte"
 }

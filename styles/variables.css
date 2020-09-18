@@ -1,9 +1,18 @@
 :root {
-  --c-primary: #fff;
-  --c-theme: #63a140;
+  --c-primary: #63a140;
+  --c-primary-hover: #426f28;
   --c-text-color: #353834;
   --c-border-color: rgb(230, 236, 240);
-  --c-gray: #f2f2f2;
-  --c-dark-gray: #525750;
+  --c-black: #000;
+  --c-white: #fff;
+  --c-gray-100: #f3f6f9;
+  --c-gray-200: #ebedf3;
+  --c-gray-300: #e4e6ef;
+  --c-gray-400: #d1d3e0;
+  --c-gray-500: #b5b5c3;
+  --c-gray-600: #7e8299;
+  --c-gray-700: #5e6278;
+  --c-gray-800: #3f4254;
+  --c-gray-900: #181c32;
   --fade: 300ms;
 }

@@ -110,7 +110,7 @@
         transition: all 0.15s ease;
 
         .dropdownItemText {
-          color: var(--c-theme);
+          color: var(--c-primary);
         }
       }
     }

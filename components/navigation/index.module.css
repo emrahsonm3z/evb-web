@@ -46,7 +46,7 @@
     flex-grow: 1;
     padding: 0;
     width: auto;
-    color: var(--c-theme);
+    color: var(--c-primary);
     font-weight: 500;
     font-size: 1rem;
     text-transform: initial;
@@ -56,7 +56,7 @@
 @media (--tm) {
   .headerMenuWrapper {
     overflow: auto;
-    background: var(--c-primary);
+    background: var(--c-white);
     box-shadow: 0 1px 9px -3px rgba(0, 0, 0, 0.75);
     z-index: 1001;
     position: fixed;
@@ -68,7 +68,7 @@
   }
 
   .headerMenu {
-    background: var(--c-primary);
+    background: var(--c-white);
   }
 
   .menuNav {
@@ -91,10 +91,10 @@
     cursor: pointer;
     min-height: 44px;
     padding: 9px 30px;
-    background: var(--c-primary);
+    background: var(--c-white);
 
     span {
-      color: var(--c-theme);
+      color: var(--c-primary);
     }
   }
 }

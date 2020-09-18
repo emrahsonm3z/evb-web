@@ -1,5 +1,169 @@
-.body {
-  margin-top: 210px;
-  padding: 15px 15px 2500px;
-  font-size: 30px;
+.section {
+  b {
+    font-weight: 600;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex: 1 auto;
+  min-width: 0;
+  height: 400px;
+  background: linear-gradient(283.4deg, rgba(255, 255, 255, 0) -5.7%, rgba(255, 255, 255, 0) 40.95%, #fff 66.49%), url("/assets/evb-lab.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .heroContent {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    & > div {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+
+    .heroTitle {
+      color: var(--c-primary);
+      font-weight: 300;
+
+      b {
+        font-weight: 600;
+      }
+    }
+
+    .heroApply {
+      --min: 1.3rem;
+      --val: 2.5vw;
+      --max: 1.8em;
+
+      background: var(--c-primary);
+      color: var(--c-white);
+      margin-top: 30px;
+      padding: 10px 40px;
+      border-radius: 40px;
+      outline: none;
+      text-align: center;
+      font-size: clamp(var(--min), var(--val), var(--max));
+      transition: background var(--fade) ease;
+
+      &:hover {
+        cursor: pointer;
+        background: var(--c-primary-hover);
+      }
+    }
+  }
+}
+
+.visionLinks {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vision {
+  margin-bottom: 50px;
+
+  p {
+    padding: 10px 0;
+  }
+}
+
+.visionBtn {
+  --min: 1rem;
+  --val: 2.5vw;
+  --max: 1.5rem;
+
+  padding: 20px 0;
+  font-size: clamp(var(--min), var(--val), var(--max));
+  background-color: var(--c-gray-100);
+  transition: background var(--fade) ease;
+  color: var(--c-text-color);
+
+  &:hover {
+    background-color: var(--c-gray-300);
+  }
+}
+
+.parallax {
+  background-image: linear-gradient(180deg, rgba(88, 88, 88, 0.55) 99.99%, rgba(255, 255, 255, 0) 100%), url("/assets/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 80px 0;
+  overflow: hidden;
+
+  .parallaxContent {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .parallaxItem {
+      color: var(--c-white);
+      text-align: center;
+      font-size: 1.1rem;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      h1,
+      h2 {
+        font-size: clamp(var(--min), var(--val), var(--max));
+      }
+
+      h1 {
+        --min: 2rem;
+        --val: 5vw;
+        --max: 4rem;
+      }
+
+      h2 {
+        --min: 1rem;
+        --val: 2.5vw;
+        --max: 2rem;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          display: flex;
+          align-items: center;
+          padding: 5px 0;
+
+          svg {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tasks {
+  background: url("/assets/customer-service.jpg");
+  background-position: center;
+  background-size: cover;
+
+  .tasksContent {
+    max-width: 450px;
+    padding: 40px 0;
+
+    h2 {
+      color: var(--c-primary);
+    }
+  }
+}
+
+.zzz {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 150px 150px 1fr;
 }

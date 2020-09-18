@@ -24,8 +24,44 @@ body {
     'Apple Color Emoji',
     'Segoe UI Emoji',
     'Segoe UI Symbol';
-  background-color: var(--c-primary);
+  background-color: var(--c-white);
   color: var(--c-text-color);
+}
+
+h1,
+h2,
+a,
+p,
+span {
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
+
+p,
+span {
+  line-height: 1.6rem;
+}
+
+h1 {
+  --min: 2rem;
+  --val: 5vw;
+  --max: 3rem;
+}
+
+h2 {
+  --min: 1rem;
+  --val: 2.5vw;
+  --max: 2rem;
+}
+
+a,
+span {
+  --min: 1rem;
+  --val: 2.5vw;
+  --max: 1.2rem;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .container {

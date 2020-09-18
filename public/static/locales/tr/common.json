@@ -13,5 +13,12 @@
   },
   "Turkish": "Türkçe",
   "English": "İnglizce",
-  "German": "Almanca"
+  "German": "Almanca",
+  "Hero": {
+    "Text": "BİR İŞTEN<1> DAHA FAZLASI</1>",
+    "Apply": "KATILMAK İSTER MİSİNİZ?"
+  },
+  "Vision": "Vizyon",
+  "QualityPromise": "Kalite sözü",
+  "Values": "Değerler"
 }
