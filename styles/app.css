@@ -30,6 +30,7 @@ body {
 
 h1,
 h2,
+h3,
 a,
 p,
 span {
@@ -48,15 +49,21 @@ h1 {
 }
 
 h2 {
-  --min: 1rem;
+  --min: 1.2rem;
   --val: 2.5vw;
   --max: 2rem;
 }
 
+h3 {
+  --min: 1rem;
+  --val: 2vw;
+  --max: 1.6rem;
+}
+
 a,
 span {
-  --min: 1rem;
-  --val: 2.5vw;
+  --min: 0.8rem;
+  --val: 1.5vw;
   --max: 1.2rem;
 }
 

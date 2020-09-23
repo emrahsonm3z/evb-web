@@ -156,14 +156,223 @@
     max-width: 450px;
     padding: 40px 0;
 
-    h2 {
+    .tasksTitle {
       color: var(--c-primary);
     }
   }
 }
 
-.zzz {
+.moreThanJob {
+  --text-padding: 10px;
+  --img-padding: 10px;
+  --img-width: 270px;
+
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.moreThanJobImg {
+  padding: var(--img-padding);
+  width: var(--img-width);
+
+  img {
+    width: 100%;
+  }
+}
+
+.moreThanJobText {
+  width: calc(100% - 2 * (var(--img-width) + 2 * var(--img-padding)  + var(--text-padding)));
+  padding: var(--text-padding);
+
+  h2 {
+    color: var(--c-primary);
+  }
+}
+
+@media (--t) {
+  .moreThanJobImg {
+    width: calc(50% - 20px);
+
+    img {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}
+
+@media (--m) {
+  .moreThanJobImg {
+    width: 100%;
+
+    img {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+@media (--tm) {
+  .moreThanJobText {
+    width: 100%;
+  }
+}
+
+.training {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #63a140 80%, rgba(255, 255, 255, 0) 80%), #fff;
+  padding: 20px;
+  margin-top: 40px;
+
+  .trainingContent {
+    margin-right: 10px;
+    padding: 15px 0;
+    color: var(--c-white);
+
+    .trainingTitle {
+      font-weight: 600;
+    }
+  }
+
+  .trainingImg {
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+@media (--m) {
+  .training {
+    background: var(--c-primary);
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+  }
+
+  .trainingContent {
+    width: 80%;
+  }
+}
+
+.team {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-end;
+  flex: 1 auto;
+  min-width: 0;
+  height: 400px;
+  background: url("/assets/team.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .teamContent {
+    padding: 40px 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.77);
+
+    .teamTitle {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.sss {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 150px 150px 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  @media (--m) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (--dt) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sssTitle {
+  color: var(--c-primary);
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.expectations {
+  background-color: var(--c-gray-100);
+  display: flex;
+  justify-content: stretch;
+  padding: 20px 0;
+
+  .expectationContent {
+    margin: 0 2rem;
+    color: var(--c-gray-700);
+
+    h2 {
+      color: var(--c-primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    ul {
+      --min: 2rem;
+      --val: 2vw;
+      --max: 3rem;
+
+      margin-top: 1rem;
+      list-style: none;
+      line-height: clamp(var(--min), var(--val), var(--max));
+
+      li {
+        position: relative;
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        &::before {
+          --min: 0.4rem;
+          --val: 1vw;
+          --max: 0.6rem;
+          --width: clamp(var(--min), var(--val), var(--max));
+
+          background: var(--c-primary);
+          position: absolute;
+          top: var(--width);
+          left: 0;
+          display: block;
+          content: '';
+          height: var(--width);
+          width: var(--width);
+          border-radius: var(--width);
+        }
+      }
+    }
+  }
+
+  .expectationImg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+
+    img {
+      max-height: 350px;
+    }
+  }
+}
+
+@media (--m) {
+  .expectationImg {
+    display: none !important;
+  }
 }

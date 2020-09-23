@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-function SvgShape(props) {
+function SvgLocation(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 13 19" fill="none" {...props}>
       <path
@@ -13,4 +13,4 @@ function SvgShape(props) {
   )
 }
 
-export default SvgShape
+export default SvgLocation
