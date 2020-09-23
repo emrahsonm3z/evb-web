@@ -2,10 +2,12 @@
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: 25px;
 
   img {
-    max-height: 40px;
+    vertical-align: middle;
+    border-style: none;
     display: inline-block;
   }
 }

@@ -2,9 +2,9 @@ import React from 'react'
 import cn from 'classnames'
 import styles from './index.module.css'
 
-function Logo() {
+function Logo({ className }) {
   return (
-    <div className={styles.logo}>
+    <div className={cn([styles.logo, className])}>
       <a href="/">
         <img src="/assets/logo.png"></img>
       </a>

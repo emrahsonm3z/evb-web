@@ -9,7 +9,7 @@
   align-items: center;
   flex: 1 auto;
   min-width: 0;
-  height: 400px;
+  height: 500px;
   background: linear-gradient(283.4deg, rgba(255, 255, 255, 0) -5.7%, rgba(255, 255, 255, 0) 40.95%, #fff 66.49%), url("/assets/evb-lab.jpg");
   background-position: center;
   background-size: cover;
