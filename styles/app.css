@@ -5,10 +5,13 @@
   padding: 0;
   border: 0;
   font: inherit;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 html {
   font-size: 15px;
+  margin-right: 0 !important;
 }
 
 body {
@@ -26,6 +29,15 @@ body {
     'Segoe UI Symbol';
   background-color: var(--c-white);
   color: var(--c-text-color);
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 h1,

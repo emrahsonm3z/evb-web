@@ -36,11 +36,31 @@ class MyDocument extends Document {
           <meta name="application-name" content={SiteConfig.title} />
           <meta name="apple-mobile-web-app-title" content={SiteConfig.title} />
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-          <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16"></link>
-          <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32"></link>
-          <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-          <meta name="msapplication-config" content="/icons/browserconfig.xml"></meta>
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="default"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            href="/icons/favicon-16x16.png"
+            sizes="16x16"
+          ></link>
+          <link
+            rel="icon"
+            type="image/png"
+            href="/icons/favicon-32x32.png"
+            sizes="32x32"
+          ></link>
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/icons/apple-touch-icon.png"
+          />
+          <meta
+            name="msapplication-config"
+            content="/icons/browserconfig.xml"
+          ></meta>
 
           {/* analytic */}
           {SiteConfig.googleAnalytic && (

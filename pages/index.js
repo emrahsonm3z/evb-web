@@ -8,9 +8,14 @@ import { Location } from '../components/icons'
 
 import styles from './index.module.css'
 import Card from '../components/card'
+import Carousel from '../components/carousel'
+
 const Homepage = ({ t }) => (
   <Layout>
     <section className={styles.section}>
+      <Carousel />
+    </section>
+    {/* <section className={styles.section}>
       <div className={styles.hero}>
         <div className={cn(['container', styles.heroContent])}>
           <div>
@@ -21,7 +26,7 @@ const Homepage = ({ t }) => (
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     <section className={styles.section}>
       <div className={cn(['container', styles.vision])}>
         <div className={styles.visionLinks}>

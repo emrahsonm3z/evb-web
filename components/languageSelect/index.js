@@ -8,7 +8,7 @@ import headerStyles from '../header/index.module.css'
 
 import { Languages } from '../../constants'
 
-function LanguageSelect({ t }) {
+function LanguageSelect({ t, className }) {
   const [language, setLanguage] = useState(Languages[0])
 
   const dropdownRef = useRef(null)
@@ -22,11 +22,14 @@ function LanguageSelect({ t }) {
   }
 
   return (
-    <div className={styles.dropdown}>
+    <div className={cn([styles.dropdown, className])}>
       <div className={headerStyles.topbarItem}>
         <div
           onClick={onClick}
-          className={cn([styles.btnDropdown, isActive ? styles.selected : styles.unselected])}
+          className={cn([
+            styles.btnDropdown,
+            isActive ? styles.selected : styles.unselected
+          ])}
         >
           {language.icon}
         </div>

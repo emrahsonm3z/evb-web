@@ -5,7 +5,7 @@
 
   .body {
     display: flex;
-    flex-direction: column wrap;
+    flex-flow: column wrap;
     padding: 20px;
 
     .left {
