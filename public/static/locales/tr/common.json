@@ -18,7 +18,18 @@
     "Text": "BİR İŞTEN<1> DAHA FAZLASI</1>",
     "Apply": "KATILMAK İSTER MİSİNİZ?"
   },
-  "Vision": "Vizyon",
-  "QualityPromise": "Kalite sözü",
-  "Values": "Değerler"
+  "VisionContainer": {
+    "Vision": {
+      "Title": "Vizyon",
+      "Text": "<p> <b> 2015'ten beri telekomünikasyon sektöründe başarılı bir hizmet şirketi olan Evb: </b> Beş yerde çalışma sunuyoruz. Her çalışan, konumunu bir veya sınırsız bir süre için değiştirmeyi seçmekte özgürdür. </p><p> Toplamda her gün şirket ve müşterilerimiz için çalışan 450'den fazla çalışanımız var. Olumlu bir çalışma ortamı yaratmak ve motivasyonumuzu her zaman yüksek tutmak bizim için önemlidir. Bu nedenle, nerede olursanız olun her zaman iyi olduğunuzdan emin oluyoruz. </p><p> Toplamda her gün şirket ve müşterilerimiz için çalışan 450'den fazla çalışanımız var. Olumlu bir çalışma ortamı yaratmak ve motivasyonumuzu her zaman yüksek tutmak bizim için önemlidir. Bu nedenle, nerede olursanız olun her zaman iyi olduğunuzdan emin oluyoruz. </p>"
+    },
+    "QualityPromise": {
+      "Title": "Kalite sözü",
+      "Text": "<p> <b> 2015'ten beri telekomünikasyon sektöründe başarılı bir hizmet şirketi olan Evb: </b> Beş yerde çalışma sunuyoruz. Her çalışan, konumunu bir veya sınırsız bir süre için değiştirmeyi seçmekte özgürdür. </p><p> Toplamda her gün şirket ve müşterilerimiz için çalışan 450'den fazla çalışanımız var. Olumlu bir çalışma ortamı yaratmak ve motivasyonumuzu her zaman yüksek tutmak bizim için önemlidir. Bu nedenle, nerede olursanız olun her zaman iyi olduğunuzdan emin oluyoruz. </p>"
+    },
+    "Values": {
+      "Title": "Değerler",
+      "Text": "<p> <b> 2015'ten beri telekomünikasyon sektöründe başarılı bir hizmet şirketi olan Evb: </b> Beş yerde çalışma sunuyoruz. Her çalışan, konumunu bir veya sınırsız bir süre için değiştirmeyi seçmekte özgürdür. </p>"
+    }
+  }
 }

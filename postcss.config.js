@@ -15,22 +15,22 @@ module.exports = {
         },
         {
           customMedia: {
-            '--t': `(min-width: ${breakpoints.md + 1}px) and (max-width:${breakpoints.lg}px)` //tablet
+            '--t': `(min-width: ${breakpoints.md}px) and (max-width:${breakpoints.lg}px)` //tablet
           }
         },
         {
           customMedia: {
-            '--m': `(max-width:${breakpoints.md}px)` //mobile
+            '--m': `(max-width:${breakpoints.md - 1}px)` //mobile
           }
         },
         {
           customMedia: {
-            '--dt': `(min-width: ${breakpoints.md + 1}px)` //desktop-and-tablet
+            '--dt': `(min-width: ${breakpoints.md}px)` //desktop-and-tablet
           }
         },
         {
           customMedia: {
-            '--tm': `(max-width:${breakpoints.lg}px)` //tablet-and-mobile
+            '--tm': `(max-width:${breakpoints.lg - 1}px)` //tablet-and-mobile
           }
         }
       ]

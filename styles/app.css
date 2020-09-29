@@ -49,9 +49,18 @@ span {
   font-size: clamp(var(--min), var(--val), var(--max));
 }
 
-p,
-span {
+a,
+span,
+p {
+  --min: 0.8rem;
+  --val: 1.5vw;
+  --max: 1.2rem;
+
   line-height: 1.6rem;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 h1 {
@@ -72,15 +81,8 @@ h3 {
   --max: 1.6rem;
 }
 
-a,
-span {
-  --min: 0.8rem;
-  --val: 1.5vw;
-  --max: 1.2rem;
-}
-
-a:hover {
-  cursor: pointer;
+i {
+  font-style: italic;
 }
 
 .container {

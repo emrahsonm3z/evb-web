@@ -18,7 +18,18 @@
     "Text": "<1>MEHR</1> ALS EIN <1>JOB</1>",
     "Apply": "WILLST DU AUCH MITMACHEN?"
   },
-  "Vision": "Vision",
-  "QualityPromise": "Qualitätsverspreche ",
-  "Values": "Werte"
+  "VisionContainer": {
+    "Vision": {
+      "Title": "Vision",
+      "Text": " <p> <b> Evb, ein erfolgreiches Dienstleistungsunternehmen in der Telekommunikationsbranche seit 2015: </b> Wir bieten Arbeit in fünf Standorten an. Jeder Mitarbeiter hat die freie Auswahl, je nach Belieben seinen Standort für eine oder unbegrenzte Zeit zu ändern. </p><p> Insgesamt haben wir über 450 Mitarbeiter, die sich tagtäglich für das Unternehmen und unsere Kunden einsetzen. Für uns ist es wichtig, ein positives Arbeitsklima zu schaffen und unsere Motivation immer hoch zu halten. Aus diesem Grund sorgen wir immer dafür, dass es dir, egal an welchem Standort, gut geht. </p>"
+    },
+    "QualityPromise": {
+      "Title": "Qualitätsverspreche",
+      "Text": "QualitätsversprecheText"
+    },
+    "Values": {
+      "Title": "Werte",
+      "Text": "WerteText"
+    }
+  }
 }

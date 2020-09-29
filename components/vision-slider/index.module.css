@@ -1,0 +1,62 @@
+.vision {
+  margin: 20px auto 50px;
+
+  @media (--tm) {
+    margin: 0 auto 20px;
+  }
+
+  p {
+    --min: 0.8rem;
+    --val: 1.5vw;
+    --max: 1.2rem;
+
+    padding: 10px 0;
+    line-height: 1.2rem;
+  }
+}
+
+.vision-slider {
+  --height: 300px;
+
+  @media (--m) {
+    --height: 450px;
+  }
+
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+
+  .carousel-cell {
+    width: 100%;
+    height: var(--height);
+
+    .inner {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--c-text-color);
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+
+  :global {
+    .flickity-page-dots {
+      bottom: 0;
+
+      .dot {
+        opacity: 1;
+        background: rgba(69, 69, 69, 0.25);
+        border: 0 solid rgba(69, 69, 69, 0.25);
+        transition: all 300ms ease;
+
+        &.is-selected {
+          background: #636363;
+          border: 0 solid #636363;
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}

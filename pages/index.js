@@ -8,51 +8,17 @@ import { Location } from '../components/icons'
 
 import styles from './index.module.css'
 import Card from '../components/card'
-import Carousel from '../components/carousel'
+import HeroSlider from '../components/hero-slider'
+import VisionSlider from '../components/vision-slider'
 
 const Homepage = ({ t }) => (
   <Layout>
     <section className={styles.section}>
-      <Carousel />
+      <HeroSlider />
     </section>
-    {/* <section className={styles.section}>
-      <div className={styles.hero}>
-        <div className={cn(['container', styles.heroContent])}>
-          <div>
-            <h1 className={styles.heroTitle}>
-              <Trans components={{ 1: <b /> }}>{t('Hero.Text')}</Trans>
-            </h1>
-            <button className={styles.heroApply}>{t('Hero.Apply')}</button>
-          </div>
-        </div>
-      </div>
-    </section> */}
+
     <section className={styles.section}>
-      <div className={cn(['container', styles.vision])}>
-        <div className={styles.visionLinks}>
-          {['Vision', 'QualityPromise', 'Values'].map((item) => (
-            <a key={item} className={styles.visionBtn}>
-              {t(item)}
-            </a>
-          ))}
-        </div>
-        <p>
-          <b>
-            Evb, ein erfolgreiches Dienstleistungsunternehmen in der
-            Telekommunikationsbranche seit 2015:
-          </b>
-          Wir bieten Arbeit in fünf Standorten an. Jeder Mitarbeiter hat die
-          freie Auswahl, je nach Belieben seinen Standort für eine oder
-          unbegrenzte Zeit zu ändern.
-        </p>
-        <p>
-          Insgesamt haben wir über 450 Mitarbeiter, die sich tagtäglich für das
-          Unternehmen und unsere Kunden einsetzen. Für uns ist es wichtig, ein
-          positives Arbeitsklima zu schaffen und unsere Motivation immer hoch zu
-          halten. Aus diesem Grund sorgen wir immer dafür, dass es dir, egal an
-          welchem Standort, gut geht.
-        </p>
-      </div>
+      <VisionSlider />
     </section>
     <section className={styles.section}>
       <div className={styles.parallax}>

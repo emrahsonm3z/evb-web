@@ -75,7 +75,7 @@
 
         @media (--tm) {
           color: var(--c-white);
-          background: rgb(0 0 0 / 55%);
+          background: rgb(0 0 0 / 75%);
           border-radius: 7px;
         }
       }

@@ -39,33 +39,13 @@ const flickityOptions = {
     y2: 45,
     x3: 15
   },
-  autoPlay: 3000,
+  autoPlay: 5000,
   pauseAutoPlayOnHover: false,
   selectedAttraction: 0.01,
   friction: 0.15
 }
 
-function Carousel({ t }) {
-  // useEffect(() => {
-  //   const carousel = document.querySelector('[data-carousel]')
-  //   const slides = document.getElementsByClassName('carousel-cell')
-  //   const flkty = new Flickity(carousel, options)
-
-  //   const handleScroll = () => {
-  //     flkty.slides.forEach(function (slide, i) {
-  //       const image = slides[i]
-  //       const x = ((slide.target + flkty.x) * -1) / 3
-  //       // image.style.backgroundPosition = x + 'px'
-  //     })
-  //   }
-
-  //   flkty.on('scroll', handleScroll)
-
-  //   return () => {
-  //     flkty.remove('scroll', handleScroll)
-  //   }
-  // }, [])
-
+function HeroSlider({ t }) {
   return (
     <Flickity
       className={styles['hero-slider']}
@@ -93,4 +73,4 @@ function Carousel({ t }) {
   )
 }
 
-export default withTranslation('common')(Carousel)
+export default withTranslation('common')(HeroSlider)
