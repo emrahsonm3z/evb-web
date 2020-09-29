@@ -11,6 +11,9 @@ const Homepage = ({ t }) => (
     <section className={styles.section}>
       <HeroSlider />
     </section>
+    <section className={styles.section}>
+      <HeroSlider />
+    </section>
   </Layout>
 )
 

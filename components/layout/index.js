@@ -1,11 +1,11 @@
 import React from 'react'
 import Footer from '../footer'
-import Header2 from '../header2'
+import Header from '../header'
 
 function Layout({ children }) {
   return (
     <div>
-      <Header2 />
+      <Header />
       <main>{children}</main>
       <Footer />
     </div>

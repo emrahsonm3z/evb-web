@@ -1,7 +1,10 @@
 import React from 'react'
-import cn from 'classnames'
+import Link from 'next/link'
+import { animateScroll as scroll } from 'react-scroll'
+import { useRouter } from 'next/router'
+
 import styles from './index.module.css'
-import { LogoWhite } from '../logo'
+import Logo from '../logo'
 import { Envelope, Fax, Location, Phone } from '../icons'
 import { Facebook, Instagram, Twitter, Linkedin } from '../icons/social-media'
 
@@ -51,16 +54,32 @@ const socialMedias = [
   }
 ]
 
+const scrollToTop = () => {
+  scroll.scrollToTop()
+}
+
 function Footer() {
+  const router = useRouter()
+
   return (
     <footer>
       <div className={styles.footer}>
         <div className="container">
           <div className={styles.body}>
             <div className={styles.left}>
-              <div className={styles.logo}>
-                <LogoWhite />
-              </div>
+              {router.pathname == '/' ? (
+                <Link href="#">
+                  <a onClick={scrollToTop}>
+                    <img src="/assets/logo-white.png"></img>
+                  </a>
+                </Link>
+              ) : (
+                <Link href="/">
+                  <a>
+                    <img src="/assets/logo-white.png"></img>
+                  </a>
+                </Link>
+              )}
               <div className={styles.infos}>
                 {footerInfos.map((item) => (
                   <div className={styles.info} key={item.Id}>
