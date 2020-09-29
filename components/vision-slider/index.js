@@ -1,4 +1,4 @@
-import React, { createRef } from 'react'
+import React from 'react'
 import Flickity from 'react-flickity-component'
 import cn from 'classnames'
 

@@ -1,0 +1,78 @@
+.sss {
+  margin: 20px auto 50px;
+
+  @media (--tm) {
+    margin: 0 auto 20px;
+  }
+
+  .title {
+    color: var(--c-primary);
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 600;
+  }
+}
+
+.sss-slider {
+  --height: 350px;
+
+  @media (--tm) {
+    --height: 300px;
+  }
+
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+
+  .carousel-cell {
+    width: 30%;
+    height: var(--height);
+    margin-right: 10px;
+    background: #8c8;
+    border-radius: 5px;
+
+    @media (--t) {
+      width: 50%;
+    }
+
+    @media (--m) {
+      width: 70%;
+    }
+
+    &.is-selected {
+      background: #ed2;
+    }
+  }
+
+  :global {
+    .workingHours::before {
+      background: url("/assets/time.jpg");
+      background-size: cover;
+      background-position: 0 0;
+    }
+
+    .breaks::before {
+      background: url("/assets/coffee.jpg");
+      background-size: cover;
+      background-position: 0 0;
+    }
+
+    .mealAllowance::before {
+      background: url("/assets/lunch.jpg");
+      background-size: cover;
+      background-position: 0 0;
+    }
+
+    .bonus::before {
+      background: url("/assets/bonus.jpg");
+      background-size: cover;
+      background-position: 0 0;
+    }
+
+    .overtime::before {
+      background: url("/assets/overtime.jpg");
+      background-size: cover;
+      background-position: 0 0;
+    }
+  }
+}

@@ -4,12 +4,11 @@ import cn from 'classnames'
 import { withTranslation, Trans } from '../i18n'
 import Layout from '../components/layout'
 
-import { Location } from '../components/icons'
-
 import styles from './index.module.css'
-import Card from '../components/card'
 import HeroSlider from '../components/hero-slider'
 import VisionSlider from '../components/vision-slider'
+import Parallax from '../components/parallax'
+import FaqSlider from '../components/faq-slider'
 
 const Homepage = ({ t }) => (
   <Layout>
@@ -21,56 +20,14 @@ const Homepage = ({ t }) => (
       <VisionSlider />
     </section>
     <section className={styles.section}>
-      <div className={styles.parallax}>
-        <div className={cn(['container', styles.parallaxContent])}>
-          <div className={styles.parallaxItem}>
-            <div>
-              <h1>5</h1>
-              <h2>STANDORTEN</h2>
-              <ul>
-                {[
-                  'İzmir',
-                  'İstanbul Europa',
-                  'İstanbul Asien',
-                  'Ankara',
-                  'Antalya'
-                ].map((item) => (
-                  <li key={item}>
-                    <Location />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className={styles.parallaxItem}>
-            <h1>450+</h1>
-            <h2>MITARBEITER</h2>
-          </div>
-          <div className={styles.parallaxItem}>
-            <h1>1,5</h1>
-            <h2>MILLIONEN BESTANDSKUNDEN</h2>
-          </div>
-        </div>
-      </div>
+      <Parallax />
     </section>
     <section className={styles.section}>
       <div className={cn(['container', styles.tasks])}>
         <div className={styles.tasksContent}>
-          <h2 className={styles.tasksTitle}>Aufgaben</h2>
+          <h2 className={styles.tasksTitle}>{t('Tasks.Title')}</h2>
           <br />
-          <p>
-            Deine Aufgaben bestehen darin, unsere
-            <b>1,5 Millionen Bestandskunden</b> zu betreuen. Da wir der
-            <b>Dienstleister unseres eigenen Energiewirtschaftsunternehmens</b>
-            sind, wirst du deine meiste Zeit damit verbringen Abschläge zu
-            ändern, Verträge zu beenden, Tarifwechsel durchzuführen und
-            Rechnungen zu erläutern. Du brauchst aber keine Bedenken zu haben,
-            denn du hast immer jemanden bei dir, der dich unterstützt, um auch
-            jedes Kundenanliegen zu lösen. Dabei musst du aber immer
-            serviceorientiert handeln. Bei uns wird guter Kundenservice sehr
-            wertgeschätzt.
-          </p>
+          <Trans components={{ p: <p />, b: <b /> }}>{t('Tasks.Text')}</Trans>
         </div>
       </div>
     </section>
@@ -136,41 +93,7 @@ const Homepage = ({ t }) => (
       </div>
     </section>
     <section className={styles.section}>
-      <div className="container">
-        <h2 className={styles.sssTitle}>Häufig gestellte Fragen…</h2>
-        <div className={styles.sss}>
-          <Card
-            className="workingHours"
-            title="Deine Arbeitszeiten und Schichten"
-          >
-            <span>
-              Wir haben insgesamt vier Schichten. Die Schichtverteilung erfolgt
-              immer fair und gerecht. Jeder arbeitet in einem Monat immer
-              abwechselnd in einer anderen Schicht. In den angegebenen
-              Arbeitszeiten sind alle Pausen mitinbegriffen.
-            </span>
-            <span>1: 08:00 – 17:00</span>
-            <span>2: 09:00 – 18:00</span>
-            <span>3: 10:00 – 19:00 </span>
-            <span>4: 11:00 – 20:00</span>
-          </Card>
-          <Card className="breaks" title="Pausen">
-            <span>
-              Wir haben insgesamt vier Schichten. Die Schichtverteilung erfolgt
-              immer fair und gerecht. Jeder arbeitet in einem Monat immer
-              Arbeitszeiten sind alle Pausen mitinbegriffen.
-            </span>
-            <span>1: 08:00 – 17:00</span>
-            <span>2: 09:00 – 18:00</span>
-          </Card>
-          <Card className="mealAllowance" title="Essensvergütung">
-            <span>
-              Wir haben insgesamt vier Schichten. Die Schichtverteilung erfolgt
-              immer fair und gerecht. Jeder arbeitet in einem Monat immer
-            </span>
-          </Card>
-        </div>
-      </div>
+      <FaqSlider />
     </section>
     <section className={styles.section}>
       <div className={styles.expectations}>

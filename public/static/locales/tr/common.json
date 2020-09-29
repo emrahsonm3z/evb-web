@@ -31,5 +31,12 @@
       "Title": "Değerler",
       "Text": "<p> <b> 2015'ten beri telekomünikasyon sektöründe başarılı bir hizmet şirketi olan Evb: </b> Beş yerde çalışma sunuyoruz. Her çalışan, konumunu bir veya sınırsız bir süre için değiştirmeyi seçmekte özgürdür. </p>"
     }
+  },
+  "Locations": "KONUMLAR",
+  "Employee": "ÇALIŞAN",
+  "ExistingCustomers": "MEVCUT MÜŞTERİ",
+  "Tasks": {
+    "Title": "Görevler",
+    "Text": "<p>İşiniz <b>1,5 milyon mevcut müşterimize</b> bakmaktır. <b>Kendi enerji şirketimizin hizmet sağlayıcısı</b> olduğumuz için, zamanınızın çoğunu indirimleri değiştirmek, sözleşmeleri feshetmek, tarifeleri değiştirmek ve faturaları açıklamak için harcayacaksınız. Ancak herhangi bir endişenizin olması gerekmez, çünkü her zaman yanınızda, her müşteri sorununu çözmede size destek olacak biri vardır. Ancak her zaman hizmet odaklı olmalısınız. İyi müşteri hizmetlerine çok değer veriyoruz.</p>"
   }
 }

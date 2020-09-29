@@ -31,5 +31,12 @@
       "Title": "Werte",
       "Text": "WerteText"
     }
+  },
+  "Locations": "STANDORTEN",
+  "Employee": "MITARBEITER",
+  "ExistingCustomers": "BESTANDSKUNDEN",
+  "Tasks": {
+    "Title": "Aufgaben",
+    "Text": " <p> Deine Aufgaben bestehen darin, unsere <b>1,5 Millionen Bestandskunden</b> zu betreuen. Da wir der <b>Dienstleister unseres eigenen Energiewirtschaftsunternehmens</b> sind, wirst du deine meiste Zeit damit verbringen Abschläge zu ändern, Verträge zu beenden, Tarifwechsel durchzuführen und Rechnungen zu erläutern. Du brauchst aber keine Bedenken zu haben, denn du hast immer jemanden bei dir, der dich unterstützt, um auch jedes Kundenanliegen zu lösen. Dabei musst du aber immer serviceorientiert handeln. Bei uns wird guter Kundenservice sehr wertgeschätzt. </p>"
   }
 }

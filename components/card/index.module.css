@@ -9,8 +9,8 @@
   overflow: hidden;
   width: 100%;
   text-align: center;
-  margin: 15px;
-  height: 350px;
+  height: 100%;
+  max-height: 400px;
 
   &::before {
     content: '';
@@ -32,7 +32,7 @@
     width: 100%;
     height: 200%;
     pointer-events: none;
-    transform: translateY(-50%);
+    transform: translateY(0);
     transition: transform calc(var(--d) * 2) var(--e);
   }
 
@@ -47,6 +47,15 @@
     transition: transform var(--d) var(--e);
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.77);
+    transform: translateY(calc(100% - 4.5rem));
+
+    > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition:
+        transform var(--d) var(--e),
+        opacity var(--d) var(--e);
+    }
 
     span {
       --min: 0.8rem;
@@ -79,45 +88,9 @@
       align-items: center;
     }
   }
-}
 
-.workingHours::before {
-  background: url("/assets/time.jpg");
-  background-size: cover;
-  background-position: 0 0;
-}
-
-.breaks::before {
-  background: url("/assets/coffee.jpg");
-  background-size: cover;
-  background-position: 0 0;
-}
-
-.mealAllowance::before {
-  background: url("/assets/lunch.jpg");
-  background-size: cover;
-  background-position: 0 0;
-}
-
-@media (hover: hover) {
-  .card::after {
-    transform: translateY(0);
-  }
-
-  .content {
-    transform: translateY(calc(100% - 4.5rem));
-
-    > *:not(.title) {
-      opacity: 0;
-      transform: translateY(1rem);
-      transition:
-        transform var(--d) var(--e),
-        opacity var(--d) var(--e);
-    }
-  }
-
-  .card:hover,
-  .card:focus-within {
+  &:hover,
+  &:focus-within {
     cursor: pointer;
     align-items: center;
 
@@ -135,7 +108,7 @@
     }
   }
 
-  .card:focus-within {
+  &:focus-within {
     &::before,
     &::after,
     .content,
