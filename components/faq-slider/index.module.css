@@ -8,7 +8,7 @@
   .title {
     color: var(--c-primary);
     text-align: center;
-    margin: 30px 0;
+    padding: 30px 0;
     font-weight: 600;
   }
 }

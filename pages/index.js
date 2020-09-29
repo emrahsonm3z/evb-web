@@ -22,7 +22,7 @@ const Homepage = ({ t }) => (
     <section className={styles.section}>
       <Parallax />
     </section>
-    <section className={styles.section}>
+    <section className={styles.section} id="ourservices">
       <div className={cn(['container', styles.tasks])}>
         <div className={styles.tasksContent}>
           <h2 className={styles.tasksTitle}>{t('Tasks.Title')}</h2>
@@ -92,7 +92,7 @@ const Homepage = ({ t }) => (
         </div>
       </div>
     </section>
-    <section className={styles.section}>
+    <section className={styles.section} id="faqs">
       <FaqSlider />
     </section>
     <section className={styles.section}>
