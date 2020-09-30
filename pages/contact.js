@@ -1,28 +1,15 @@
-import PropTypes from 'prop-types'
-
-import { withTranslation, Trans } from '../i18n'
 import Layout from '../components/layout'
+import cn from 'classnames'
 
-import styles from './index.module.css'
-import HeroSlider from '../components/hero-slider'
+import styles from './contact.module.css'
+import Locations from '../container/locations'
 
-const Homepage = ({ t }) => (
+const Contact = () => (
   <Layout>
-    <section className={styles.section}>
-      <HeroSlider />
-    </section>
-    <section className={styles.section}>
-      <HeroSlider />
+    <section className={cn([styles.section, styles.location])}>
+      <Locations />
     </section>
   </Layout>
 )
 
-Homepage.getInitialProps = async () => ({
-  namespacesRequired: ['common']
-})
-
-Homepage.propTypes = {
-  t: PropTypes.func.isRequired
-}
-
-export default withTranslation('common')(Homepage)
+export default Contact

@@ -85,6 +85,25 @@ i {
   font-style: italic;
 }
 
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
 .container {
   width: 100%;
   padding-right: 10px;

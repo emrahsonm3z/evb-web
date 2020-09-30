@@ -1,0 +1,185 @@
+.grid {
+  --fade: 0.35s;
+
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 26px;
+    text-align: center;
+    cursor: pointer;
+
+    @media (--m) {
+      display: inline-block;
+      float: none;
+      margin: 10px auto;
+      width: 100%;
+    }
+
+    img {
+      position: relative;
+      display: block;
+      min-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+
+      &.img-fluid {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    figcaption {
+      padding: 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      backface-visibility: hidden;
+
+      &::before,
+      &::after {
+        pointer-events: none;
+      }
+
+      & > a {
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+      }
+    }
+
+    figcaption,
+    figcaption > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    h2 {
+      word-spacing: -0.15em;
+      font-weight: 300;
+
+      span {
+        font-weight: 800;
+      }
+    }
+
+    h2,
+    p {
+      margin: 0;
+    }
+
+    p {
+      letter-spacing: 1px;
+      font-size: 68.5%;
+    }
+
+    &.effect {
+      margin: 0;
+
+      img {
+        transition: opacity var(--fade), transform var(--fade);
+        transform: scale(1.12);
+        width: 100%;
+      }
+
+      figcaption {
+        padding: 3em;
+        transition: background var(--fade), transform var(--fade);
+
+        &::before {
+          position: absolute;
+          top: 30px;
+          right: 30px;
+          bottom: 30px;
+          left: 30px;
+          content: '';
+          transform: scale(1.1);
+        }
+
+        p,
+        &::before {
+          opacity: 0;
+          transition: opacity var(--fade), transform var(--fade);
+        }
+      }
+
+      .caption {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%);
+        transition: all var(--fade);
+        width: 100%;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1);
+        }
+
+        figcaption {
+          background: rgba(0, 0, 0, 0.8);
+        }
+
+        figcaption::before,
+        p {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        .caption {
+          top: 20%;
+
+          h2 {
+            --min: 1rem;
+            --val: 1.5vw;
+            --max: 1.4rem;
+          }
+        }
+      }
+
+      h2 {
+        color: #fff;
+
+        /* font-size: 34px; */
+        font-weight: 600;
+        text-transform: inherit;
+        text-shadow: 1px 0 30px #000;
+
+        @media (--tm) {
+          font-size: 26px;
+        }
+      }
+
+      p {
+        margin: 0 auto;
+        transform: scale(1.5);
+
+        /* font-size: 16px; */
+        text-shadow: 1px 0 30px #000;
+        color: #fff;
+        padding: 10px;
+
+        @media (--tm) {
+          font-size: 18px;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}
