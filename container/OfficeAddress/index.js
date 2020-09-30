@@ -6,7 +6,7 @@ import Figure from '../../components/figure'
 
 const OFFICES = [
   {
-    city: 'izmir',
+    city: 'izmir (merkez ofis)',
     address: '1474 Sokak No: 11 Alsancak',
     bg: '/assets/izmir.jpg'
   },
@@ -34,22 +34,25 @@ const OFFICES = [
   }
 ]
 
-function Locations() {
+function OfficeAddresses() {
   return (
-    <div className={cn(['container', styles.grid])}>
-      {OFFICES.map((office) => (
-        <div key={office.city} className={styles.item}>
-          <div className={styles.content}>
-            <Figure
-              src={office.bg}
-              title={office.city}
-              address={office.address}
-            />
+    <div className="container">
+      <h2 className={styles.title}>Şubeler</h2>
+      <div className={styles.grid}>
+        {OFFICES.map((office) => (
+          <div key={office.city} className={styles.item}>
+            <div className={styles.content}>
+              <Figure
+                src={office.bg}
+                title={office.city}
+                address={office.address}
+              />
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   )
 }
 
-export default Locations
+export default OfficeAddresses
