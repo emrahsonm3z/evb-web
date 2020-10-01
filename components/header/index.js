@@ -10,7 +10,6 @@ import {
 import styles from './index.module.css'
 import { Languages, Menui18nPrefix } from '../../constants'
 import { i18n, withTranslation } from '../../i18n'
-import Logo from '../logo'
 
 const menu = [
   {
@@ -47,7 +46,7 @@ const scrollerOptions = {
   offset: -70
 }
 
-const SectionLink = ({ to, text }) => (
+const SectionLink = ({ to, text, onClick }) => (
   <ScrollLink
     activeClass="active"
     to={to}
@@ -56,6 +55,7 @@ const SectionLink = ({ to, text }) => (
     offset={scrollerOptions.offset}
     duration={scrollerOptions.duration}
     className={cn([styles['menu-link']])}
+    onClick={onClick}
   >
     <span className={styles['mask-lnk']}>{text}</span>
     <span className={cn([styles['mask-lnk'], styles['mask-lnk-hover']])}>
@@ -64,19 +64,10 @@ const SectionLink = ({ to, text }) => (
   </ScrollLink>
 )
 
-const SectionLinkFromAnotherPage = ({ to, text }) => {
-  const router = useRouter()
-
+const SectionLinkFromAnotherPage = ({ text, onClick }) => {
   return (
     <Link href="#">
-      <a
-        className={cn([styles['menu-link']])}
-        onClick={() => {
-          router
-            .push('/')
-            .then(() => scroller.scrollTo(to, { ...scrollerOptions }))
-        }}
-      >
+      <a className={cn([styles['menu-link']])} onClick={onClick}>
         <span className={styles['mask-lnk']}>{text}</span>
         <span className={cn([styles['mask-lnk'], styles['mask-lnk-hover']])}>
           {text}
@@ -86,9 +77,9 @@ const SectionLinkFromAnotherPage = ({ to, text }) => {
   )
 }
 
-const NavLink = ({ to, text }) => (
+const NavLink = ({ to, text, onClick }) => (
   <Link href={to}>
-    <a className={cn([styles['menu-link']])}>
+    <a className={cn([styles['menu-link']])} onClick={onClick}>
       <span className={styles['mask-lnk']}>{text}</span>
       <span className={cn([styles['mask-lnk'], styles['mask-lnk-hover']])}>
         {text}
@@ -137,7 +128,6 @@ function Header({ t }) {
     >
       <div className={cn([styles['head-top'], 'container'])}>
         <a
-          href="#"
           className={styles['menu-btn']}
           onClick={() => setIsActive(!isActive)}
         >
@@ -146,13 +136,22 @@ function Header({ t }) {
         <div className={cn([styles.logo, styles['hover-masks-logo']])}>
           {router.pathname == '/' ? (
             <Link href="#">
-              <a onClick={scrollToTop}>
+              <a
+                onClick={() => {
+                  setIsActive(false)
+                  scrollToTop()
+                }}
+              >
                 <img src="/assets/logo.png"></img>
               </a>
             </Link>
           ) : (
             <Link href="/">
-              <a>
+              <a
+                onClick={() => {
+                  setIsActive(false)
+                }}
+              >
                 <img src="/assets/logo.png"></img>
               </a>
             </Link>
@@ -179,11 +178,21 @@ function Header({ t }) {
                         <SectionLink
                           to={item.href}
                           text={t(`${Menui18nPrefix}.${item.text}`)}
+                          onClick={() => {
+                            setIsActive(false)
+                          }}
                         />
                       ) : (
                         <SectionLinkFromAnotherPage
-                          to={item.href}
                           text={t(`${Menui18nPrefix}.${item.text}`)}
+                          onClick={() => {
+                            router.push('/').then(() => {
+                              setIsActive(false)
+                              scroller.scrollTo(item.href, {
+                                ...scrollerOptions
+                              })
+                            })
+                          }}
                         />
                       ))}
 
@@ -191,6 +200,9 @@ function Header({ t }) {
                       <NavLink
                         to={item.href}
                         text={t(`${Menui18nPrefix}.${item.text}`)}
+                        onClick={() => {
+                          setIsActive(false)
+                        }}
                       />
                     )}
                   </li>

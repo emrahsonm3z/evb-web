@@ -3,12 +3,19 @@ import cn from 'classnames'
 
 import styles from './contact.module.css'
 import OfficeAddresses from '../container/OfficeAddress'
+import ContactForm from '../container/contact-form'
+
 const Contact = () => (
   <Layout>
     <section className={cn([styles.section, styles.location])}>
       <OfficeAddresses />
     </section>
-    <section>
+    <section className={styles.section}>
+      <div className="container">
+        <ContactForm />
+      </div>
+    </section>
+    <section className={styles.section}>
       <div className="container">
         <iframe
           height="400"

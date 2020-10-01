@@ -104,6 +104,11 @@ section {
   display: block;
 }
 
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
 .container {
   width: 100%;
   padding-right: 10px;
@@ -338,4 +343,186 @@ section {
 
 .align-self-stretch {
   align-self: stretch !important;
+}
+
+.invalid-feedback {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: #f64e60;
+}
+
+.form-group {
+  margin-bottom: 1.75rem;
+
+  label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3f4254;
+  }
+
+  .invalid-feedback,
+  .valid-feedback {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .form-text {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1.3rem + 2px);
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3f4254;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #e4e6ef;
+  border-radius: 0.42rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+
+  &:invalid,
+  &.is-invalid {
+    border-color: #f64e60;
+    padding-right: calc(1.5em + 1.3rem);
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23F64E60' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23F64E60' stroke='none'/%3e%3c/svg%3e);
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.325rem) center;
+    background-size: calc(0.75em + 0.65rem) calc(0.75em + 0.65rem);
+  }
+
+  &::-moz-placeholder {
+    color: #b5b5c3;
+    opacity: 1;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #b5b5c3;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: #b5b5c3;
+    opacity: 1;
+  }
+
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  &:focus {
+    color: #3f4254;
+    background-color: #fff;
+    border-color: #69b3ff;
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: #b5b5c3;
+    opacity: 1;
+  }
+
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #3f4254;
+  }
+
+  &.form-control-solid {
+    background-color: #f3f6f9;
+    border-color: #f3f6f9;
+    color: #3f4254;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+
+    &::-webkit-input-placeholder {
+      color: #b5b5c3;
+    }
+
+    &::-moz-placeholder {
+      color: #b5b5c3;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: #b5b5c3;
+    }
+
+    &:active,
+    &.active,
+    &:focus,
+    &.focus {
+      background-color: #ebedf3;
+      border-color: #ebedf3;
+      color: #3f4254;
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-control {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+input[type="date"].form-control,
+input[type="time"].form-control,
+input[type="datetime-local"].form-control,
+input[type="month"].form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  color: #3f4254;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.42rem;
+  outline: none !important;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+
+  &.btn-primary {
+    color: #fff;
+    background-color: var(--c-primary);
+    border-color: var(--c-primary);
+
+    &:hover:not(:disabled):not(.disabled),
+    &:focus,
+    &.focus {
+      color: #fff;
+      background-color: var(--c-primary-hover);
+      border-color: var(--c-primary-hover);
+    }
+  }
+
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
 }

@@ -135,19 +135,22 @@
       .caption {
         position: absolute;
         left: 50%;
-        top: 35%;
+        top: 25%;
         transform: translate(-50%);
         transition: all var(--fade);
         width: 100%;
       }
 
       h2 {
-        color: #fff;
+        --min: 1rem;
+        --val: 1.5vw;
+        --max: 1.4rem;
 
-        /* font-size: 34px; */
+        color: #fff;
         font-weight: 600;
         text-transform: inherit;
         text-shadow: 1px 0 30px #000;
+        transition: all var(--fade);
 
         @media (--tm) {
           font-size: 26px;
@@ -167,16 +170,6 @@
         p {
           opacity: 1;
           transform: scale(1);
-        }
-
-        .caption {
-          top: 20%;
-
-          h2 {
-            --min: 1rem;
-            --val: 1.5vw;
-            --max: 1.4rem;
-          }
         }
       }
     }
