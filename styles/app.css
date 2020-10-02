@@ -345,6 +345,10 @@ label {
   align-self: stretch !important;
 }
 
+.a-height {
+  height: auto !important;
+}
+
 .invalid-feedback {
   width: 100%;
   margin-top: 0.25rem;

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
+import cn from 'classnames'
 
 import { withTranslation, Trans } from '../../i18n'
 import {
@@ -28,12 +29,10 @@ function ContactForm({ t }) {
               </Trans>
             )
             .required(t('Validation.Required')),
-          email: Yup.string()
-            .max(
-              MAX_EMAIL,
-              <Trans values={{ max: MAX_EMAIL }}>{t('Validation.Max')}</Trans>
-            )
-            .required(t('Validation.Required')),
+          email: Yup.string().max(
+            MAX_EMAIL,
+            <Trans values={{ max: MAX_EMAIL }}>{t('Validation.Max')}</Trans>
+          ),
           phone: Yup.string()
             .matches(PHONE_REG_EXP, t('Validation.Invalid.Email'))
             .required(t('Validation.Required')),
@@ -76,13 +75,15 @@ function ContactForm({ t }) {
           <TextArea
             label={t('Message')}
             name="message"
-            rows="6"
+            rows="5"
             placeholder={t('Message')}
-            className="form-control-solid"
+            className={cn(['form-control-solid', 'a-height', styles.message])}
           />
-          <button className="btn btn-primary" type="submit">
-            Submit
-          </button>
+          <div className={styles.submitBtn}>
+            <button className="btn btn-primary" type="submit">
+              Submit
+            </button>
+          </div>
         </Form>
       </Formik>
     </>

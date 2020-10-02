@@ -8,6 +8,8 @@ const OFFICES = [
   {
     city: 'izmir (merkez ofis)',
     address: '1474 Sokak No: 11 Alsancak',
+    tel: '0(232) 488-21-00',
+    email: 'info@itsbilisim.com',
     bg: '/assets/izmir.jpg'
   },
   {

@@ -2,13 +2,13 @@ import Layout from '../components/layout'
 import cn from 'classnames'
 
 import styles from './contact.module.css'
-import OfficeAddresses from '../container/OfficeAddress'
+import OfficeAddress from '../container/office-address'
 import ContactForm from '../container/contact-form'
 
 const Contact = () => (
   <Layout>
     <section className={cn([styles.section, styles.location])}>
-      <OfficeAddresses />
+      <OfficeAddress />
     </section>
     <section className={styles.section}>
       <div className="container">
