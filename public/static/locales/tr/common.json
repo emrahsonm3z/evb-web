@@ -38,5 +38,20 @@
   "Tasks": {
     "Title": "Görevler",
     "Text": "<p>İşiniz <b>1,5 milyon mevcut müşterimize</b> bakmaktır. <b>Kendi enerji şirketimizin hizmet sağlayıcısı</b> olduğumuz için, zamanınızın çoğunu indirimleri değiştirmek, sözleşmeleri feshetmek, tarifeleri değiştirmek ve faturaları açıklamak için harcayacaksınız. Ancak herhangi bir endişenizin olması gerekmez, çünkü her zaman yanınızda, her müşteri sorununu çözmede size destek olacak biri vardır. Ancak her zaman hizmet odaklı olmalısınız. İyi müşteri hizmetlerine çok değer veriyoruz.</p>"
-  }
+  },
+  "Validation": {
+    "Max": "{{max}} karakter veya daha az olmalıdır",
+    "Required": "Gerekli alan",
+    "Invalid": {
+      "Email": "Hatalı e-posta formatı",
+      "Phone": "Hatalı telefon numarası formatı"
+    }
+  },
+  "YourFullName": "Tam adınız",
+  "YourEmail": "E-posta adresiniz",
+  "YourPhoneNumber": "Telefon numaranız",
+  "YourMessage": "Mesajınız",
+  "Submit": "Gönder",
+  "ContactUs": "Bizimle iletişime geçin",
+  "OurOffices": "Ofislerimiz"
 }

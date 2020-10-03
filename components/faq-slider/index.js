@@ -3,8 +3,9 @@ import Flickity from 'react-flickity-component'
 import cn from 'classnames'
 
 import styles from './index.module.css'
-import { withTranslation, Trans } from '../../i18n'
+import { withTranslation } from '../../i18n'
 import Card from '../card'
+import SubTitle from '../title/subtitle'
 
 const flickityOptions = {
   accessibility: true,
@@ -28,11 +29,10 @@ const flickityOptions = {
 
 function FaqSlider({ t }) {
   return (
-    <div className={cn(['container', styles.sss])}>
-      <h2 className={styles.title}>Häufig gestellte Fragen…</h2>
-
+    <div className={cn(['container', styles.faq])}>
+      <SubTitle title={t('Menu.Faqs')} />
       <Flickity
-        className={styles['sss-slider']}
+        className={styles['faq-slider']}
         elementType={'div'}
         options={flickityOptions}
         reloadOnUpdate

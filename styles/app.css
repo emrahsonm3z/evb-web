@@ -70,7 +70,7 @@ h1 {
 }
 
 h2 {
-  --min: 1.2rem;
+  --min: 1.4rem;
   --val: 2.5vw;
   --max: 2rem;
 }
@@ -361,14 +361,14 @@ label {
 
   label {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #3f4254;
   }
 
   .invalid-feedback,
   .valid-feedback {
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   .form-text {

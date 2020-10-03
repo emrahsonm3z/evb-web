@@ -1,4 +1,4 @@
-.sss {
+.faq {
   margin: 20px auto 50px;
 
   @media (--tm) {
@@ -13,7 +13,7 @@
   }
 }
 
-.sss-slider {
+.faq-slider {
   --height: 350px;
 
   @media (--tm) {

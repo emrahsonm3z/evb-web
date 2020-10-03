@@ -1,3 +1,7 @@
+.contact-form {
+  margin-top: 50px;
+}
+
 .form {
   display: grid;
   grid-column-gap: 40px;

@@ -13,11 +13,13 @@ import {
 import { TextArea, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
+import SubTitle from '../../components/title/subtitle'
 
 function ContactForm({ t }) {
   return (
-    <>
-      <h1>Contact</h1>
+    <div className="container">
+      <SubTitle title={t('ContactUs')} />
+
       <Formik
         initialValues={{ fullName: '', email: '', phone: '', message: '' }}
         validationSchema={Yup.object({
@@ -29,12 +31,14 @@ function ContactForm({ t }) {
               </Trans>
             )
             .required(t('Validation.Required')),
-          email: Yup.string().max(
-            MAX_EMAIL,
-            <Trans values={{ max: MAX_EMAIL }}>{t('Validation.Max')}</Trans>
-          ),
+          email: Yup.string()
+            .max(
+              MAX_EMAIL,
+              <Trans values={{ max: MAX_EMAIL }}>{t('Validation.Max')}</Trans>
+            )
+            .email(t('Validation.Invalid.Email')),
           phone: Yup.string()
-            .matches(PHONE_REG_EXP, t('Validation.Invalid.Email'))
+            .matches(PHONE_REG_EXP, t('Validation.Invalid.Phone'))
             .required(t('Validation.Required')),
           message: Yup.string()
             .max(
@@ -52,41 +56,41 @@ function ContactForm({ t }) {
       >
         <Form className={styles.form}>
           <TextInput
-            label={t('FullName')}
+            label={t('YourFullName')}
             name="fullName"
             type="text"
-            placeholder={t('FullName')}
+            placeholder={t('YourFullName')}
             className="form-control-solid"
           />
           <TextInput
-            label={t('Email')}
+            label={t('YourEmail')}
             name="email"
             type="email"
-            placeholder={t('Email')}
+            placeholder={t('YourEmail')}
             className="form-control-solid"
           />
           <TextInput
-            label={t('PhoneNumber')}
+            label={t('YourPhoneNumber')}
             name="phone"
             type="text"
-            placeholder={t('PhoneNumber')}
+            placeholder={t('YourPhoneNumber')}
             className="form-control-solid"
           />
           <TextArea
-            label={t('Message')}
+            label={t('YourMessage')}
             name="message"
             rows="5"
-            placeholder={t('Message')}
+            placeholder={t('YourMessage')}
             className={cn(['form-control-solid', 'a-height', styles.message])}
           />
           <div className={styles.submitBtn}>
             <button className="btn btn-primary" type="submit">
-              Submit
+              {t('Submit')}
             </button>
           </div>
         </Form>
       </Formik>
-    </>
+    </div>
   )
 }
 

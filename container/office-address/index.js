@@ -3,6 +3,8 @@ import cn from 'classnames'
 import styles from './index.module.css'
 
 import Figure from '../../components/figure'
+import SubTitle from '../../components/title/subtitle'
+import { withTranslation } from '../../i18n'
 
 const OFFICES = [
   {
@@ -36,10 +38,10 @@ const OFFICES = [
   }
 ]
 
-function OfficeAddresses() {
+function OfficeAddresses({ t }) {
   return (
     <div className="container">
-      <h2 className={styles.title}>Şubeler</h2>
+      <SubTitle title={t('OurOffices')} />
       <div className={styles.grid}>
         {OFFICES.map((office) => (
           <div key={office.city} className={styles.item}>
@@ -57,4 +59,4 @@ function OfficeAddresses() {
   )
 }
 
-export default OfficeAddresses
+export default withTranslation('common')(OfficeAddresses)

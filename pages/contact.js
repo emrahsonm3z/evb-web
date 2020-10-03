@@ -7,15 +7,13 @@ import ContactForm from '../container/contact-form'
 
 const Contact = () => (
   <Layout>
-    <section className={cn([styles.section, styles.location])}>
+    <section className={cn([styles.section, styles['our-offices']])}>
       <OfficeAddress />
     </section>
     <section className={styles.section}>
-      <div className="container">
-        <ContactForm />
-      </div>
+      <ContactForm />
     </section>
-    <section className={styles.section}>
+    <section className={cn([styles.section, styles['map']])}>
       <div className="container">
         <iframe
           height="400"
