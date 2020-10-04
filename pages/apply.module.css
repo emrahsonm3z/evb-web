@@ -1,0 +1,7 @@
+.apply-form {
+  margin-top: 130px;
+
+  @media (--m) {
+    margin-top: 80px;
+  }
+}

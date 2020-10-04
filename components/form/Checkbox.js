@@ -1,18 +1,19 @@
 import React from 'react'
+import cn from 'classnames'
 import { useField } from 'formik'
+import InputFeedback from './InputFeedback'
 
-const Checkbox = ({ children, ...props }) => {
+const Checkbox = ({ label, className, ...props }) => {
   const [field, meta] = useField({ ...props, type: 'checkbox' })
   return (
-    <>
-      <label className="checkbox">
+    <div className="form-group">
+      <label className={cn(['checkbox', className])}>
         <input {...field} {...props} type="checkbox" />
-        {children}
+        <span></span>
+        {label}
       </label>
-      {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
-      ) : null}
-    </>
+      {meta.touched && meta.error ? <InputFeedback error={meta.error} /> : null}
+    </div>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import cn from 'classnames'
 import { useField } from 'formik'
+import InputFeedback from './InputFeedback'
 
 const TextInput = ({ label, className, ...props }) => {
   const [field, meta] = useField(props)
@@ -16,9 +17,7 @@ const TextInput = ({ label, className, ...props }) => {
         {...field}
         {...props}
       />
-      {meta.touched && meta.error ? (
-        <div className="invalid-feedback">{meta.error}</div>
-      ) : null}
+      {meta.touched && meta.error ? <InputFeedback error={meta.error} /> : null}
     </div>
   )
 }

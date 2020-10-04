@@ -45,7 +45,8 @@
     "Invalid": {
       "Email": "Falsches E-Mail-Format",
       "Phone": "Falsches Telefonnummernformat"
-    }
+    },
+    "YouMustAgree": "Du musst zustimmen"
   },
   "YourFullName": "Ihr vollständiger Name",
   "YourEmail": "Ihre E-Mail-Adresse",
@@ -53,5 +54,36 @@
   "YourMessage": "Your Message",
   "Submit": "Absenden",
   "ContactUs": "Kontaktieren Sie uns",
-  "OurOffices": "Unsere Büros"
+  "OurOffices": "Unsere Büros",
+
+  "NameAndSurname": "Name und Nachname",
+  "Birthplace": "Geburtsort",
+  "Birthday": "Geburtsdatum",
+  "Phonenumber": "Telefonnummer",
+  "Gender": "Geschlecht",
+  "Female": "Weiblich",
+  "Male": "Männlich",
+  "Nationality": "Staatsangehörigkeit",
+  "TR(Turkey)": "TR (Türkei)",
+  "Other": "Andere",
+  "HomeAddress": "Wohnanschrift",
+  "EmailAddress": "E-Mail-Adresse",
+  "RequestedOffice": "Angefragtes Büro",
+  "MaritalStatus": "Familienstand",
+  "Married": "Verheiratet",
+  "Single": "Ledig",
+  "EducationalStatus": "Bildungsstatus",
+  "MiddleSchool": "Mittelschule",
+  "HighSchool": "Oberschule",
+  "University": "Universität",
+  "WorkExperience": "Arbeitserfahrung",
+  "Yes": "Ja",
+  "No": "Nein",
+  "ComputerSkills": "Computerfähigkeiten",
+  "Well": "Gut",
+  "Medium": "Mittel",
+  "Little": "Wenig",
+  "GermanLanguageLevel": "Deutsches Sprachniveau",
+  "DataProtection": "Ich akzeptiere die Datenschutzregelungen",
+  "ApplicationForm": "Bewerbungsbogen"
 }

@@ -45,7 +45,8 @@
     "Invalid": {
       "Email": "Hatalı e-posta formatı",
       "Phone": "Hatalı telefon numarası formatı"
-    }
+    },
+    "YouMustAgree": "Kabul etmelisiniz"
   },
   "YourFullName": "Tam adınız",
   "YourEmail": "E-posta adresiniz",
@@ -53,5 +54,35 @@
   "YourMessage": "Mesajınız",
   "Submit": "Gönder",
   "ContactUs": "Bizimle iletişime geçin",
-  "OurOffices": "Ofislerimiz"
+  "OurOffices": "Ofislerimiz",
+  "NameAndSurname": "Ad ve soyad",
+  "Birthplace": "Doğum yeri",
+  "Birthday": "Doğum tarihi",
+  "Phonenumber": "Telefon numarası",
+  "Gender": "Cinsiyet",
+  "Female": "Kadın",
+  "Male": "Erkek",
+  "Nationality": "Uyruk",
+  "TR(Turkey)": "TR (Türkiye)",
+  "Other": "Diğer",
+  "HomeAddress": "Ev adresi",
+  "EmailAddress": "E-posta adresi",
+  "RequestedOffice": "Talep edilen ofis",
+  "MaritalStatus": "Medeni durum",
+  "Married": "Evli",
+  "Single": "Bekar",
+  "EducationalStatus": "Eğitim durumu",
+  "MiddleSchool": "Orta okul",
+  "HighSchool": "Lise",
+  "University": "Üniversite",
+  "WorkExperience": "İş deneyimi",
+  "Yes": "Evet",
+  "No": "Hayır",
+  "ComputerSkills": "Bilgisayar kullanım seviyesi",
+  "Well": "İyi",
+  "Medium": "Orta",
+  "Little": "Az",
+  "GermanLanguageLevel": "Almanca dil seviyesi",
+  "DataProtection": "Veri koruma yönetmeliklerini kabul ediyorum",
+  "ApplicationForm": "Başvuru formu"
 }
