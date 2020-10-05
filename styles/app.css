@@ -444,6 +444,71 @@ input[type="checkbox"] {
   }
 }
 
+.option {
+  display: flex;
+  padding: 1.4em;
+  border: 1px solid #ebedf3;
+  border-radius: 0.42rem;
+  cursor: pointer;
+
+  @media (--m) {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  &:first-child {
+    margin-right: 30px;
+  }
+
+  .option-control {
+    width: 2.7rem;
+    padding-top: 0.1rem;
+  }
+
+  &.option-plain {
+    display: flex;
+    align-items: baseline;
+    width: 300px;
+    border: 0;
+    padding: 0;
+
+    .option-control {
+      vertical-align: middle;
+      width: 2.7rem;
+
+      .radio {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    .option-label .option-body {
+      padding-top: 0.2rem;
+    }
+  }
+
+  .option-label {
+    width: 100%;
+
+    .option-head {
+      display: flex;
+      justify-content: space-between;
+
+      .option-title {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #3f4254;
+      }
+    }
+
+    .option-body {
+      display: block;
+      padding-top: 0.7rem;
+      font-size: 0.9rem;
+      color: #b5b5c3;
+    }
+  }
+}
+
 .checkbox {
   display: flex;
   align-items: center;
