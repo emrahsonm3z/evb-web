@@ -4,8 +4,10 @@ import Head from 'next/head'
 
 import { appWithTranslation } from '../i18n'
 
-import '../styles/app.css'
 import 'flickity/css/flickity.css'
+import 'react-day-picker/lib/style.css'
+
+import '../styles/app.css'
 
 function MyApp({ Component, pageProps }) {
   return (

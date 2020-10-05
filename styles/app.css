@@ -663,3 +663,22 @@ input[type="month"].form-control {
     cursor: pointer;
   }
 }
+
+.DayPicker-Day {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.DayPicker:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+  background-color: var(--c-primary-100);
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+  position: relative;
+  background-color: var(--c-primary);
+  color: var(--c-primary-100);
+
+  &:hover {
+    background-color: var(--c-primary);
+  }
+}

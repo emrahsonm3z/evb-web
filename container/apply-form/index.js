@@ -3,13 +3,14 @@ import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import cn from 'classnames'
 
-import { withTranslation, Trans } from '../../i18n'
+import { withTranslation, Trans, i18n } from '../../i18n'
 import { MAX_FULLNAME, MAX_EMAIL, PHONE_REG_EXP } from '../../constants'
 import { Checkbox, RadioButton, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
 import SubTitle from '../../components/title/subtitle'
 import RadioButtonGroup from '../../components/form/RadioButtonGroup'
+import DayPicker from '../../components/form/DayPicker'
 
 function ApplyForm({ t }) {
   return (
@@ -97,13 +98,20 @@ function ApplyForm({ t }) {
               placeholder={t('Birthplace')}
               className="form-control-solid"
             />
-            <TextInput
+            <DayPicker
+              label={t('Birthday')}
+              name="Birthday"
+              type="text"
+              locale={i18n.language}
+              className="form-control-solid"
+            />
+            {/* <TextInput
               label={t('Birthday')}
               name="Birthday"
               type="text"
               placeholder={t('Birthday')}
               className="form-control-solid"
-            />
+            /> */}
             <TextInput
               label={t('Phonenumber')}
               name="Phonenumber"
