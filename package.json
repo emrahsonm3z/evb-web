@@ -25,6 +25,7 @@
     "react-day-picker": "^7.4.8",
     "react-dom": "16.13.1",
     "react-flickity-component": "^3.5.0",
+    "react-loader": "^2.4.7",
     "react-responsive-carousel": "^3.2.10",
     "react-scroll": "^1.8.1",
     "react-slick": "^0.27.11",

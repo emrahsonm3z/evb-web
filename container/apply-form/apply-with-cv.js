@@ -1,25 +1,41 @@
 import React from 'react'
-import { Formik, Form } from 'formik'
+import { Formik, Form, Field } from 'formik'
+import cn from 'classnames'
+
 import * as Yup from 'yup'
 
-import { withTranslation, Trans, i18n } from '../../i18n'
+import { withTranslation, Trans } from '../../i18n'
 import { MAX_FULLNAME, MAX_EMAIL, PHONE_REG_EXP } from '../../constants'
 import { Checkbox, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
+import InputFeedback from '../../components/form/InputFeedback'
 
-const FILE_SIZE = 160 * 1024
-const SUPPORTED_FORMATS = ['image/jpg', 'image/jpeg', 'image/gif', 'image/png']
-
+const FILE_SIZE = 10 * 1024 * 1024
+const SUPPORTED_FORMATS = [
+  {
+    extension: '.doc',
+    mimeType: 'application/msword'
+  },
+  {
+    extension: '.docx',
+    mimeType:
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+  },
+  {
+    extension: '.pdf',
+    mimeType: 'application/pdf'
+  }
+]
 function ApplyWithCV({ t }) {
   return (
     <Formik
       initialValues={{
-        NameAndSurname: '',
-        EmailAddress: '',
-        Phonenumber: '',
+        NameAndSurname: 'emrah',
+        EmailAddress: 'emrah@mfas.cas',
+        Phonenumber: '5554448877',
         Attachment: null,
-        recaptcha: ''
+        DataProtection: false
       }}
       validationSchema={Yup.object({
         NameAndSurname: Yup.string()
@@ -48,13 +64,26 @@ function ApplyWithCV({ t }) {
           .test(
             'fileFormat',
             'Unsupported Format',
-            (value) => value && SUPPORTED_FORMATS.includes(value.type)
+            (value) =>
+              value && SUPPORTED_FORMATS.some((c) => c.mimeType === value.type)
           ),
         DataProtection: Yup.bool().oneOf([true], t('Validation.YouMustAgree'))
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2))
+          alert(
+            JSON.stringify(
+              {
+                fileName: values.Attachment.name,
+                type: values.Attachment.type,
+                size: `${values.Attachment.size} bytes`,
+                ...values
+              },
+              null,
+              2
+            )
+          )
+
           setSubmitting(false)
         }, 400)
       }}
@@ -91,6 +120,50 @@ function ApplyWithCV({ t }) {
             placeholder={t('EmailAddress')}
             className="form-control-solid"
           />
+          <div className="form-group">
+            <label htmlFor="Attachment">{t('Attachment')}</label>
+            <label
+              htmlFor="Attachment"
+              className={cn([
+                styles['custom-file-upload'],
+                'form-control',
+                'form-control-solid',
+                touched['Attachment'] && errors['Attachment']
+                  ? 'is-invalid'
+                  : ''
+              ])}
+            >
+              <input
+                name="Attachment"
+                id="Attachment"
+                style={{ opacity: 0, position: 'relative', left: -40 }}
+                className={cn([
+                  'form-control',
+                  'form-control-solid',
+                  touched['Attachment'] && errors['Attachment']
+                    ? 'is-invalid'
+                    : ''
+                ])}
+                type="file"
+                onChange={(event) => {
+                  setFieldValue('Attachment', event.currentTarget.files[0])
+                }}
+              />
+              {`${t('ChooseFile')} (${SUPPORTED_FORMATS.map(
+                (c) => c.extension
+              ).join(', ')})`}
+            </label>
+            {values.Attachment && (
+              <span className={styles['selected-file-name']}>
+                {values.Attachment.name}
+              </span>
+            )}
+
+            {touched['Attachment'] && errors['Attachment'] ? (
+              <InputFeedback error={errors['Attachment']} />
+            ) : null}
+          </div>
+
           <Checkbox
             className={styles.dataProtection}
             name="DataProtection"

@@ -6,12 +6,14 @@ import { withTranslation } from '../../i18n'
 import styles from './index.module.css'
 import SubTitle from '../../components/title/subtitle'
 
+import Loading from '../../components/loader'
+
 const DynamicApplyWithCV = dynamic(() => import('./apply-with-cv'), {
-  loading: () => <p>Loading ...</p>,
+  loading: () => <Loading />,
   ssr: false
 })
 const DynamicApplyWithForm = dynamic(() => import('./apply-with-form'), {
-  loading: () => <p>Loading ...</p>,
+  loading: () => <Loading />,
   ssr: false
 })
 
@@ -22,6 +24,7 @@ function ApplyForm({ t }) {
     <div className="container">
       <SubTitle title={t('JobApplication')} />
 
+      {/* <Loading /> */}
       <div className="form-group d-flex flex-row flex-wrap">
         <label className="option option-plain" htmlFor="apply-with-form">
           <span className="option-control">
@@ -41,10 +44,10 @@ function ApplyForm({ t }) {
           </span>
           <span className="option-label">
             <span className="option-head">
-              <span className="option-title">Form ile iş başvurusu</span>
+              <span className="option-title">Form ile başvuru</span>
             </span>
             <span className="option-body">
-              Hakkında bilmek istediğimiz bilgileri formu doldurarak başvur
+              Hakkında merak ettiklerimizi formu doldurarak bize bildir
             </span>
           </span>
         </label>
@@ -65,10 +68,10 @@ function ApplyForm({ t }) {
           </span>
           <span className="option-label">
             <span className="option-head">
-              <span className="option-title">Özgeçmiş ile iş başvurusu</span>
+              <span className="option-title">Özgeçmiş ile başvuru</span>
             </span>
             <span className="option-body">
-              Güncel özgeçmiş dökümanınla ile başvur
+              Güncel özgeçmişin ile başvurunu tamamla
             </span>
           </span>
         </label>

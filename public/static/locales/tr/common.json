@@ -85,5 +85,7 @@
   "GermanLanguageLevel": "Almanca dil seviyesi",
   "DataProtection": "Veri koruma yönetmeliklerini kabul ediyorum",
   "ApplicationForm": "Başvuru formu",
-  "JobApplication": "İş başvurusu"
+  "JobApplication": "İş başvurusu",
+  "Attachment": "Ek dosya",
+  "ChooseFile": "Dosya seç"
 }

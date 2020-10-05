@@ -86,5 +86,7 @@
   "GermanLanguageLevel": "Deutsches Sprachniveau",
   "DataProtection": "Ich akzeptiere die Datenschutzregelungen",
   "ApplicationForm": "Bewerbungsbogen",
-  "JobApplication": "Bewerbung"
+  "JobApplication": "Bewerbung",
+  "Attachment": "Anhang",
+  "ChooseFile": "Datei wählen"
 }
