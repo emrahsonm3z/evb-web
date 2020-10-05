@@ -70,6 +70,7 @@ const DayPicker = ({ label, language, className, ...props }) => {
         ])}
         {...field}
         {...props}
+        readOnly
       />
     )
   })
