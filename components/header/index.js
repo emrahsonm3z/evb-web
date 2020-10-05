@@ -135,7 +135,7 @@ function Header({ t }) {
         </a>
         <div className={cn([styles.logo, styles['hover-masks-logo']])}>
           {router.pathname == '/' ? (
-            <Link href="javascript:void(0);">
+            <Link href="">
               <a
                 onClick={() => {
                   setIsActive(false)

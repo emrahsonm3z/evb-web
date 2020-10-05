@@ -664,6 +664,10 @@ input[type="month"].form-control {
   }
 }
 
+.DayPickerInput {
+  display: block;
+}
+
 .DayPicker-Day {
   border-radius: 10px;
   text-align: center;

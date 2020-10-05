@@ -101,7 +101,7 @@ function ApplyForm({ t }) {
             <DayPicker
               label={t('Birthday')}
               name="Birthday"
-              type="text"
+              type="date"
               locale={i18n.language}
               className="form-control-solid"
             />
