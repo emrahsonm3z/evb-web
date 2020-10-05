@@ -5,9 +5,9 @@ function Loading() {
   return (
     <Loader
       lines={13}
-      length={20}
-      width={10}
-      radius={30}
+      length={10}
+      width={5}
+      radius={15}
       corners={1}
       rotate={0}
       direction={1}
