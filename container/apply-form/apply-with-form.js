@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formik, Form } from 'formik'
+import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 import cn from 'classnames'
 
@@ -19,6 +19,7 @@ function ApplyWithForm({ t }) {
         EmailAddress: '',
         Phonenumber: '',
         Birthday: '',
+        Birthday2: '',
         Birthplace: '',
         Gender: '',
         Nationality: '',
@@ -49,6 +50,7 @@ function ApplyWithForm({ t }) {
           .matches(PHONE_REG_EXP, t('Validation.Invalid.Phone'))
           .required(t('Validation.Required')),
         Birthday: Yup.string().required(t('Validation.Required')),
+        Birthday2: Yup.string().required(t('Validation.Required')),
         Birthplace: Yup.string().required(t('Validation.Required')),
         Gender: Yup.string().required(t('Validation.Required')),
         Nationality: Yup.string().required(t('Validation.Required')),
@@ -78,6 +80,20 @@ function ApplyWithForm({ t }) {
         isSubmitting
       }) => (
         <Form className={styles.form}>
+          <Field as="select" name="color">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </Field>
+
+          <TextInput
+            label={t('Birthday')}
+            name="Birthday2"
+            type="date"
+            placeholder={t('Birthday')}
+            className="form-control-solid"
+          />
+
           <TextInput
             label={t('NameAndSurname')}
             name="NameAndSurname"
@@ -98,6 +114,7 @@ function ApplyWithForm({ t }) {
             locale={i18n.language}
             className="form-control-solid"
           />
+
           {/* <TextInput
               label={t('Birthday')}
               name="Birthday"
