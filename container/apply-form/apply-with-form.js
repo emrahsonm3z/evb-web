@@ -88,7 +88,6 @@ function ApplyWithForm({ t }) {
           <TextInput
             label={t('Birthplace')}
             name="Birthplace"
-            type="text"
             placeholder={t('Birthplace')}
             className="form-control-solid"
           />
