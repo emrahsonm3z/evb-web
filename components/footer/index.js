@@ -68,7 +68,7 @@ function Footer() {
           <div className={styles.body}>
             <div className={styles.left}>
               {router.pathname == '/' ? (
-                <Link href="#">
+                <Link href="">
                   <a onClick={scrollToTop}>
                     <img src="/assets/logo-white.png"></img>
                   </a>
@@ -89,15 +89,13 @@ function Footer() {
                 ))}
               </div>
             </div>
-            <div className={styles.right}>
-              <ul className={styles.socialMedias}>
-                {socialMedias.map((media) => (
-                  <li key={media.Title}>
-                    <a href={media.Url}>{media.Icon}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className={styles.socialMedias}>
+              {socialMedias.map((media) => (
+                <li key={media.Title}>
+                  <a href={media.Url}>{media.Icon}</a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

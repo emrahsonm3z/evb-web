@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../footer'
 import Header from '../header'
+import ScrollToTop from '../scrollToTop'
 
 function Layout({ children }) {
   return (
@@ -8,6 +9,7 @@ function Layout({ children }) {
       <Header />
       <main>{children}</main>
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }

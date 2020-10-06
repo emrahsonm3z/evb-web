@@ -1,3 +1,4 @@
+export { default as ArrowTop } from './ArrowTop'
 export { default as Envelope } from './Envelope'
 export { default as Fax } from './Fax'
 export { default as Location } from './Location'
