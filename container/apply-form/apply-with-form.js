@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
-import cn from 'classnames'
 
-import { withTranslation, Trans, i18n } from '../../i18n'
+import { withTranslation, Trans } from '../../i18n'
 import { MAX_FULLNAME, MAX_EMAIL, PHONE_REG_EXP } from '../../constants'
 import { Checkbox, RadioButton, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
 import RadioButtonGroup from '../../components/form/RadioButtonGroup'
-import DayPicker from '../../components/form/DayPicker'
 
 function ApplyWithForm({ t }) {
+  useEffect(() => {
+    let birtydayInput = document.getElementById('Birthday')
+
+    birtydayInput.max = new Date().toISOString().split('T')[0]
+  }, [])
   return (
     <Formik
       initialValues={{
@@ -19,7 +22,6 @@ function ApplyWithForm({ t }) {
         EmailAddress: '',
         Phonenumber: '',
         Birthday: '',
-        Birthday2: '',
         Birthplace: '',
         Gender: '',
         Nationality: '',
@@ -50,7 +52,6 @@ function ApplyWithForm({ t }) {
           .matches(PHONE_REG_EXP, t('Validation.Invalid.Phone'))
           .required(t('Validation.Required')),
         Birthday: Yup.string().required(t('Validation.Required')),
-        Birthday2: Yup.string().required(t('Validation.Required')),
         Birthplace: Yup.string().required(t('Validation.Required')),
         Gender: Yup.string().required(t('Validation.Required')),
         Nationality: Yup.string().required(t('Validation.Required')),
@@ -80,20 +81,6 @@ function ApplyWithForm({ t }) {
         isSubmitting
       }) => (
         <Form className={styles.form}>
-          <Field as="select" name="color">
-            <option value="red">Red</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
-          </Field>
-
-          <TextInput
-            label={t('Birthday')}
-            name="Birthday2"
-            type="date"
-            placeholder={t('Birthday')}
-            className="form-control-solid"
-          />
-
           <TextInput
             label={t('NameAndSurname')}
             name="NameAndSurname"
@@ -102,31 +89,25 @@ function ApplyWithForm({ t }) {
             className="form-control-solid"
           />
           <TextInput
+            label={t('Phonenumber')}
+            name="Phonenumber"
+            type="tel"
+            placeholder={t('Phonenumber')}
+            className="form-control-solid"
+          />
+          <TextInput
             label={t('Birthplace')}
             name="Birthplace"
             placeholder={t('Birthplace')}
             className="form-control-solid"
           />
-          <DayPicker
+          <TextInput
+            id="Birthday"
             label={t('Birthday')}
             name="Birthday"
             type="date"
-            locale={i18n.language}
-            className="form-control-solid"
-          />
-
-          {/* <TextInput
-              label={t('Birthday')}
-              name="Birthday"
-              type="text"
-              placeholder={t('Birthday')}
-              className="form-control-solid"
-            /> */}
-          <TextInput
-            label={t('Phonenumber')}
-            name="Phonenumber"
-            type="tel"
-            placeholder={t('Phonenumber')}
+            // pattern="\d{4}-\d{2}-\d{2}"
+            placeholder={t('Birthday')}
             className="form-control-solid"
           />
           <RadioButtonGroup

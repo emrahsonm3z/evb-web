@@ -6,7 +6,6 @@ import 'moment/locale/tr'
 import 'moment/locale/de'
 
 import 'flickity/css/flickity.css'
-import 'react-day-picker/lib/style.css'
 
 import '../styles/app.css'
 
