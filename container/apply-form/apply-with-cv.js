@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formik, Form, Field } from 'formik'
+import { Formik, Form } from 'formik'
 import cn from 'classnames'
 
 import * as Yup from 'yup'
@@ -31,9 +31,9 @@ function ApplyWithCV({ t }) {
   return (
     <Formik
       initialValues={{
-        NameAndSurname: 'emrah',
-        EmailAddress: 'emrah@mfas.cas',
-        Phonenumber: '5554448877',
+        NameAndSurname: '',
+        EmailAddress: '',
+        Phonenumber: '',
         Attachment: null,
         DataProtection: false
       }}

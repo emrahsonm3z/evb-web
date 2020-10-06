@@ -1,21 +1,22 @@
 import React, { useState } from 'react'
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 
 import { withTranslation } from '../../i18n'
 
-import styles from './index.module.css'
 import SubTitle from '../../components/title/subtitle'
+import ApplyWithCV from './apply-with-cv'
+import ApplyWithForm from './apply-with-form'
 
-import Loading from '../../components/loader'
+// import Loading from '../../components/loader'
 
-const DynamicApplyWithCV = dynamic(() => import('./apply-with-cv'), {
-  loading: () => <Loading />,
-  ssr: false
-})
-const DynamicApplyWithForm = dynamic(() => import('./apply-with-form'), {
-  loading: () => <Loading />,
-  ssr: false
-})
+// const DynamicApplyWithCV = dynamic(() => import('./apply-with-cv'), {
+//   loading: () => <Loading />,
+//   ssr: false
+// })
+// const DynamicApplyWithForm = dynamic(() => import('./apply-with-form'), {
+//   loading: () => <Loading />,
+//   ssr: false
+// })
 
 function ApplyForm({ t }) {
   const [showApplyWithForm, setShowApplyWithForm] = useState(true)
@@ -77,7 +78,7 @@ function ApplyForm({ t }) {
         </label>
       </div>
 
-      {showApplyWithForm ? <DynamicApplyWithForm /> : <DynamicApplyWithCV />}
+      {showApplyWithForm ? <ApplyWithForm /> : <ApplyWithCV />}
     </div>
   )
 }
