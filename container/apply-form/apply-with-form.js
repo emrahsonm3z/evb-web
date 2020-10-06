@@ -109,7 +109,7 @@ function ApplyWithForm({ t }) {
           <TextInput
             label={t('Phonenumber')}
             name="Phonenumber"
-            type="text"
+            type="tel"
             placeholder={t('Phonenumber')}
             className="form-control-solid"
           />

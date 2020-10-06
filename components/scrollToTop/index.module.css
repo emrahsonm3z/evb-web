@@ -1,11 +1,6 @@
-
 .scrolltop {
   display: none;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 36px;
   height: 36px;
@@ -18,64 +13,64 @@
   -webkit-box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075);
   box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075);
   opacity: 0;
-  -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
-  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
   border-radius: 0.42rem !important;
+
+  .svg-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      height: 24px;
+      width: 24px;
+
+      g [fill] {
+        -webkit-transition: fill 0.3s ease;
+        transition: fill 0.3s ease;
+        fill: #fff;
+      }
+
+      &:hover g [fill] {
+        transition: fill 0.3s ease;
+      }
+    }
+  }
+
+  & > i {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  &:hover {
+    & > i {
+      color: #fff;
+    }
+
+    .svg-icon svg {
+      g [fill] {
+        transition: fill 0.3s ease;
+        fill: #fff;
+      }
+
+      &:hover g [fill] {
+        transition: fill 0.3s ease;
+      }
+    }
+  }
 }
 
-.scrolltop .svg-icon svg {
-  height: 24px;
-  width: 24px;
-}
+[data-scrolltop="on"] {
+  .scrolltop {
+    opacity: 0.7;
+    animation: animation-scrolltop 0.4s ease-out 1;
+    display: flex;
 
-.scrolltop .svg-icon svg g [fill] {
-  -webkit-transition: fill 0.3s ease;
-  transition: fill 0.3s ease;
-  fill: #fff;
-}
-
-.scrolltop .svg-icon svg:hover g [fill] {
-  -webkit-transition: fill 0.3s ease;
-  transition: fill 0.3s ease;
-}
-
-.scrolltop > i {
-  font-size: 1.3rem;
-  color: #fff;
-}
-
-.scrolltop:hover > i {
-  color: #fff;
-}
-
-.scrolltop:hover .svg-icon svg g [fill] {
-  -webkit-transition: fill 0.3s ease;
-  transition: fill 0.3s ease;
-  fill: #fff;
-}
-
-.scrolltop:hover .svg-icon svg:hover g [fill] {
-  -webkit-transition: fill 0.3s ease;
-  transition: fill 0.3s ease;
-}
-
-[data-scrolltop="on"] .scrolltop {
-  opacity: 0.7;
-  -webkit-animation: animation-scrolltop 0.4s ease-out 1;
-  animation: animation-scrolltop 0.4s ease-out 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-[data-scrolltop="on"] .scrolltop:hover {
-  -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
-  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
-  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
-  opacity: 1;
+    &:hover {
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+      opacity: 1;
+    }
+  }
 }
 
 @media (--tm) {

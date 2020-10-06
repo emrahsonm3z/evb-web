@@ -105,10 +105,11 @@
 
     span {
       --min: 0.6rem;
-      --val: 1vw;
-      --max: 0.8rem;
+      --val: 2vw;
+      --max: 0.9rem;
 
-      font-weight: 400;
+      font-weight: 600;
+      color: var(--c-gray-300);
     }
   }
 }
