@@ -99,7 +99,7 @@ function Header({ t }) {
 
   const router = useRouter()
 
-  const _isMounted = useRef(true)
+  // const _isMounted = useRef(true)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -109,7 +109,7 @@ function Header({ t }) {
 
     window.addEventListener('scroll', handleScroll)
     return () => {
-      _isMounted.current = false
+      // _isMounted.current = false
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
