@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
 import cn from 'classnames'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -246,6 +247,14 @@ function Header({ t }) {
       </div>
     </header>
   )
+}
+
+Header.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+Header.propTypes = {
+  t: PropTypes.func.isRequired
 }
 
 export default withTranslation('common')(Header)

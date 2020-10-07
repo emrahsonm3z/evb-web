@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 
@@ -34,7 +35,7 @@ function ApplyWithForm({ t }) {
         WorkExperience: '',
         ComputerSkills: '',
         GermanLanguageLevel: '',
-        DataProtection: false
+        Kvkk: false
       }}
       validationSchema={Yup.object({
         NameAndSurname: Yup.string()
@@ -64,7 +65,7 @@ function ApplyWithForm({ t }) {
         WorkExperience: Yup.string().required(t('Validation.Required')),
         ComputerSkills: Yup.string().required(t('Validation.Required')),
         GermanLanguageLevel: Yup.string().required(t('Validation.Required')),
-        DataProtection: Yup.bool().oneOf([true], t('Validation.YouMustAgree'))
+        Kvkk: Yup.bool().oneOf([true], t('Validation.YouMustAgree'))
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
@@ -270,24 +271,24 @@ function ApplyWithForm({ t }) {
             />
           </RadioButtonGroup>
           <Checkbox
-            className={styles.dataProtection}
-            name="DataProtection"
+            className={styles['link-checkbox']}
+            name="Kvkk"
             content={
               <Modal
-                label={t('DataProtection')}
+                label={t('Kvkk')}
                 title={
                   <Trans
-                    ns="kvkk"
+                    ns="documents"
                     components={{
                       strong: <strong />
                     }}
                   >
-                    {t(`kvkk.title`)}
+                    {t(`KVKK.Title`)}
                   </Trans>
                 }
               >
                 <Trans
-                  ns="kvkk"
+                  ns="documents"
                   components={{
                     p: <p />,
                     strong: <strong />,
@@ -304,7 +305,7 @@ function ApplyWithForm({ t }) {
                     u: <u />
                   }}
                 >
-                  {t(`kvkk.content`)}
+                  {t(`KVKK.Content`)}
                 </Trans>
               </Modal>
             }
@@ -318,6 +319,14 @@ function ApplyWithForm({ t }) {
       )}
     </Formik>
   )
+}
+
+ApplyWithForm.getInitialProps = async () => ({
+  namespacesRequired: ['common', 'documents']
+})
+
+ApplyWithForm.propTypes = {
+  t: PropTypes.func.isRequired
 }
 
 export default withTranslation('common')(ApplyWithForm)

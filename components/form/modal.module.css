@@ -30,9 +30,9 @@
   a,
   p,
   span {
-    --min: 0.8rem;
+    --min: 0.7rem;
     --val: 1.5vw;
-    --max: 1rem;
+    --max: 0.9rem;
   }
 
   p {

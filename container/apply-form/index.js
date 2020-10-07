@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 // import dynamic from 'next/dynamic'
+import PropTypes from 'prop-types'
 
 import { withTranslation } from '../../i18n'
 
@@ -78,9 +79,17 @@ function ApplyForm({ t }) {
         </label>
       </div>
 
-      {showApplyWithForm ? <ApplyWithCV /> : <ApplyWithForm />}
+      {showApplyWithForm ? <ApplyWithForm /> : <ApplyWithCV />}
     </div>
   )
+}
+
+ApplyForm.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+ApplyForm.propTypes = {
+  t: PropTypes.func.isRequired
 }
 
 export default withTranslation('common')(ApplyForm)

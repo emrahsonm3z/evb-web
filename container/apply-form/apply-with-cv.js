@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Formik, Form } from 'formik'
 import cn from 'classnames'
 
@@ -36,7 +37,7 @@ function ApplyWithCV({ t }) {
         EmailAddress: '',
         Phonenumber: '',
         Attachment: null,
-        DataProtection: false
+        Kvkk: false
       }}
       validationSchema={Yup.object({
         NameAndSurname: Yup.string()
@@ -68,7 +69,7 @@ function ApplyWithCV({ t }) {
             (value) =>
               value && SUPPORTED_FORMATS.some((c) => c.mimeType === value.type)
           ),
-        DataProtection: Yup.bool().oneOf([true], t('Validation.YouMustAgree'))
+        Kvkk: Yup.bool().oneOf([true], t('Validation.YouMustAgree'))
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
@@ -166,24 +167,24 @@ function ApplyWithCV({ t }) {
           </div>
 
           <Checkbox
-            className={styles.dataProtection}
-            name="DataProtection"
+            className={styles['link-checkbox']}
+            name="Kvkk"
             content={
               <Modal
-                label={t('DataProtection')}
+                label={t('Kvkk')}
                 title={
                   <Trans
-                    ns="kvkk"
+                    ns="documents"
                     components={{
                       strong: <strong />
                     }}
                   >
-                    {t(`kvkk.title`)}
+                    {t(`KVKK.Title`)}
                   </Trans>
                 }
               >
                 <Trans
-                  ns="kvkk"
+                  ns="documents"
                   components={{
                     p: <p />,
                     strong: <strong />,
@@ -200,7 +201,7 @@ function ApplyWithCV({ t }) {
                     u: <u />
                   }}
                 >
-                  {t(`kvkk.content`)}
+                  {t(`KVKK.Content`)}
                 </Trans>
               </Modal>
             }
@@ -217,7 +218,11 @@ function ApplyWithCV({ t }) {
 }
 
 ApplyWithCV.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'kvkk']
+  namespacesRequired: ['common', 'documents']
 })
+
+ApplyWithCV.propTypes = {
+  t: PropTypes.func.isRequired
+}
 
 export default withTranslation('common')(ApplyWithCV)
