@@ -10,6 +10,7 @@ import { Checkbox, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
 import InputFeedback from '../../components/form/InputFeedback'
+import Modal from '../../components/form/Modal'
 
 const FILE_SIZE = 10 * 1024 * 1024
 const SUPPORTED_FORMATS = [
@@ -167,7 +168,42 @@ function ApplyWithCV({ t }) {
           <Checkbox
             className={styles.dataProtection}
             name="DataProtection"
-            label={t('DataProtection')}
+            content={
+              <Modal
+                label={t('DataProtection')}
+                title={
+                  <Trans
+                    ns="kvkk"
+                    components={{
+                      strong: <strong />
+                    }}
+                  >
+                    {t(`kvkk.title`)}
+                  </Trans>
+                }
+              >
+                <Trans
+                  ns="kvkk"
+                  components={{
+                    p: <p />,
+                    strong: <strong />,
+                    h3: <h3 />,
+                    table: <table />,
+                    tbody: <tbody />,
+                    th: <th />,
+                    td: <td />,
+                    tr: <tr />,
+                    li: <li />,
+                    a: <a />,
+                    em: <em />,
+                    ul: <ul />,
+                    u: <u />
+                  }}
+                >
+                  {t(`kvkk.content`)}
+                </Trans>
+              </Modal>
+            }
           />
           <div className={styles.submitBtn}>
             <button className="btn btn-primary" type="submit">
@@ -179,5 +215,9 @@ function ApplyWithCV({ t }) {
     </Formik>
   )
 }
+
+ApplyWithCV.getInitialProps = async () => ({
+  namespacesRequired: ['common', 'kvkk']
+})
 
 export default withTranslation('common')(ApplyWithCV)

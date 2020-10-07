@@ -2,9 +2,6 @@ import React from 'react'
 import App from 'next/app'
 import Head from 'next/head'
 
-import 'moment/locale/tr'
-import 'moment/locale/de'
-
 import 'flickity/css/flickity.css'
 
 import '../styles/app.css'

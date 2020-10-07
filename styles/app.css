@@ -724,30 +724,38 @@ input[type="month"].form-control {
     }
   }
 
+  &.btn-light-primary {
+    color: var(--c-primary);
+    background-color: var(--c-primary-100);
+    border-color: transparent;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--c-primary);
+      border-color: transparent;
+    }
+  }
+
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
   }
 }
 
-.DayPickerInput {
-  display: block;
+.font-weight-bold {
+  font-weight: bold;
 }
 
-.DayPicker-Day {
-  border-radius: 10px;
-  text-align: center;
+.ReactModal__Overlay {
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
 }
 
-.DayPicker:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
-  background-color: var(--c-primary-100);
+.ReactModal__Overlay--after-open {
+  opacity: 1;
 }
 
-.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
-  position: relative;
-  background-color: var(--c-primary);
-  color: var(--c-primary-100);
-
-  &:hover {
-    background-color: var(--c-primary);
-  }
+.ReactModal__Overlay--before-close {
+  opacity: 0;
 }

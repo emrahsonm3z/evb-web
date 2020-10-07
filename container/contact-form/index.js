@@ -72,7 +72,7 @@ function ContactForm({ t }) {
           <TextInput
             label={t('YourPhoneNumber')}
             name="phone"
-            type="text"
+            type="tel"
             placeholder={t('YourPhoneNumber')}
             className="form-control-solid"
           />

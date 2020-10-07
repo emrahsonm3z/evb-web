@@ -1,0 +1,22 @@
+.modalContent {
+  font-size: 1rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  td {
+    padding: 5px;
+  }
+}

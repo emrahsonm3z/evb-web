@@ -99,6 +99,8 @@ function Header({ t }) {
 
   const router = useRouter()
 
+  const _isMounted = useRef(true)
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 1) setScrolled(true)
@@ -107,6 +109,7 @@ function Header({ t }) {
 
     window.addEventListener('scroll', handleScroll)
     return () => {
+      _isMounted.current = false
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
