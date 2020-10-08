@@ -27,6 +27,23 @@ const MAX_EMAIL = 40
 const MAX_MESSAGE = 1000
 const PHONE_REG_EXP = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
+const FILE_SIZE = 10 * 1024 * 1024
+const SUPPORTED_FORMATS = [
+  {
+    extension: '.doc',
+    mimeType: 'application/msword'
+  },
+  {
+    extension: '.docx',
+    mimeType:
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+  },
+  {
+    extension: '.pdf',
+    mimeType: 'application/pdf'
+  }
+]
+
 export {
   Menui18nPrefix,
   Menu,
@@ -34,5 +51,7 @@ export {
   MAX_FULLNAME,
   MAX_EMAIL,
   MAX_MESSAGE,
-  PHONE_REG_EXP
+  PHONE_REG_EXP,
+  FILE_SIZE,
+  SUPPORTED_FORMATS
 }

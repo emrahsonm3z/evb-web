@@ -11,24 +11,11 @@ import { Checkbox, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
 import InputFeedback from '../../components/form/InputFeedback'
-import Modal from '../../components/form/Modal'
 
-const FILE_SIZE = 10 * 1024 * 1024
-const SUPPORTED_FORMATS = [
-  {
-    extension: '.doc',
-    mimeType: 'application/msword'
-  },
-  {
-    extension: '.docx',
-    mimeType:
-      'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-  },
-  {
-    extension: '.pdf',
-    mimeType: 'application/pdf'
-  }
-]
+import KvkkModal from '../documents/kvkk-modal'
+
+import { FILE_SIZE, SUPPORTED_FORMATS } from '../../constants'
+
 function ApplyWithCV({ t }) {
   return (
     <Formik
@@ -41,35 +28,31 @@ function ApplyWithCV({ t }) {
       }}
       validationSchema={Yup.object({
         NameAndSurname: Yup.string()
-          .max(
-            MAX_FULLNAME,
-            <Trans values={{ max: MAX_FULLNAME }}>{t('Validation.Max')}</Trans>
-          )
-          .required(t('Validation.Required')),
+          .max(MAX_FULLNAME, t('validation:Max', { max: MAX_FULLNAME }))
+          .required(t('validation:Required')),
         EmailAddress: Yup.string()
-          .max(
-            MAX_EMAIL,
-            <Trans values={{ max: MAX_EMAIL }}>{t('Validation.Max')}</Trans>
-          )
-          .email(t('Validation.Invalid.Email'))
-          .required(t('Validation.Required')),
+          .max(MAX_EMAIL, t('validation:Max', { max: MAX_EMAIL }))
+          .email(t('validation:Invalid.Email'))
+          .required(t('validation:Required')),
         Phonenumber: Yup.string()
-          .matches(PHONE_REG_EXP, t('Validation.Invalid.Phone'))
-          .required(t('Validation.Required')),
+          .matches(PHONE_REG_EXP, t('validation:Invalid.Phone'))
+          .required(t('validation:Required')),
         Attachment: Yup.mixed()
-          .required(t('Validation.Required'))
+          .required(t('validation:Required'))
           .test(
             'fileSize',
-            'File too large',
+            t('validation:FileSize', { max: FILE_SIZE }),
             (value) => value && value.size <= FILE_SIZE
           )
           .test(
             'fileFormat',
-            'Unsupported Format',
+            t('validation:UnsupportedFormat', {
+              extension: SUPPORTED_FORMATS.map((c) => c.extension).join(', ')
+            }),
             (value) =>
               value && SUPPORTED_FORMATS.some((c) => c.mimeType === value.type)
           ),
-        Kvkk: Yup.bool().oneOf([true], t('Validation.YouMustAgree'))
+        Kvkk: Yup.bool().oneOf([true], t('validation:YouMustAgree'))
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
@@ -167,43 +150,16 @@ function ApplyWithCV({ t }) {
           </div>
 
           <Checkbox
-            className={styles['link-checkbox']}
             name="Kvkk"
             content={
-              <Modal
-                label={t('Kvkk')}
-                title={
-                  <Trans
-                    ns="documents"
-                    components={{
-                      strong: <strong />
-                    }}
-                  >
-                    {t(`KVKK.Title`)}
-                  </Trans>
-                }
+              <Trans
+                components={{
+                  span: <span />,
+                  link: <KvkkModal />
+                }}
               >
-                <Trans
-                  ns="documents"
-                  components={{
-                    p: <p />,
-                    strong: <strong />,
-                    h3: <h3 />,
-                    table: <table />,
-                    tbody: <tbody />,
-                    th: <th />,
-                    td: <td />,
-                    tr: <tr />,
-                    li: <li />,
-                    a: <a />,
-                    em: <em />,
-                    ul: <ul />,
-                    u: <u />
-                  }}
-                >
-                  {t(`KVKK.Content`)}
-                </Trans>
-              </Modal>
+                {t('ConfirmationKvkk')}
+              </Trans>
             }
           />
           <div className={styles.submitBtn}>
@@ -218,7 +174,7 @@ function ApplyWithCV({ t }) {
 }
 
 ApplyWithCV.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'documents']
+  namespacesRequired: ['common', 'validation', 'documents']
 })
 
 ApplyWithCV.propTypes = {

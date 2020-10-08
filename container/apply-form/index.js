@@ -46,11 +46,9 @@ function ApplyForm({ t }) {
           </span>
           <span className="option-label">
             <span className="option-head">
-              <span className="option-title">Form ile başvuru</span>
+              <span className="option-title">{t('ApplyWithForm')}</span>
             </span>
-            <span className="option-body">
-              Hakkında merak ettiklerimizi formu doldurarak bize bildir
-            </span>
+            <span className="option-body">{t('ApplyWithFormDesc')}</span>
           </span>
         </label>
         <label className="option option option-plain" htmlFor="apply-with-cv">
@@ -70,16 +68,14 @@ function ApplyForm({ t }) {
           </span>
           <span className="option-label">
             <span className="option-head">
-              <span className="option-title">Özgeçmiş ile başvuru</span>
+              <span className="option-title">{t('ApplyWithResume')}</span>
             </span>
-            <span className="option-body">
-              Güncel özgeçmişin ile başvurunu tamamla
-            </span>
+            <span className="option-body">{t('ApplyWithResumeDesc')}</span>
           </span>
         </label>
       </div>
 
-      {showApplyWithForm ? <ApplyWithForm /> : <ApplyWithCV />}
+      {showApplyWithForm ? <ApplyWithCV /> : <ApplyWithForm />}
     </div>
   )
 }

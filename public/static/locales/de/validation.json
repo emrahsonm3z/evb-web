@@ -1,0 +1,11 @@
+{
+  "Max": "Sollte {{max}} Zeichen oder weniger sein",
+  "Required": "Erforderliches Feld",
+  "Invalid": {
+    "Email": "Falsches E-Mail-Format",
+    "Phone": "Falsches Telefonnummernformat"
+  },
+  "YouMustAgree": "Du musst zustimmen",
+  "FileSize": "Kann bis zu {{max}} groß sein",
+  "UnsupportedFormat": "Ungültiges Format. Muss die Erweiterung ({{extension}}) haben"
+}

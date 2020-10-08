@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import PropTypes from 'prop-types'
 import cn from 'classnames'
 
 import { i18n, withTranslation } from '../../i18n'
@@ -56,6 +57,14 @@ function LanguageSelect({ t, className }) {
       </div>
     </div>
   )
+}
+
+LanguageSelect.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+LanguageSelect.propTypes = {
+  t: PropTypes.func.isRequired
 }
 
 export default withTranslation('common')(LanguageSelect)

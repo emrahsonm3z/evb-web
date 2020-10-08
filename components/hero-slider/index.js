@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Flickity from 'react-flickity-component'
 import cn from 'classnames'
 
@@ -73,4 +74,11 @@ function HeroSlider({ t }) {
   )
 }
 
+HeroSlider.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+HeroSlider.propTypes = {
+  t: PropTypes.func.isRequired
+}
 export default withTranslation('common')(HeroSlider)

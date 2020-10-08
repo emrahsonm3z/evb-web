@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Flickity from 'react-flickity-component'
 import cn from 'classnames'
 
@@ -97,6 +98,14 @@ function FaqSlider({ t }) {
       </Flickity>
     </div>
   )
+}
+
+FaqSlider.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+FaqSlider.propTypes = {
+  t: PropTypes.func.isRequired
 }
 
 export default withTranslation('common')(FaqSlider)

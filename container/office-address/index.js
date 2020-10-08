@@ -1,5 +1,5 @@
 import React from 'react'
-import cn from 'classnames'
+import PropTypes from 'prop-types'
 import styles from './index.module.css'
 
 import Figure from '../../components/figure'
@@ -57,6 +57,14 @@ function OfficeAddresses({ t }) {
       </div>
     </div>
   )
+}
+
+OfficeAddresses.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+OfficeAddresses.propTypes = {
+  t: PropTypes.func.isRequired
 }
 
 export default withTranslation('common')(OfficeAddresses)

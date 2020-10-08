@@ -1,0 +1,11 @@
+{
+  "Max": "{{max}} karakter veya daha az olmalıdır",
+  "Required": "Gerekli alan",
+  "Invalid": {
+    "Email": "Hatalı e-posta formatı",
+    "Phone": "Hatalı telefon numarası formatı"
+  },
+  "YouMustAgree": "Kabul etmelisiniz",
+  "FileSize": "En fazla {{max}} boyutunda olabilir",
+  "UnsupportedFormat": "Geçersiz format. ({{extension}}) uzantılı olmalıdır"
+}

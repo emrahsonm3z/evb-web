@@ -1,16 +1,23 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import React from 'react'
+
+import { lngFromReq } from 'next-i18next/dist/commonjs/utils'
 import SiteConfig from '../site.config'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const lng = lngFromReq(ctx.req)
+    const additionalProps = {
+      lng
+    }
+    return { ...initialProps, ...additionalProps }
   }
 
   render() {
+    const { lng } = this.props
     return (
-      <Html lang={SiteConfig.lang}>
+      <Html lang={lng}>
         <Head>
           {/* base */}
           <meta charSet="utf-8" />

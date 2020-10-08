@@ -39,15 +39,6 @@
     "Title": "Aufgaben",
     "Text": " <p> Deine Aufgaben bestehen darin, unsere <b>1,5 Millionen Bestandskunden</b> zu betreuen. Da wir der <b>Dienstleister unseres eigenen Energiewirtschaftsunternehmens</b> sind, wirst du deine meiste Zeit damit verbringen Abschläge zu ändern, Verträge zu beenden, Tarifwechsel durchzuführen und Rechnungen zu erläutern. Du brauchst aber keine Bedenken zu haben, denn du hast immer jemanden bei dir, der dich unterstützt, um auch jedes Kundenanliegen zu lösen. Dabei musst du aber immer serviceorientiert handeln. Bei uns wird guter Kundenservice sehr wertgeschätzt. </p>"
   },
-  "Validation": {
-    "Max": "Sollte {{max}} Zeichen oder weniger sein",
-    "Required": "Erforderliches Feld",
-    "Invalid": {
-      "Email": "Falsches E-Mail-Format",
-      "Phone": "Falsches Telefonnummernformat"
-    },
-    "YouMustAgree": "Du musst zustimmen"
-  },
   "YourFullName": "Ihr vollständiger Name",
   "YourEmail": "Ihre E-Mail-Adresse",
   "YourPhoneNumber": "Ihre Telefonnummer",
@@ -55,7 +46,6 @@
   "Submit": "Absenden",
   "ContactUs": "Kontaktieren Sie uns",
   "OurOffices": "Unsere Büros",
-
   "NameAndSurname": "Name und Nachname",
   "Birthplace": "Geburtsort",
   "Birthday": "Geburtsdatum",
@@ -85,9 +75,14 @@
   "Little": "Wenig",
   "GermanLanguageLevel": "Deutsches Sprachniveau",
   "TermOfUseAndPrivacyPolicy": "evb.com.tr kullanım koşulları ve gizlilik politikasını okudum ve kabul ediyorum",
-  "Kvkk": "evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden 6698 sayılı kişisel verilerin korunması kanunu kapsamında aydınlatma metnini okudum, anladım",
+  "Kvkk": "6698 sayılı kişisel verilerin korunması kanunu kapsamında aydınlatma metnini",
+  "ConfirmationKvkk": "<span>evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden <link /> okudum, anladım</span>",
   "ApplicationForm": "Bewerbungsbogen",
   "JobApplication": "Bewerbung",
   "Attachment": "Anhang",
-  "ChooseFile": "Datei wählen"
+  "ChooseFile": "Datei wählen",
+  "ApplyWithForm": "Bewerbung mit Formular",
+  "ApplyWithFormDesc": "Lassen Sie uns wissen, worüber Sie sich wundern, indem Sie das Formular ausfüllen",
+  "ApplyWithResume": "Bewerbung mit Lebenslauf",
+  "ApplyWithResumeDesc": "Vervollständigen Sie Ihre Bewerbung mit Ihrem aktuellen Lebenslauf"
 }

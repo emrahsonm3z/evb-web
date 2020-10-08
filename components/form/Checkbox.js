@@ -9,7 +9,7 @@ const Checkbox = ({ content, className, ...props }) => {
     <div className="form-group">
       <label className={cn(['checkbox', className])}>
         <input {...field} {...props} type="checkbox" />
-        <span></span>
+        <span className="icon"></span>
         {content}
       </label>
       {meta.touched && meta.error ? <InputFeedback error={meta.error} /> : null}

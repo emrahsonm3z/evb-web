@@ -9,8 +9,7 @@ import { Checkbox, RadioButton, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
 import RadioButtonGroup from '../../components/form/RadioButtonGroup'
-
-import Modal from '../../components/form/Modal'
+import KvkkModal from '../documents/kvkk-modal'
 
 function ApplyWithForm({ t }) {
   useEffect(() => {
@@ -39,33 +38,27 @@ function ApplyWithForm({ t }) {
       }}
       validationSchema={Yup.object({
         NameAndSurname: Yup.string()
-          .max(
-            MAX_FULLNAME,
-            <Trans values={{ max: MAX_FULLNAME }}>{t('Validation.Max')}</Trans>
-          )
-          .required(t('Validation.Required')),
+          .max(MAX_FULLNAME, t('validation:Max', { max: MAX_FULLNAME }))
+          .required(t('validation:Required')),
         EmailAddress: Yup.string()
-          .max(
-            MAX_EMAIL,
-            <Trans values={{ max: MAX_EMAIL }}>{t('Validation.Max')}</Trans>
-          )
-          .email(t('Validation.Invalid.Email'))
-          .required(t('Validation.Required')),
+          .max(MAX_EMAIL, t('validation:Max', { max: MAX_EMAIL }))
+          .email(t('validation:Invalid.Email'))
+          .required(t('validation:Required')),
         Phonenumber: Yup.string()
-          .matches(PHONE_REG_EXP, t('Validation.Invalid.Phone'))
-          .required(t('Validation.Required')),
-        Birthday: Yup.string().required(t('Validation.Required')),
-        Birthplace: Yup.string().required(t('Validation.Required')),
-        Gender: Yup.string().required(t('Validation.Required')),
-        Nationality: Yup.string().required(t('Validation.Required')),
-        HomeAddress: Yup.string().required(t('Validation.Required')),
-        RequestedOffice: Yup.string().required(t('Validation.Required')),
-        MaritalStatus: Yup.string().required(t('Validation.Required')),
-        EducationalStatus: Yup.string().required(t('Validation.Required')),
-        WorkExperience: Yup.string().required(t('Validation.Required')),
-        ComputerSkills: Yup.string().required(t('Validation.Required')),
-        GermanLanguageLevel: Yup.string().required(t('Validation.Required')),
-        Kvkk: Yup.bool().oneOf([true], t('Validation.YouMustAgree'))
+          .matches(PHONE_REG_EXP, t('validation:Invalid.Phone'))
+          .required(t('validation:Required')),
+        Birthday: Yup.string().required(t('validation:Required')),
+        Birthplace: Yup.string().required(t('validation:Required')),
+        Gender: Yup.string().required(t('validation:Required')),
+        Nationality: Yup.string().required(t('validation:Required')),
+        HomeAddress: Yup.string().required(t('validation:Required')),
+        RequestedOffice: Yup.string().required(t('validation:Required')),
+        MaritalStatus: Yup.string().required(t('validation:Required')),
+        EducationalStatus: Yup.string().required(t('validation:Required')),
+        WorkExperience: Yup.string().required(t('validation:Required')),
+        ComputerSkills: Yup.string().required(t('validation:Required')),
+        GermanLanguageLevel: Yup.string().required(t('validation:Required')),
+        Kvkk: Yup.bool().oneOf([true], t('validation:YouMustAgree'))
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
@@ -271,43 +264,16 @@ function ApplyWithForm({ t }) {
             />
           </RadioButtonGroup>
           <Checkbox
-            className={styles['link-checkbox']}
             name="Kvkk"
             content={
-              <Modal
-                label={t('Kvkk')}
-                title={
-                  <Trans
-                    ns="documents"
-                    components={{
-                      strong: <strong />
-                    }}
-                  >
-                    {t(`KVKK.Title`)}
-                  </Trans>
-                }
+              <Trans
+                components={{
+                  span: <span />,
+                  link: <KvkkModal />
+                }}
               >
-                <Trans
-                  ns="documents"
-                  components={{
-                    p: <p />,
-                    strong: <strong />,
-                    h3: <h3 />,
-                    table: <table />,
-                    tbody: <tbody />,
-                    th: <th />,
-                    td: <td />,
-                    tr: <tr />,
-                    li: <li />,
-                    a: <a />,
-                    em: <em />,
-                    ul: <ul />,
-                    u: <u />
-                  }}
-                >
-                  {t(`KVKK.Content`)}
-                </Trans>
-              </Modal>
+                {t('ConfirmationKvkk')}
+              </Trans>
             }
           />
           <div className={styles.submitBtn}>
@@ -322,7 +288,7 @@ function ApplyWithForm({ t }) {
 }
 
 ApplyWithForm.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'documents']
+  namespacesRequired: ['common', 'validation', 'documents']
 })
 
 ApplyWithForm.propTypes = {

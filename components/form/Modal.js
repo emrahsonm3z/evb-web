@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import ReactModal from 'react-modal'
 import cn from 'classnames'
 import { withTranslation } from '../../i18n'
@@ -44,7 +45,7 @@ function Modal({ t, label, title, children, ...props }) {
                 data-dismiss="modal"
                 onClick={toggleModal}
               >
-                Close
+                {t('Close')}
               </button>
             </div>
           </div>
@@ -52,6 +53,14 @@ function Modal({ t, label, title, children, ...props }) {
       </ReactModal>
     </>
   )
+}
+
+Modal.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+Modal.propTypes = {
+  t: PropTypes.func.isRequired
 }
 
 export default withTranslation('common')(Modal)

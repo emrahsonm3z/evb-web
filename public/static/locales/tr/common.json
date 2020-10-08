@@ -39,15 +39,7 @@
     "Title": "Görevler",
     "Text": "<p>İşiniz <b>1,5 milyon mevcut müşterimize</b> bakmaktır. <b>Kendi enerji şirketimizin hizmet sağlayıcısı</b> olduğumuz için, zamanınızın çoğunu indirimleri değiştirmek, sözleşmeleri feshetmek, tarifeleri değiştirmek ve faturaları açıklamak için harcayacaksınız. Ancak herhangi bir endişenizin olması gerekmez, çünkü her zaman yanınızda, her müşteri sorununu çözmede size destek olacak biri vardır. Ancak her zaman hizmet odaklı olmalısınız. İyi müşteri hizmetlerine çok değer veriyoruz.</p>"
   },
-  "Validation": {
-    "Max": "{{max}} karakter veya daha az olmalıdır",
-    "Required": "Gerekli alan",
-    "Invalid": {
-      "Email": "Hatalı e-posta formatı",
-      "Phone": "Hatalı telefon numarası formatı"
-    },
-    "YouMustAgree": "Kabul etmelisiniz"
-  },
+
   "YourFullName": "Tam adınız",
   "YourEmail": "E-posta adresiniz",
   "YourPhoneNumber": "Telefon numaranız",
@@ -84,9 +76,14 @@
   "Little": "Az",
   "GermanLanguageLevel": "Almanca dil seviyesi",
   "TermOfUseAndPrivacyPolicy": "evb.com.tr kullanım koşulları ve gizlilik politikasını okudum ve kabul ediyorum",
-  "Kvkk": "evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden 6698 sayılı kişisel verilerin korunması kanunu kapsamında aydınlatma metnini okudum, anladım",
+  "Kvkk": "6698 sayılı kişisel verilerin korunması kanunu kapsamında aydınlatma metnini",
+  "ConfirmationKvkk": "<span>evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden <link /> okudum, anladım</span>",
   "ApplicationForm": "Başvuru formu",
   "JobApplication": "İş başvurusu",
   "Attachment": "Ek dosya",
-  "ChooseFile": "Dosya seç"
+  "ChooseFile": "Dosya seç",
+  "ApplyWithForm": "Form ile başvuru",
+  "ApplyWithFormDesc": "Hakkında merak ettiklerimizi formu doldurarak bize bildir",
+  "ApplyWithResume": "Özgeçmiş ile başvuru",
+  "ApplyWithResumeDesc": "Güncel özgeçmişin ile başvurunu tamamla"
 }

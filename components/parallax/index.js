@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import cn from 'classnames'
 
 import styles from './index.module.css'
@@ -40,4 +41,11 @@ function Parallax({ t }) {
   )
 }
 
+Parallax.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+Parallax.propTypes = {
+  t: PropTypes.func.isRequired
+}
 export default withTranslation('common')(Parallax)

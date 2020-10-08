@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Flickity from 'react-flickity-component'
 import cn from 'classnames'
 
@@ -53,4 +54,11 @@ function VisionSlider({ t }) {
   )
 }
 
+VisionSlider.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+VisionSlider.propTypes = {
+  t: PropTypes.func.isRequired
+}
 export default withTranslation('common')(VisionSlider)

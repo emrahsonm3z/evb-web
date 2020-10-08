@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import cn from 'classnames'
@@ -94,4 +95,11 @@ function ContactForm({ t }) {
   )
 }
 
+ContactForm.getInitialProps = async () => ({
+  namespacesRequired: ['common']
+})
+
+ContactForm.propTypes = {
+  t: PropTypes.func.isRequired
+}
 export default withTranslation('common')(ContactForm)

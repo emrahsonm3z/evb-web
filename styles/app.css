@@ -515,11 +515,19 @@ input[type="checkbox"] {
   position: relative;
   text-align: left;
   cursor: pointer;
-  font-size: 1rem;
   transition: all 0.3s ease;
   margin: 0;
 
-  & > span {
+  a {
+    color: var(--c-primary);
+  }
+
+  span,
+  a {
+    font-size: 1rem !important;
+  }
+
+  & > .icon {
     height: 18px;
     width: 18px;
     background-color: #ebedf3;
@@ -549,7 +557,7 @@ input[type="checkbox"] {
     z-index: -1;
     opacity: 0;
 
-    &:checked ~ span {
+    &:checked ~ .icon {
       background-color: var(--c-primary);
       transition: all 0.3s ease;
 
@@ -569,7 +577,7 @@ input[type="checkbox"] {
   .checkbox {
     margin-bottom: 1rem;
 
-    span {
+    .icon {
       margin-right: 0.75rem;
     }
   }
