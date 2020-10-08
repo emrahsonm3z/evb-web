@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Formik, Form } from 'formik'
 import cn from 'classnames'
+import filesize from 'filesize'
 
 import * as Yup from 'yup'
 
@@ -41,7 +42,7 @@ function ApplyWithCV({ t }) {
           .required(t('validation:Required'))
           .test(
             'fileSize',
-            t('validation:FileSize', { max: FILE_SIZE }),
+            t('validation:FileSize', { max: filesize(FILE_SIZE) }),
             (value) => value && value.size <= FILE_SIZE
           )
           .test(
