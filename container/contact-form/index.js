@@ -4,7 +4,7 @@ import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import cn from 'classnames'
 
-import { withTranslation, Trans } from '../../i18n'
+import { withTranslation } from '../../i18n'
 import {
   MAX_FULLNAME,
   MAX_EMAIL,
@@ -22,31 +22,26 @@ function ContactForm({ t }) {
       <SubTitle title={t('ContactUs')} />
 
       <Formik
-        initialValues={{ fullName: '', email: '', phone: '', message: '' }}
+        initialValues={{
+          NameAndSurname: '',
+          EmailAddress: '',
+          Phonenumber: '',
+          Message: ''
+        }}
         validationSchema={Yup.object({
-          fullName: Yup.string()
-            .max(
-              MAX_FULLNAME,
-              <Trans values={{ max: MAX_FULLNAME }}>
-                {t('Validation.Max')}
-              </Trans>
-            )
-            .required(t('Validation.Required')),
-          email: Yup.string()
-            .max(
-              MAX_EMAIL,
-              <Trans values={{ max: MAX_EMAIL }}>{t('Validation.Max')}</Trans>
-            )
-            .email(t('Validation.Invalid.Email')),
-          phone: Yup.string()
-            .matches(PHONE_REG_EXP, t('Validation.Invalid.Phone'))
-            .required(t('Validation.Required')),
-          message: Yup.string()
-            .max(
-              MAX_MESSAGE,
-              <Trans values={{ max: MAX_MESSAGE }}>{t('Validation.Max')}</Trans>
-            )
-            .required(t('Validation.Required'))
+          NameAndSurname: Yup.string()
+            .max(MAX_FULLNAME, t('validation:Max', { max: MAX_FULLNAME }))
+            .required(t('validation:Required')),
+          EmailAddress: Yup.string()
+            .max(MAX_EMAIL, t('validation:Max', { max: MAX_EMAIL }))
+            .email(t('validation:Invalid.Email'))
+            .required(t('validation:Required')),
+          Phonenumber: Yup.string()
+            .matches(PHONE_REG_EXP, t('validation:Invalid.Phone'))
+            .required(t('validation:Required')),
+          Message: Yup.string()
+            .max(MAX_MESSAGE, t('validation:Max', { max: MAX_MESSAGE }))
+            .required(t('validation:Required'))
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
@@ -57,29 +52,29 @@ function ContactForm({ t }) {
       >
         <Form className={styles.form}>
           <TextInput
-            label={t('YourFullName')}
-            name="fullName"
+            label={t('NameAndSurname')}
+            name="NameAndSurname"
             type="text"
-            placeholder={t('YourFullName')}
+            placeholder={t('NameAndSurname')}
             className="form-control-solid"
           />
           <TextInput
-            label={t('YourEmail')}
-            name="email"
+            label={t('EmailAddress')}
+            name="EmailAddress"
             type="email"
-            placeholder={t('YourEmail')}
+            placeholder={t('EmailAddress')}
             className="form-control-solid"
           />
           <TextInput
-            label={t('YourPhoneNumber')}
-            name="phone"
+            label={t('Phonenumber')}
+            name="Phonenumber"
             type="tel"
-            placeholder={t('YourPhoneNumber')}
+            placeholder={t('Phonenumber')}
             className="form-control-solid"
           />
           <TextArea
             label={t('YourMessage')}
-            name="message"
+            name="Message"
             rows="5"
             placeholder={t('YourMessage')}
             className={cn(['form-control-solid', 'a-height', styles.message])}
@@ -96,7 +91,7 @@ function ContactForm({ t }) {
 }
 
 ContactForm.getInitialProps = async () => ({
-  namespacesRequired: ['common']
+  namespacesRequired: ['common', 'validation']
 })
 
 ContactForm.propTypes = {
