@@ -75,7 +75,7 @@ function ApplyForm({ t }) {
         </label>
       </div>
 
-      {showApplyWithForm ? <ApplyWithCV /> : <ApplyWithForm />}
+      {showApplyWithForm ? <ApplyWithForm /> : <ApplyWithCV />}
     </div>
   )
 }

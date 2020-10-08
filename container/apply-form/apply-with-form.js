@@ -269,7 +269,7 @@ function ApplyWithForm({ t }) {
               <Trans
                 components={{
                   span: <span />,
-                  link: <KvkkModal />
+                  kvkklink: <KvkkModal />
                 }}
               >
                 {t('ConfirmationKvkk')}

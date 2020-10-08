@@ -77,7 +77,7 @@
   "GermanLanguageLevel": "Almanca dil seviyesi",
   "TermOfUseAndPrivacyPolicy": "evb.com.tr kullanım koşulları ve gizlilik politikasını okudum ve kabul ediyorum",
   "Kvkk": "6698 sayılı kişisel verilerin korunması kanunu kapsamında aydınlatma metnini",
-  "ConfirmationKvkk": "<span>evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden <link /> okudum, anladım</span>",
+  "ConfirmationKvkk": "<span>evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden <kvkklink /> okudum, anladım</span>",
   "ApplicationForm": "Başvuru formu",
   "JobApplication": "İş başvurusu",
   "Attachment": "Ek dosya",

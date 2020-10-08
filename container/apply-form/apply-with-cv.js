@@ -155,7 +155,7 @@ function ApplyWithCV({ t }) {
               <Trans
                 components={{
                   span: <span />,
-                  link: <KvkkModal />
+                  kvkklink: <KvkkModal />
                 }}
               >
                 {t('ConfirmationKvkk')}
