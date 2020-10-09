@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 import styles from './index.module.css'
 import { withTranslation } from '../../i18n'
-import { Location } from '../icons'
+import { Location } from '../../components/icons'
 
 function Parallax({ t }) {
   return (

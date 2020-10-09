@@ -5,8 +5,8 @@ import cn from 'classnames'
 
 import styles from './index.module.css'
 import { withTranslation } from '../../i18n'
-import Card from '../card'
-import SubTitle from '../title/subtitle'
+import Card from '../../components/card'
+import SubTitle from '../../components/title/subtitle'
 
 const flickityOptions = {
   accessibility: true,

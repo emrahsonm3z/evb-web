@@ -35,9 +35,38 @@
   "Locations": "KONUMLAR",
   "Employee": "ÇALIŞAN",
   "ExistingCustomers": "MEVCUT MÜŞTERİ",
+
   "Tasks": {
     "Title": "Görevler",
-    "Text": "<p>İşiniz <b>1,5 milyon mevcut müşterimize</b> bakmaktır. <b>Kendi enerji şirketimizin hizmet sağlayıcısı</b> olduğumuz için, zamanınızın çoğunu indirimleri değiştirmek, sözleşmeleri feshetmek, tarifeleri değiştirmek ve faturaları açıklamak için harcayacaksınız. Ancak herhangi bir endişenizin olması gerekmez, çünkü her zaman yanınızda, her müşteri sorununu çözmede size destek olacak biri vardır. Ancak her zaman hizmet odaklı olmalısınız. İyi müşteri hizmetlerine çok değer veriyoruz.</p>"
+    "Content": "<p>İşiniz <b>1,5 milyon mevcut müşterimize</b> bakmaktır. <b>Kendi enerji şirketimizin hizmet sağlayıcısı</b> olduğumuz için, zamanınızın çoğunu indirimleri değiştirmek, sözleşmeleri feshetmek, tarifeleri değiştirmek ve faturaları açıklamak için harcayacaksınız. Ancak herhangi bir endişenizin olması gerekmez, çünkü her zaman yanınızda, her müşteri sorununu çözmede size destek olacak biri vardır. Ancak her zaman hizmet odaklı olmalısınız. İyi müşteri hizmetlerine çok değer veriyoruz.</p>"
+  },
+
+  "MoreThanAJob": {
+    "Title": "Bir işten daha fazlası",
+    "Content": "EVB'nin iş yerinizden daha fazlası olduğunu çabucak anlayacaksınız. Sadece günlük işlerinizi yapmanız beklenmiyor, aynı zamanda çok sayıda aktiviteye, eğitim kurslarına ve çeşitli projelere de katılabilirsiniz."
+  },
+
+  "IntensiveTraining": {
+    "Title": "Çalışanlar ve yöneticiler için yoğun eğitim",
+    "Content": "Çalışmaya başlamadan önce, sekiz haftalık bir temel eğitim kursunu tamamlayacaksınız. Sadece uygun olduğunuzda başlayabilirsiniz. Elbette eğitim süresinin tamamı da ödenecektir."
+  },
+
+  "Team": {
+    "Title": "Müşterilerimize ve çalışanlarımıza karşı adalet",
+    "Content": "Herkese hak ettikleri saygıyı göstermeye, yönetici ya da katip olmasına bakılmaksızın herkese eşit davranmaya, sorumluluk almaya ve aynı zamanda başkalarına kendilerini yönetici olarak kanıtlama fırsatı vermek için sorumluluktan vazgeçmeye özel bir özen gösteriyoruz. Sadece EVB'ye sadakat ve güvenilirlik bekliyoruz."
+  },
+
+  "Expectations": {
+    "Title": "Sizden beklentilerimiz",
+    "Content": "Gördüğünüz gibi size çok şey sunuyoruz, ancak sizden de yüksek beklentilerimiz var.",
+    "Items": {
+      "1": "Hizmet odaklı çalışabiliyor musunuz?",
+      "2": "Bir bilgisayarı çalıştırabiliyor musunuz ve ayrıca MS Office'e aşina mısınız?",
+      "3": "Konuşmayı ve yazmayı seviyorsun.",
+      "4": "Almanca hem yazılı hem de sözlü olarak iletişim kurabiliyor musunuz?",
+      "5": "Belirli süreçleri öğrenip uygulayabiliyor musunuz?",
+      "6": "Sorumluluk sahibi misiniz ve her zaman elinizden gelenin en iyisini yapmaya mı çalışıyorsunuz?"
+    }
   },
 
   "YourFullName": "Tam adınız",

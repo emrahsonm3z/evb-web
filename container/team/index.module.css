@@ -1,0 +1,25 @@
+.block {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-end;
+  flex: 1 auto;
+  min-width: 0;
+  height: 400px;
+  background: url("/assets/team.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .content {
+    padding: 40px 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.77);
+
+    .title {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  }
+}

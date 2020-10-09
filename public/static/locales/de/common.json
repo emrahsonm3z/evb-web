@@ -37,8 +37,34 @@
   "ExistingCustomers": "BESTANDSKUNDEN",
   "Tasks": {
     "Title": "Aufgaben",
-    "Text": " <p> Deine Aufgaben bestehen darin, unsere <b>1,5 Millionen Bestandskunden</b> zu betreuen. Da wir der <b>Dienstleister unseres eigenen Energiewirtschaftsunternehmens</b> sind, wirst du deine meiste Zeit damit verbringen Abschläge zu ändern, Verträge zu beenden, Tarifwechsel durchzuführen und Rechnungen zu erläutern. Du brauchst aber keine Bedenken zu haben, denn du hast immer jemanden bei dir, der dich unterstützt, um auch jedes Kundenanliegen zu lösen. Dabei musst du aber immer serviceorientiert handeln. Bei uns wird guter Kundenservice sehr wertgeschätzt. </p>"
+    "Content": " <p> Deine Aufgaben bestehen darin, unsere <b>1,5 Millionen Bestandskunden</b> zu betreuen. Da wir der <b>Dienstleister unseres eigenen Energiewirtschaftsunternehmens</b> sind, wirst du deine meiste Zeit damit verbringen Abschläge zu ändern, Verträge zu beenden, Tarifwechsel durchzuführen und Rechnungen zu erläutern. Du brauchst aber keine Bedenken zu haben, denn du hast immer jemanden bei dir, der dich unterstützt, um auch jedes Kundenanliegen zu lösen. Dabei musst du aber immer serviceorientiert handeln. Bei uns wird guter Kundenservice sehr wertgeschätzt. </p>"
   },
+  "MoreThanAJob": {
+    "Title": "Mehr als ein Job",
+    "Content": "Schnell wirst du erkennen, dass die EVB mehr als nur deine Arbeitsstelle ist. Man erwartet von dir also nicht nur deine tägliche Arbeit zu leisten, sondern du kannst an zahlreichen Aktivitäten, Fortbildungen und an verschiedenen Projekten teilnehmen."
+  },
+  "IntensiveTraining": {
+    "Title": "Intensive Einschulung für Mitarbeiter und Führungskräfte",
+    "Content": "Bevor du mit der Arbeit beginnst, wirst du als erstes eine acht Wochen lange Basisschulung absolvieren. Erst wenn du fit bist, kannst du loslegen. Selbstverständlich wird dir die Schulungszeit auch voll ausbezahlt."
+  },
+  "Team": {
+    "Title": "Fairness gegenüber unseren Kunden und Mitarbeitern",
+    "Content": "Wir achten besonders darauf, jedem den gebührenden Respekt zu zollen, jedermann, egal ob Führungskraft oder auch Sachbearbeiter, gleichermaßen zu behandeln, Verantwortungen zu übernehmen, aber auch die Verantwortung abzugeben, um auch anderen die Möglichkeit zu geben, sich als Führungskraft zu beweisen. Dabei erwarten wir nur Loyalität der EVB gegenüber und Zuverlässigkeit."
+  },
+
+  "Expectations": {
+    "Title": "Unsere Erwartungen an dich",
+    "Content": " Wie du siehst bieten wir dir sehr vieles an, dafür haben wir aber auch hohe Erwartungen an dich.",
+    "Items": {
+      "1": "Bist du in der Lage serviceorientiert zu arbeiten?",
+      "2": "Kannst du einen Computer bedienen und kennst dich zudem auch mit MS-Office aus?",
+      "3": "Du sprichst und schreibst gerne.",
+      "4": "Kannst du dich auf Deutsch schriftlich, sowie auch mündlich verständigen?",
+      "5": "Bist du in der Lage, bestimmte Prozesse zu erlernen und anzuwenden?",
+      "6": "Bist du verantwortungsbewusst und bemühst dich immer dein Bestes zu leisten?"
+    }
+  },
+
   "YourFullName": "Ihr vollständiger Name",
   "YourEmail": "Ihre E-Mail-Adresse",
   "YourPhoneNumber": "Ihre Telefonnummer",

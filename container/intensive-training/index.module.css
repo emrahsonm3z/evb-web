@@ -1,0 +1,40 @@
+.block {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, var(--c-primary) 80%, rgba(255, 255, 255, 0) 80%), #fff;
+  padding: 20px;
+  margin-top: 40px;
+
+  .content {
+    margin-right: 10px;
+    padding: 15px 0;
+    color: var(--c-white);
+
+    .title {
+      font-weight: 600;
+    }
+  }
+
+  .img {
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+@media (--m) {
+  .block {
+    background: var(--c-primary);
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+  }
+
+  .content {
+    width: 80%;
+  }
+}

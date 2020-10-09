@@ -1,0 +1,14 @@
+.block {
+  background: url("/assets/customer-service.jpg");
+  background-position: center;
+  background-size: cover;
+
+  .content {
+    max-width: 450px;
+    padding: 40px 0;
+
+    .title {
+      color: var(--c-primary);
+    }
+  }
+}
