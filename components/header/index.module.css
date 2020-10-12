@@ -113,7 +113,7 @@
             opacity: 1;
             background: var(--c-primary);
             color: var(--c-white);
-            border-radius: 1rem;
+            border-radius: 99px;
 
             span {
               padding: 0 1rem;

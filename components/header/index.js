@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 import Link from 'next/link'
@@ -9,36 +9,8 @@ import {
   scroller
 } from 'react-scroll'
 import styles from './index.module.css'
-import { Languages, Menui18nPrefix } from '../../constants'
+import { LANGUAGES, MENU, MENU_PREFIX } from '../../constants'
 import { i18n, withTranslation } from '../../i18n'
-
-const menu = [
-  {
-    id: 'menu-item-475',
-    text: 'OurServices',
-    href: 'ourservices',
-    isSection: true
-  },
-  {
-    id: 'menu-item-477',
-    text: 'Faqs',
-    href: 'faqs',
-    isSection: true
-  },
-  {
-    id: 'menu-item-478',
-    text: 'Contact',
-    href: 'contact',
-    isSection: false
-  },
-  {
-    id: 'menu-item-479',
-    text: 'Apply',
-    href: 'apply',
-    primary: true,
-    isSection: false
-  }
-]
 
 const scrollerOptions = {
   duration: 500,
@@ -47,6 +19,14 @@ const scrollerOptions = {
   offset: -70
 }
 
+const LinkLabel = ({ text }) => (
+  <>
+    <span className={styles['mask-lnk']}>{text}</span>
+    <span className={cn([styles['mask-lnk'], styles['mask-lnk-hover']])}>
+      {text}
+    </span>
+  </>
+)
 const SectionLink = ({ to, text, onClick }) => (
   <ScrollLink
     activeClass="active"
@@ -58,62 +38,31 @@ const SectionLink = ({ to, text, onClick }) => (
     className={cn([styles['menu-link']])}
     onClick={onClick}
   >
-    <span className={styles['mask-lnk']}>{text}</span>
-    <span className={cn([styles['mask-lnk'], styles['mask-lnk-hover']])}>
-      {text}
-    </span>
+    <LinkLabel text={text} />
   </ScrollLink>
 )
 
 const SectionLinkFromAnotherPage = ({ text, onClick }) => {
   return (
-    <Link href="#">
-      <a className={cn([styles['menu-link']])} onClick={onClick}>
-        <span className={styles['mask-lnk']}>{text}</span>
-        <span className={cn([styles['mask-lnk'], styles['mask-lnk-hover']])}>
-          {text}
-        </span>
-      </a>
-    </Link>
+    <a className={cn([styles['menu-link']])} onClick={onClick}>
+      <LinkLabel text={text} />
+    </a>
   )
 }
 
 const NavLink = ({ to, text, onClick }) => (
   <Link href={to}>
     <a className={cn([styles['menu-link']])} onClick={onClick}>
-      <span className={styles['mask-lnk']}>{text}</span>
-      <span className={cn([styles['mask-lnk'], styles['mask-lnk-hover']])}>
-        {text}
-      </span>
+      <LinkLabel text={text} />
     </a>
   </Link>
 )
 
-const scrollToTop = () => {
-  scroll.scrollToTop()
-}
-
-function Header({ t }) {
-  const [scrolled, setScrolled] = useState(false)
+const Header = ({ t }) => {
   const [isActive, setIsActive] = useState(false)
   const [language, setLanguage] = useState(i18n.language)
 
   const router = useRouter()
-
-  // const _isMounted = useRef(true)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.pageYOffset > 1) setScrolled(true)
-      else setScrolled(false)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      // _isMounted.current = false
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
 
   const changeLanguage = (e) => {
     const lang = e.target.value
@@ -126,7 +75,8 @@ function Header({ t }) {
       id="header"
       className={cn([
         styles.header,
-        scrolled ? styles.fixed : '',
+        styles.fixed,
+        // scrolled ? styles.fixed : '',
         isActive ? styles.active : ''
       ])}
     >
@@ -143,7 +93,7 @@ function Header({ t }) {
               <a
                 onClick={() => {
                   setIsActive(false)
-                  scrollToTop()
+                  scroll.scrollToTop()
                 }}
               >
                 <img src="/assets/logo.png"></img>
@@ -165,7 +115,7 @@ function Header({ t }) {
           <div className={styles['top-menu-nav']}>
             <div className="menu-topmenuonepage-container">
               <ul id="menu-topmenuonepage" className={styles.menu}>
-                {menu.map((item) => (
+                {MENU.map((item) => (
                   <li
                     key={item.id}
                     id={item.id}
@@ -181,14 +131,14 @@ function Header({ t }) {
                       (router.pathname == '/' ? (
                         <SectionLink
                           to={item.href}
-                          text={t(`${Menui18nPrefix}.${item.text}`)}
+                          text={t(`${MENU_PREFIX}.${item.text}`)}
                           onClick={() => {
                             setIsActive(false)
                           }}
                         />
                       ) : (
                         <SectionLinkFromAnotherPage
-                          text={t(`${Menui18nPrefix}.${item.text}`)}
+                          text={t(`${MENU_PREFIX}.${item.text}`)}
                           onClick={() => {
                             router.push('/').then(() => {
                               setIsActive(false)
@@ -203,7 +153,7 @@ function Header({ t }) {
                     {!item.isSection && (
                       <NavLink
                         to={item.href}
-                        text={t(`${Menui18nPrefix}.${item.text}`)}
+                        text={t(`${MENU_PREFIX}.${item.text}`)}
                         onClick={() => {
                           setIsActive(false)
                         }}
@@ -221,7 +171,7 @@ function Header({ t }) {
                   ])}
                 >
                   <div className={styles['radio-tile-group']}>
-                    {Languages.map((item) => (
+                    {LANGUAGES.map((item) => (
                       <div
                         key={item.lang}
                         className={styles['input-container']}

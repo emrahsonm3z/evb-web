@@ -25,13 +25,6 @@
   width: 100%;
   height: var(--height);
   overflow: hidden;
-  margin-top: 90px;
-
-  @media (--tm) {
-    & {
-      margin-top: 66px;
-    }
-  }
 
   .slide1 {
     background-image: url("/assets/slider1.jpg");

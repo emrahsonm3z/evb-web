@@ -1,12 +1,8 @@
 {
-  "h1": "Basit bir örnek",
-  "change-locale": "Yerel ayarı değiştir",
   "error-with-status": "Sunucuda {{statusCode}} hatası oluştu",
   "error-without-status": "Sunucuda bir hata oluştu",
   "Menu": {
-    "AboutUs": "Hakkımızda",
     "OurServices": "Hizmetlerimiz",
-    "Team": "Takımımız",
     "Faqs": "Sıkça Sorulan Sorular",
     "Contact": "İletişim",
     "Apply": "Başvur"
@@ -14,48 +10,82 @@
   "Turkish": "Türkçe",
   "English": "İnglizce",
   "German": "Almanca",
-  "Hero": {
-    "Text": "BİR İŞTEN<1> DAHA FAZLASI</1>",
-    "Apply": "KATILMAK İSTER MİSİNİZ?"
-  },
-  "VisionContainer": {
-    "Vision": {
-      "Title": "Vizyon",
-      "Text": "<p> <b> 2015'ten beri telekomünikasyon sektöründe başarılı bir hizmet şirketi olan Evb: </b> Beş yerde çalışma sunuyoruz. Her çalışan, konumunu bir veya sınırsız bir süre için değiştirmeyi seçmekte özgürdür. </p><p> Toplamda her gün şirket ve müşterilerimiz için çalışan 450'den fazla çalışanımız var. Olumlu bir çalışma ortamı yaratmak ve motivasyonumuzu her zaman yüksek tutmak bizim için önemlidir. Bu nedenle, nerede olursanız olun her zaman iyi olduğunuzdan emin oluyoruz. </p><p> Toplamda her gün şirket ve müşterilerimiz için çalışan 450'den fazla çalışanımız var. Olumlu bir çalışma ortamı yaratmak ve motivasyonumuzu her zaman yüksek tutmak bizim için önemlidir. Bu nedenle, nerede olursanız olun her zaman iyi olduğunuzdan emin oluyoruz. </p>"
-    },
-    "QualityPromise": {
-      "Title": "Kalite sözü",
-      "Text": "<p> <b> 2015'ten beri telekomünikasyon sektöründe başarılı bir hizmet şirketi olan Evb: </b> Beş yerde çalışma sunuyoruz. Her çalışan, konumunu bir veya sınırsız bir süre için değiştirmeyi seçmekte özgürdür. </p><p> Toplamda her gün şirket ve müşterilerimiz için çalışan 450'den fazla çalışanımız var. Olumlu bir çalışma ortamı yaratmak ve motivasyonumuzu her zaman yüksek tutmak bizim için önemlidir. Bu nedenle, nerede olursanız olun her zaman iyi olduğunuzdan emin oluyoruz. </p>"
-    },
-    "Values": {
-      "Title": "Değerler",
-      "Text": "<p> <b> 2015'ten beri telekomünikasyon sektöründe başarılı bir hizmet şirketi olan Evb: </b> Beş yerde çalışma sunuyoruz. Her çalışan, konumunu bir veya sınırsız bir süre için değiştirmeyi seçmekte özgürdür. </p>"
-    }
-  },
   "Locations": "KONUMLAR",
   "Employee": "ÇALIŞAN",
   "ExistingCustomers": "MEVCUT MÜŞTERİ",
-
+  "Hero": {
+    "Items": {
+      "1": {
+        "Title": "BİR İŞTEN<b> DAHA FAZLASI</b>",
+        "Button": "KATILMAK İSTER MİSİNİZ?"
+      },
+      "2": {
+        "Title": "BİR İŞTEN<b> DAHA FAZLASI</b>",
+        "Button": "KATILMAK İSTER MİSİNİZ?"
+      },
+      "3": {
+        "Title": "BİR İŞTEN<b> DAHA FAZLASI</b>",
+        "Button": "KATILMAK İSTER MİSİNİZ?"
+      }
+    }
+  },
+  "VisionContainer": {
+    "Info": "<p> <b> 2015'ten beri telekomünikasyon sektöründe başarılı bir hizmet şirketi olan Evb: </b> Beş yerde çalışma sunuyoruz. Her çalışan, konumunu bir veya sınırsız bir süre için değiştirmeyi seçmekte özgürdür. </p> <p> Toplamda her gün şirket ve müşterilerimiz için çalışan 450'den fazla çalışanımız var. Olumlu bir çalışma ortamı yaratmak ve motivasyonumuzu her zaman yüksek tutmak bizim için önemlidir. Bu nedenle, nerede olursanız olun her zaman iyi olduğunuzdan emin oluyoruz. </p>",
+    "Items": {
+      "1": {
+        "Title": "Vizyon",
+        "Content": "<span> Bir yol gösterici ve rehber olarak müşteri memnuniyetinin geleceğini el ele geliştirmeye devam edeceğiz. Günlük yaşamlarında dikkate değer katma değeri olan insanlara ulaşıyoruz. Birlikte hareket ediyoruz. </span>"
+      },
+      "2": {
+        "Title": "Kalite",
+        "Content": "<h3> Çalışan memnuniyeti </h3> <span> Çalışan memnuniyetine odaklanarak hizmet kalitemizi ve çalışanlarımızın motivasyonunu sürekli olarak artırıyoruz. Ayrıca, meslektaşlarımızla her zaman kibar ve saygılı ilişkiler sürdürüyor ve herkese eşit şekilde uygulanan nesnel standartlar belirliyor, herkese aynı fırsatı sunuyor ve tüm meslektaşlarımızı eşit bir şekilde buluşturuyoruz. Çalışanlarımızın performansı ve başarısı birlikte değerlenir ve kutlanır. Çalışanlarımıza her zaman takdirle davranır ve diğer kültürel ihtiyaçlara saygı duyarız. </span> <h3> Müşteri memnuniyeti </h3> <span> Amacımız, müşterilerimizin ve müşterilerinin beklenti ve gereksinimlerini mümkün olan en iyi hizmet kalitesiyle karşılamaktır. Ek olarak, çalışanlarımızın yüksek müşteri memnuniyetine ulaşmada en önemli faktörlerden biri olduğunu kabul ettik. Bu nedenle, hizmetlerimizin sürekli iyileştirilmesi hizmetinde, çalışan gelişimi bizim için merkezi bir öneme sahiptir. </span>"
+      },
+      "3": {
+        "Title": "Değerler",
+        "Content": "<h3> Saygı </h3> <span> Her zaman kibar ve tarafsız bir şekilde iletişim kurar ve herkesi eşit şekilde dinleriz. Başarılarımızı birlikte dört gözle bekliyoruz. </span> <h3> Adalet </h3> <span> Herkese aynı fırsatı sunuyoruz ve kimsenin lehine değiliz. Eleştiriye açığız ve kabul ediyoruz. </span> <h3> Bağlılık </h3> <span> Şirketimizi ve şirketimizin avantajlarını biliyor ve kötü zamanlarda bile şirketimizin arkasındayız. Olumlu bir tavrımız var. </span> <h3> Sorumluluk </h3> <span> Şirketimizin başarısından hepimiz müşterek olarak sorumluyuz. İşimizi biliyoruz. </span> <h3> Güvenilirlik </h3> <span> Meslektaşlarımız, diğer şirketler ve dünya için rol modeliyiz. Açıklamalarımızın arkasındayız. </span>"
+      }
+    }
+  },
   "Tasks": {
     "Title": "Görevler",
     "Content": "<p>İşiniz <b>1,5 milyon mevcut müşterimize</b> bakmaktır. <b>Kendi enerji şirketimizin hizmet sağlayıcısı</b> olduğumuz için, zamanınızın çoğunu indirimleri değiştirmek, sözleşmeleri feshetmek, tarifeleri değiştirmek ve faturaları açıklamak için harcayacaksınız. Ancak herhangi bir endişenizin olması gerekmez, çünkü her zaman yanınızda, her müşteri sorununu çözmede size destek olacak biri vardır. Ancak her zaman hizmet odaklı olmalısınız. İyi müşteri hizmetlerine çok değer veriyoruz.</p>"
   },
-
   "MoreThanAJob": {
     "Title": "Bir işten daha fazlası",
     "Content": "EVB'nin iş yerinizden daha fazlası olduğunu çabucak anlayacaksınız. Sadece günlük işlerinizi yapmanız beklenmiyor, aynı zamanda çok sayıda aktiviteye, eğitim kurslarına ve çeşitli projelere de katılabilirsiniz."
   },
-
   "IntensiveTraining": {
     "Title": "Çalışanlar ve yöneticiler için yoğun eğitim",
     "Content": "Çalışmaya başlamadan önce, sekiz haftalık bir temel eğitim kursunu tamamlayacaksınız. Sadece uygun olduğunuzda başlayabilirsiniz. Elbette eğitim süresinin tamamı da ödenecektir."
   },
-
   "Team": {
     "Title": "Müşterilerimize ve çalışanlarımıza karşı adalet",
     "Content": "Herkese hak ettikleri saygıyı göstermeye, yönetici ya da katip olmasına bakılmaksızın herkese eşit davranmaya, sorumluluk almaya ve aynı zamanda başkalarına kendilerini yönetici olarak kanıtlama fırsatı vermek için sorumluluktan vazgeçmeye özel bir özen gösteriyoruz. Sadece EVB'ye sadakat ve güvenilirlik bekliyoruz."
   },
-
+  "Faqs": {
+    "Items": {
+      "1": {
+        "Title": "Çalışma saatleriniz ve vardiyalarınız",
+        "Content": "<span> Toplam dört vardiyamız var. Vardiyalar her zaman adil ve adil bir şekilde dağıtılır. Herkes bir ayda farklı bir vardiyada dönüşümlü olarak çalışır. Tüm molalar, belirtilen çalışma saatlerine dahildir. </span> <span> 1: 08:00 - 17:00 </span> <span> 2: 09:00 - 18:00 </span> <span> 3: 10:00 - 19:00 </span> <span> 4: 11:00 - 20:00 </span> "
+      },
+      "2": {
+        "Title": "Mola",
+        "Content": "<span> Toplam dört vardiyamız var. Vardiyalar her zaman adil ve adil bir şekilde dağıtılır. Herkes bir ay içinde çalışır, her zaman çalışma saatleri, tüm molalar dahildir. </span> <span> 1: 08:00 - 17:00 </span> <span> 2: 09:00 - 18:00 </span> "
+      },
+      "3": {
+        "Title": "Yemek desteği",
+        "Content": "<span> Toplam dört vardiyamız var. Vardiyalar her zaman adil ve adil bir şekilde dağıtılır. Herkes her zaman bir ay içinde çalışır </span>"
+      },
+      "4": {
+        "Title": "Bonus",
+        "Content": "<span> Maaşınıza ek olarak, mükemmel performansınız ve olumlu müşteri geri bildirimleriniz için temel maaşınızın% 20.00'a kadarını ikramiye olarak alacaksınız. Ayrıca ofise her zaman zamanında gelirseniz bir katılım bonusu alacaksınız. / span> "
+      },
+      "5": {
+        "Title": "Fazla mesai",
+        "Content": "<span> Gerekirse, fazla mesai yapmak isteyip istemediğinizi özgürce belirleyebilirsiniz. İş hacmine bağlı olarak, fazla mesai 1.5 veya 2.0 faktörü ile hesaplanır. Önemli! Her ödeme daima sizin olacaktır Net ödenir. </span> "
+      }
+    }
+  },
   "Expectations": {
     "Title": "Sizden beklentilerimiz",
     "Content": "Gördüğünüz gibi size çok şey sunuyoruz, ancak sizden de yüksek beklentilerimiz var.",

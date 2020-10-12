@@ -28,6 +28,20 @@ MyApp.getInitialProps = async (appContext) => {
   }
 }
 
+// MyApp.getInitialProps = async (appContext) => {
+//   const appProps = await App.getInitialProps(appContext)
+//   const defaultProps = appContext.Component.defaultProps
+//   return {
+//     ...appProps,
+//     pageProps: {
+//       namespacesRequired: [
+//         ...(appProps.pageProps.namespacesRequired || []),
+//         ...(defaultProps?.i18nNamespaces || [])
+//       ]
+//     }
+//   }
+// }
+
 // MyApp.getInitialProps = async ({ Component, appContext }) => {
 //   let pageProps = {} // This is how pages will get their own getinitialprops
 //   if (Component.getInitialProps) {

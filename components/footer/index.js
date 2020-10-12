@@ -4,59 +4,8 @@ import { animateScroll as scroll } from 'react-scroll'
 import { useRouter } from 'next/router'
 
 import styles from './index.module.css'
-import Logo from '../logo'
-import { Envelope, Fax, Location, Phone } from '../icons'
-import { Facebook, Instagram, Twitter, Linkedin } from '../icons/social-media'
 
-const footerInfos = [
-  {
-    Id: 1,
-    Icon: <Location />,
-    Text: '1474 sok. No:11 35220 Alsancak İZMİR'
-  },
-  {
-    Id: 2,
-    Icon: <Envelope />,
-    Text: 'info@itsbilisim.com'
-  },
-  {
-    Id: 3,
-    Icon: <Phone />,
-    Text: ' 0 (232) 488-21-00'
-  },
-  {
-    Id: 4,
-    Icon: <Fax />,
-    Text: '0 (232) 488-21-01'
-  }
-]
-
-const socialMedias = [
-  {
-    Title: 'facebook',
-    Url: '#',
-    Icon: <Facebook />
-  },
-  {
-    Title: 'instagram',
-    Url: '#',
-    Icon: <Instagram />
-  },
-  {
-    Title: 'twitter',
-    Url: '#',
-    Icon: <Twitter />
-  },
-  {
-    Title: 'linkedin',
-    Url: '#',
-    Icon: <Linkedin />
-  }
-]
-
-const scrollToTop = () => {
-  scroll.scrollToTop()
-}
+import { CONTACT_INFORMATIONS, SOCIAL_MEDIAS } from '../../constants'
 
 function Footer() {
   const router = useRouter()
@@ -69,7 +18,11 @@ function Footer() {
             <div className={styles.left}>
               {router.pathname == '/' ? (
                 <Link href="">
-                  <a onClick={scrollToTop}>
+                  <a
+                    onClick={() => {
+                      scroll.scrollToTop()
+                    }}
+                  >
                     <img src="/assets/logo-white.png"></img>
                   </a>
                 </Link>
@@ -81,7 +34,7 @@ function Footer() {
                 </Link>
               )}
               <div className={styles.infos}>
-                {footerInfos.map((item) => (
+                {CONTACT_INFORMATIONS.map((item) => (
                   <div className={styles.info} key={item.Id}>
                     {item.Icon}
                     <span>{item.Text}</span>
@@ -90,7 +43,7 @@ function Footer() {
               </div>
             </div>
             <ul className={styles.socialMedias}>
-              {socialMedias.map((media) => (
+              {SOCIAL_MEDIAS.map((media) => (
                 <li key={media.Title}>
                   <a href={media.Url}>{media.Icon}</a>
                 </li>

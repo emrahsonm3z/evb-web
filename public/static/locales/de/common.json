@@ -1,12 +1,8 @@
 {
-  "change-locale": "Wechseln Locale",
-  "h1": "Ein einfaches Beispiel",
   "error-with-status": "Auf dem Server ist ein Fehler ({{statusCode}}) aufgetreten",
   "error-without-status": "Auf dem Server ist ein Fehler aufgetreten",
   "Menu": {
-    "AboutUs": "Uber Uns",
     "OurServices": "Unsere Dıenstleıstungen",
-    "Team": "Team",
     "Faqs": "Häufıg Gestellte Fragen",
     "Contact": "Kontakt",
     "Apply": "Bewerbe"
@@ -14,27 +10,43 @@
   "Turkish": "Türkisch",
   "English": "Englisch",
   "German": "Deutsche",
-  "Hero": {
-    "Text": "<1>MEHR</1> ALS EIN <1>JOB</1>",
-    "Apply": "WILLST DU AUCH MITMACHEN?"
-  },
-  "VisionContainer": {
-    "Vision": {
-      "Title": "Vision",
-      "Text": " <p> <b> Evb, ein erfolgreiches Dienstleistungsunternehmen in der Telekommunikationsbranche seit 2015: </b> Wir bieten Arbeit in fünf Standorten an. Jeder Mitarbeiter hat die freie Auswahl, je nach Belieben seinen Standort für eine oder unbegrenzte Zeit zu ändern. </p><p> Insgesamt haben wir über 450 Mitarbeiter, die sich tagtäglich für das Unternehmen und unsere Kunden einsetzen. Für uns ist es wichtig, ein positives Arbeitsklima zu schaffen und unsere Motivation immer hoch zu halten. Aus diesem Grund sorgen wir immer dafür, dass es dir, egal an welchem Standort, gut geht. </p>"
-    },
-    "QualityPromise": {
-      "Title": "Qualitätsverspreche",
-      "Text": "QualitätsversprecheText"
-    },
-    "Values": {
-      "Title": "Werte",
-      "Text": "WerteText"
-    }
-  },
   "Locations": "STANDORTEN",
   "Employee": "MITARBEITER",
   "ExistingCustomers": "BESTANDSKUNDEN",
+
+  "Hero": {
+    "Items": {
+      "1": {
+        "Title": "<b>MEHR</b> ALS EIN <b>JOB</b>",
+        "Button": "WILLST DU AUCH MITMACHEN?"
+      },
+      "2": {
+        "Title": "<b>MEHR</b> ALS EIN <b>JOB</b>",
+        "Button": "WILLST DU AUCH MITMACHEN?"
+      },
+      "3": {
+        "Title": "<b>MEHR</b> ALS EIN <b>JOB</b>",
+        "Button": "WILLST DU AUCH MITMACHEN?"
+      }
+    }
+  },
+  "VisionContainer": {
+    "Info": "<p> <b> Evb, ein erfolgreiches Dienstleistungsunternehmen in der Telekommunikationsbranche seit 2015: </b> Wir bieten Arbeit in fünf Standorten an. Jeder Mitarbeiter hat die freie Auswahl, je nach Belieben seinen Standort für eine oder unbegrenzte Zeit zu ändern. </p><p> Insgesamt haben wir über 450 Mitarbeiter, die sich tagtäglich für das Unternehmen und unsere Kunden einsetzen. Für uns ist es wichtig, ein positives Arbeitsklima zu schaffen und unsere Motivation immer hoch zu halten. Aus diesem Grund sorgen wir immer dafür, dass es dir, egal an welchem Standort, gut geht. </p>",
+    "Items": {
+      "1": {
+        "Title": "Vision",
+        "Content": "<span>Hand in Hand werden wir als Leuchtturm und Wegweiser die Zukunft der Kundenzufriedenheit weiterentwickeln.Wir erreichen die Menschen mit spürbaren Mehrwerten in ihrem Alltag.Gemeinsam bewegen wir.</span>"
+      },
+      "2": {
+        "Title": "Qualitätsverspreche",
+        "Content": "<h3>Mitarbeiterzufriedenheit</h3> <span> Wir steigern kontinuierlich die Qualität unserer Dienstleistung und die Leistungsbereitschaft unserer Mitarbeiter durch die Fokussierung auf Mitarbeiterzufriedenheit. Dazu pflegen wir jederzeit einen höflichen und respektvollen Umgang mit unseren Kolleginnen und Kollegen und setzen objektive und für alle gleich geltende Maßstäbe, bieten jeder die gleiche Chance und begegnen allen Kollegen auf Augenhöhe. Die Leistung und der Erfolg unserer Mitarbeiter wird wertgeschätzt und gemeinsam gefeiert. Wir verhalten uns unseren Mitarbeitern gegenüber zu jeder Zeit wertschätzend und respektieren andere kulturelle Bedürfnisse. </span> <h3>Kundenzufriedenheit</h3> <span> Unser Anspruch ist, die Erwartungen und Anforderungen unserer Kunden und deren Kunden mit der bestmöglichen Servicequalität zu erfüllen. Dazu haben wir erkannt, dass unsere Mitarbeiter einer der wichtigsten Faktoren zur Erreichung hoher Kundenzufriedenheit sind. Daher hat im Dienste kontinuierlicher Verbesserung unserer Dienstleistungen hat Mitarbeiterentwicklung für uns zentrale Bedeutung. </span>"
+      },
+      "3": {
+        "Title": "Werte",
+        "Content": "<h3>Respekt</h3> <span> Wir kommunizieren jederzeit höflich und sachlich und hören allen gleich zu. Wir freuen uns zusammen über unsere Erfolge. </span> <h3>Gerechtigkeit</h3> <span> Wir bieten jedem die gleiche Chance und bevorzugen niemanden. Wir sind offen für Kritik und nehmen diese an. </span> <h3>Loyalität</h3> <span> Wir kennen unser Unternehmen und die Vorteile unseren Unternehmens und stehen auch in schlechten Zeiten hinter unserem Unternehmen. Wir haben eine positive Haltung. </span> <h3>Verantwortung</h3> <span> Wir sind alle gemeinsam verantwortlich für den Erfolg unseres Unternehmens. Wir kennen unsere Aufgaben. </span> <h3>Zuverlässigkeit</h3> <span> Wir sind Vorbilder für unsere Kollegen, für andere Unternehmen und die Welt. Wir stehen zu unseren Aussagen. </span>"
+      }
+    }
+  },
   "Tasks": {
     "Title": "Aufgaben",
     "Content": " <p> Deine Aufgaben bestehen darin, unsere <b>1,5 Millionen Bestandskunden</b> zu betreuen. Da wir der <b>Dienstleister unseres eigenen Energiewirtschaftsunternehmens</b> sind, wirst du deine meiste Zeit damit verbringen Abschläge zu ändern, Verträge zu beenden, Tarifwechsel durchzuführen und Rechnungen zu erläutern. Du brauchst aber keine Bedenken zu haben, denn du hast immer jemanden bei dir, der dich unterstützt, um auch jedes Kundenanliegen zu lösen. Dabei musst du aber immer serviceorientiert handeln. Bei uns wird guter Kundenservice sehr wertgeschätzt. </p>"
@@ -51,7 +63,30 @@
     "Title": "Fairness gegenüber unseren Kunden und Mitarbeitern",
     "Content": "Wir achten besonders darauf, jedem den gebührenden Respekt zu zollen, jedermann, egal ob Führungskraft oder auch Sachbearbeiter, gleichermaßen zu behandeln, Verantwortungen zu übernehmen, aber auch die Verantwortung abzugeben, um auch anderen die Möglichkeit zu geben, sich als Führungskraft zu beweisen. Dabei erwarten wir nur Loyalität der EVB gegenüber und Zuverlässigkeit."
   },
-
+  "Faqs": {
+    "Items": {
+      "1": {
+        "Title": "Deine Arbeitszeiten und Schichten",
+        "Content": "<span> Wir haben insgesamt vier Schichten. Die Schichtverteilung erfolgt immer fair und gerecht. Jeder arbeitet in einem Monat immer abwechselnd in einer anderen Schicht. In den angegebenen Arbeitszeiten sind alle Pausen mitinbegriffen. </span> <span>1: 08:00 – 17:00</span> <span>2: 09:00 – 18:00</span> <span>3: 10:00 – 19:00 </span> <span>4: 11:00 – 20:00</span>"
+      },
+      "2": {
+        "Title": "Pausen",
+        "Content": "<span> Wir haben insgesamt vier Schichten. Die Schichtverteilung erfolgt immer fair und gerecht. Jeder arbeitet in einem Monat immer Arbeitszeiten sind alle Pausen mitinbegriffen. </span> <span>1: 08:00 – 17:00</span> <span>2: 09:00 – 18:00</span>"
+      },
+      "3": {
+        "Title": "Essensvergütung",
+        "Content": "<span> Wir haben insgesamt vier Schichten. Die Schichtverteilung erfolgt immer fair und gerecht. Jeder arbeitet in einem Monat immer </span>"
+      },
+      "4": {
+        "Title": "Bonus",
+        "Content": "<span> Zusätzlich zu deinem Gehalt erhältst du für deine großartige Leistung und dein positives Kundenfeedback bis zu 20,00 % deines Grundlohns als Prämie ausgezahlt. Zudem erhältst du auch einen Anwesenheitsbonus, wenn du immer pünktlich im Büro erscheinst. </span>"
+      },
+      "5": {
+        "Title": "Überstunden",
+        "Content": "<span> Bei Bedarf kannst du frei bestimmen, ob du noch Überstunden leisten möchtest oder nicht. Je nach dem Arbeitsvolumen werden die Überstunden mit dem Faktor 1,5 oder 2,0 berechnet. Wichtig! Jede Auszahlung wird dir immer Netto ausgezahlt. </span>"
+      }
+    }
+  },
   "Expectations": {
     "Title": "Unsere Erwartungen an dich",
     "Content": " Wie du siehst bieten wir dir sehr vieles an, dafür haben wir aber auch hohe Erwartungen an dich.",

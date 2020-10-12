@@ -2,4 +2,14 @@
   b {
     font-weight: 600;
   }
+
+  &:first-child {
+    margin-top: 80px;
+
+    @media (--tm) {
+      & {
+        margin-top: 66px;
+      }
+    }
+  }
 }

@@ -1,5 +1,6 @@
 .faq {
   margin: 20px auto 50px;
+  font-weight: 600;
 
   @media (--tm) {
     margin: 0 auto 20px;
@@ -9,7 +10,6 @@
     color: var(--c-primary);
     text-align: center;
     padding: 30px 0;
-    font-weight: 600;
   }
 }
 
@@ -17,7 +17,7 @@
   --height: 350px;
 
   @media (--tm) {
-    --height: 300px;
+    --height: 320px;
   }
 
   width: 100%;
