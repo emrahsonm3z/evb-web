@@ -1,7 +1,15 @@
-.apply-form {
-  margin-top: 130px;
+.section {
+  b {
+    font-weight: 600;
+  }
 
-  @media (--m) {
+  &:first-child {
     margin-top: 80px;
+
+    @media (--tm) {
+      & {
+        margin-top: 66px;
+      }
+    }
   }
 }

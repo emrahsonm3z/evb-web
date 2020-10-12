@@ -20,7 +20,7 @@ function VisionSlider({ t }) {
       y2: 45,
       x3: 15
     },
-    autoPlay: 10000,
+    autoPlay: 5000,
     selectedAttraction: 0.2,
     friction: 0.8
   }
@@ -39,18 +39,18 @@ function VisionSlider({ t }) {
         static
       >
         <div className={styles['carousel-cell']}>
-          <div className={cn([styles.inner, styles.centered])}>
-            <h2>{t(`VisionContainer.Items.1.Title`)}</h2>
-            <Trans components={{ span: <span />, h3: <h3 /> }}>
-              {t(`VisionContainer.Items.1.Content`)}
-            </Trans>
-          </div>
-        </div>
-        <div className={styles['carousel-cell']}>
           <div className={cn([styles.inner])}>
             <h2>{t(`VisionContainer.Items.2.Title`)}</h2>
             <Trans components={{ span: <span />, h3: <h3 /> }}>
               {t(`VisionContainer.Items.2.Content`)}
+            </Trans>
+          </div>
+        </div>
+        <div className={styles['carousel-cell']}>
+          <div className={cn([styles.inner, styles.centered])}>
+            <h2>{t(`VisionContainer.Items.1.Title`)}</h2>
+            <Trans components={{ span: <span />, h3: <h3 /> }}>
+              {t(`VisionContainer.Items.1.Content`)}
             </Trans>
           </div>
         </div>

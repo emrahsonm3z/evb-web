@@ -12,4 +12,8 @@ const Apply = () => (
   </Layout>
 )
 
+Apply.getInitialProps = async () => ({
+  namespacesRequired: ['common', 'validation', 'documents']
+})
+
 export default Apply

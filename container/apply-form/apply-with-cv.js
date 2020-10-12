@@ -12,8 +12,9 @@ import { Checkbox, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
 import InputFeedback from '../../components/form/InputFeedback'
+import ErrorFocus from '../../components/form/ErrorFocus'
 
-import KvkkModal from '../documents/kvkk-modal'
+import { KvkkModal, TermOfUseModal, PrivacyPolicyModal } from '../documents'
 
 import { FILE_SIZE, SUPPORTED_FORMATS } from '../../constants'
 
@@ -25,7 +26,8 @@ function ApplyWithCV({ t }) {
         EmailAddress: '',
         Phonenumber: '',
         Attachment: null,
-        Kvkk: false
+        Kvkk: false,
+        TermOfUseAndPrivacyPolicy: false
       }}
       validationSchema={Yup.object({
         NameAndSurname: Yup.string()
@@ -53,7 +55,11 @@ function ApplyWithCV({ t }) {
             (value) =>
               value && SUPPORTED_FORMATS.some((c) => c.mimeType === value.type)
           ),
-        Kvkk: Yup.bool().oneOf([true], t('validation:YouMustAgree'))
+        Kvkk: Yup.bool().oneOf([true], t('validation:YouMustAgree')),
+        TermOfUseAndPrivacyPolicy: Yup.bool().oneOf(
+          [true],
+          t('validation:YouMustAgree')
+        )
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
@@ -85,23 +91,26 @@ function ApplyWithCV({ t }) {
       }) => (
         <Form className={styles.form}>
           <TextInput
-            label={t('NameAndSurname')}
+            id="NameAndSurname"
             name="NameAndSurname"
+            label={t('NameAndSurname')}
             type="text"
             placeholder={t('NameAndSurname')}
             className="form-control-solid"
           />
 
           <TextInput
-            label={t('Phonenumber')}
+            id="Phonenumber"
             name="Phonenumber"
+            label={t('Phonenumber')}
             type="tel"
             placeholder={t('Phonenumber')}
             className="form-control-solid"
           />
           <TextInput
-            label={t('EmailAddress')}
+            id="EmailAddress"
             name="EmailAddress"
+            label={t('EmailAddress')}
             type="email"
             placeholder={t('EmailAddress')}
             className="form-control-solid"
@@ -120,8 +129,8 @@ function ApplyWithCV({ t }) {
               ])}
             >
               <input
-                name="Attachment"
                 id="Attachment"
+                name="Attachment"
                 style={{ opacity: 0, position: 'relative', left: -40 }}
                 className={cn([
                   'form-control',
@@ -149,20 +158,38 @@ function ApplyWithCV({ t }) {
               <InputFeedback error={errors['Attachment']} />
             ) : null}
           </div>
-
-          <Checkbox
-            name="Kvkk"
-            content={
-              <Trans
-                components={{
-                  span: <span />,
-                  kvkklink: <KvkkModal />
-                }}
-              >
-                {t('ConfirmationKvkk')}
-              </Trans>
-            }
-          />
+          <div>
+            <Checkbox
+              id="Kvkk"
+              name="Kvkk"
+              content={
+                <Trans
+                  components={{
+                    span: <span />,
+                    kvkklink: <KvkkModal />
+                  }}
+                >
+                  {t('ConfirmationKvkk')}
+                </Trans>
+              }
+            />
+            <Checkbox
+              id="TermOfUseAndPrivacyPolicy"
+              name="TermOfUseAndPrivacyPolicy"
+              content={
+                <Trans
+                  components={{
+                    span: <span />,
+                    termofuselink: <TermOfUseModal />,
+                    privacypolicylink: <PrivacyPolicyModal />
+                  }}
+                >
+                  {t('ConfirmationTermOfUseAndPrivacyPolicy')}
+                </Trans>
+              }
+            />
+          </div>
+          <ErrorFocus />
           <div className={styles.submitBtn}>
             <button className="btn btn-primary" type="submit">
               {t('Submit')}
@@ -182,4 +209,4 @@ ApplyWithCV.propTypes = {
   t: PropTypes.func.isRequired
 }
 
-export default withTranslation('common')(ApplyWithCV)
+export default withTranslation(['common', 'validation'])(ApplyWithCV)

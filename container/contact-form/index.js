@@ -12,6 +12,7 @@ import {
   PHONE_REG_EXP
 } from '../../constants'
 import { TextArea, TextInput } from '../../components/form'
+import ErrorFocus from '../../components/form/ErrorFocus'
 
 import styles from './index.module.css'
 import SubTitle from '../../components/title/subtitle'
@@ -52,33 +53,38 @@ function ContactForm({ t }) {
       >
         <Form className={styles.form}>
           <TextInput
-            label={t('NameAndSurname')}
+            id="NameAndSurname"
             name="NameAndSurname"
+            label={t('NameAndSurname')}
             type="text"
             placeholder={t('NameAndSurname')}
             className="form-control-solid"
           />
           <TextInput
-            label={t('EmailAddress')}
+            id="EmailAddress"
             name="EmailAddress"
+            label={t('EmailAddress')}
             type="email"
             placeholder={t('EmailAddress')}
             className="form-control-solid"
           />
           <TextInput
-            label={t('Phonenumber')}
+            id="Phonenumber"
             name="Phonenumber"
+            label={t('Phonenumber')}
             type="tel"
             placeholder={t('Phonenumber')}
             className="form-control-solid"
           />
           <TextArea
-            label={t('YourMessage')}
+            id="Message"
             name="Message"
+            label={t('YourMessage')}
             rows="5"
             placeholder={t('YourMessage')}
             className={cn(['form-control-solid', 'a-height', styles.message])}
           />
+          <ErrorFocus />
           <div className={styles.submitBtn}>
             <button className="btn btn-primary" type="submit">
               {t('Submit')}

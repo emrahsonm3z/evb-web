@@ -171,6 +171,53 @@ const FAQS_SLIDER_ITEMS = [
   }
 ]
 
+const OFFICES = [
+  {
+    city: {
+      tr: 'izmir (merkez ofis)',
+      de: 'izmir (zentralbüro)'
+    },
+    address: '1474 Sokak No: 11 Alsancak',
+    tel: '0(232) 488-21-00',
+    email: 'info@itsbilisim.com',
+    bg: '/assets/izmir.jpg'
+  },
+  {
+    city: {
+      tr: 'ankara',
+      de: 'ankara'
+    },
+    address:
+      'Eskişehiryolu Dumlupınar Blv 6a Armada İş Merkezi Kat: 15 Daire: 23 Yenimahalle',
+    bg: '/assets/ankara.jpg'
+  },
+  {
+    city: {
+      tr: 'antalya',
+      de: 'antalya'
+    },
+    address: 'Etiler, 829. Sk. D:No: 3 701/702, 07010 Muratpaşa',
+    bg: '/assets/antalya.jpg'
+  },
+  {
+    city: {
+      tr: 'istanbul asya',
+      de: 'istanbul asien'
+    },
+    address:
+      'Aydınevler Mahallesi, Centrum Plaza, Sanayi Cd. No: 1 D:B Blok, 34854 Maltepe',
+    bg: '/assets/istanbul-anadolu.jpg'
+  },
+  {
+    city: {
+      tr: 'istanbul avrupa',
+      de: 'istanbul europa'
+    },
+    address: 'Gülbahar, Harman Yolu Üst Sokağı No: 4/3, 34394 Şişli',
+    bg: '/assets/istanbul-avrupa.jpg'
+  }
+]
+
 export {
   MENU_PREFIX,
   MENU,
@@ -187,5 +234,6 @@ export {
   CITIES_WE_ARE_IN,
   NUMBER_OF_EMPLOYEE,
   NUMBER_OF_CUSTOMER,
-  FAQS_SLIDER_ITEMS
+  FAQS_SLIDER_ITEMS,
+  OFFICES
 }

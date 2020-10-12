@@ -100,6 +100,7 @@
     }
   },
 
+  "Close": "schließen",
   "YourFullName": "Ihr vollständiger Name",
   "YourEmail": "Ihre E-Mail-Adresse",
   "YourPhoneNumber": "Ihre Telefonnummer",
@@ -135,9 +136,11 @@
   "Medium": "Mittel",
   "Little": "Wenig",
   "GermanLanguageLevel": "Deutsches Sprachniveau",
-  "TermOfUseAndPrivacyPolicy": "evb.com.tr kullanım koşulları ve gizlilik politikasını okudum ve kabul ediyorum",
-  "Kvkk": "6698 sayılı kişisel verilerin korunması kanunu kapsamında aydınlatma metnini",
-  "ConfirmationKvkk": "<span>evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden <kvkklink /> okudum, anladım</span>",
+  "Kvkk": "Türkei Cumhıriyer Text der Verfassung der Beleuchtung im Rahmen des Datenschutzgesetzes Nr. 6698 des",
+  "ConfirmationKvkk": "<span>In Bezug auf die Arbeit, die ich mit araclıg Anwendung evb.com.t <kvkklink /> Ich habe gelesen, verstanden</span>",
+  "TermOfUse": "Nutzungsbedingungen",
+  "PrivacyPolicy": "Datenschutzbestimmungen ",
+  "ConfirmationTermOfUseAndPrivacyPolicy": "<span>Ich habe die <termofuselink /> und <privacypolicylink /> von evb.com.tr gelesen und akzeptiert</span>",
   "ApplicationForm": "Bewerbungsbogen",
   "JobApplication": "Bewerbung",
   "Attachment": "Anhang",

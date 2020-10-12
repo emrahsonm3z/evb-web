@@ -1,11 +1,15 @@
-.our-offices {
-  margin-top: 130px;
-
-  @media (--m) {
-    margin-top: 80px;
+.section {
+  b {
+    font-weight: 600;
   }
-}
 
-.map {
-  margin-bottom: 30px;
+  &:first-child {
+    margin-top: 80px;
+
+    @media (--tm) {
+      & {
+        margin-top: 66px;
+      }
+    }
+  }
 }

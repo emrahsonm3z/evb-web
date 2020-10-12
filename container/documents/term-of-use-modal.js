@@ -4,10 +4,10 @@ import { withTranslation, Trans } from '../../i18n'
 
 import Modal from '../../components/form/Modal'
 
-function KvkkModal({ t }) {
+function TermOfUseModal({ t }) {
   return (
     <Modal
-      label={t('Kvkk')}
+      label={t('TermOfUse')}
       title={
         <Trans
           ns="documents"
@@ -15,7 +15,7 @@ function KvkkModal({ t }) {
             strong: <strong />
           }}
         >
-          {t(`KVKK.Title`)}
+          {t(`TermOfUse.Title`)}
         </Trans>
       }
     >
@@ -37,18 +37,18 @@ function KvkkModal({ t }) {
           u: <u />
         }}
       >
-        {t(`KVKK.Content`)}
+        {t(`TermOfUse.Content`)}
       </Trans>
     </Modal>
   )
 }
 
-// KvkkModal.getInitialProps = async () => ({
-//   namespacesRequired: ['common', 'documents']
+// TermOfUseModal.getInitialProps = async () => ({
+//   namespacesRequired: ['common']
 // })
 
-KvkkModal.propTypes = {
+TermOfUseModal.propTypes = {
   t: PropTypes.func.isRequired
 }
 
-export default withTranslation(['common', 'documents'])(KvkkModal)
+export default withTranslation(['common', 'documents'])(TermOfUseModal)

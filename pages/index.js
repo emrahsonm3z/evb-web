@@ -44,4 +44,8 @@ const Homepage = () => (
   </Layout>
 )
 
+Homepage.getInitialProps = async () => ({
+  namespacesRequired: ['common', 'documents']
+})
+
 export default Homepage

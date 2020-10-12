@@ -57,6 +57,7 @@
   border-top-right-radius: 0.42rem;
 
   .close {
+    font-size: 1.1rem;
     padding: 1.5rem 1.75rem;
     margin: -1.5rem -1.75rem -1.5rem auto;
     transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;

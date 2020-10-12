@@ -369,6 +369,8 @@ input[type="checkbox"] {
   margin-bottom: 1.75rem;
 
   label {
+    display: flex;
+    align-items: baseline;
     font-size: 1rem;
     font-weight: 600;
     color: #3f4254;

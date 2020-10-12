@@ -29,4 +29,8 @@ const Contact = () => (
   </Layout>
 )
 
+Contact.getInitialProps = async () => ({
+  namespacesRequired: ['common', 'validation', 'documents']
+})
+
 export default Contact

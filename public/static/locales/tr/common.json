@@ -99,6 +99,7 @@
     }
   },
 
+  "Close": "Kapat",
   "YourFullName": "Tam adınız",
   "YourEmail": "E-posta adresiniz",
   "YourPhoneNumber": "Telefon numaranız",
@@ -134,9 +135,11 @@
   "Medium": "Orta",
   "Little": "Az",
   "GermanLanguageLevel": "Almanca dil seviyesi",
-  "TermOfUseAndPrivacyPolicy": "evb.com.tr kullanım koşulları ve gizlilik politikasını okudum ve kabul ediyorum",
   "Kvkk": "6698 sayılı kişisel verilerin korunması kanunu kapsamında aydınlatma metnini",
   "ConfirmationKvkk": "<span>evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden <kvkklink /> okudum, anladım</span>",
+  "TermOfUse": "kullanım koşullarını",
+  "PrivacyPolicy": "gizlilik politikasını",
+  "ConfirmationTermOfUseAndPrivacyPolicy": "<span>evb.com.tr <termofuselink /> ve <privacypolicylink /> okudum ve kabul ediyorum</span>",
   "ApplicationForm": "Başvuru formu",
   "JobApplication": "İş başvurusu",
   "Attachment": "Ek dosya",
