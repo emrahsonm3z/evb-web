@@ -98,7 +98,7 @@
       "6": "Sorumluluk sahibi misiniz ve her zaman elinizden gelenin en iyisini yapmaya mı çalışıyorsunuz?"
     }
   },
-
+  "Copyright": "Telif hakkı",
   "Close": "Kapat",
   "YourFullName": "Tam adınız",
   "YourEmail": "E-posta adresiniz",
@@ -135,11 +135,16 @@
   "Medium": "Orta",
   "Little": "Az",
   "GermanLanguageLevel": "Almanca dil seviyesi",
-  "Kvkk": "6698 sayılı kişisel verilerin korunması kanunu kapsamında aydınlatma metnini",
-  "ConfirmationKvkk": "<span>evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden <kvkklink /> okudum, anladım</span>",
-  "TermOfUse": "kullanım koşullarını",
-  "PrivacyPolicy": "gizlilik politikasını",
-  "ConfirmationTermOfUseAndPrivacyPolicy": "<span>evb.com.tr <termofuselink /> ve <privacypolicylink /> okudum ve kabul ediyorum</span>",
+  "JobApplicationConfirmation": {
+    "Kvkk": "6698 sayılı kişisel verilerin korunması kanunu kapsamında aydınlatma metnini",
+    "ConfirmationKvkk": "<span>evb.com.tr araclığıyla yapmış olduğum iş başvurusuna istinaden <kvkklink /> okudum, anladım</span>",
+    "TermOfUse": "kullanım koşullarını",
+    "PrivacyPolicy": "gizlilik politikasını",
+    "ConfirmationTermOfUseAndPrivacyPolicy": "<span>evb.com.tr <termofuselink /> ve <privacypolicylink /> okudum ve kabul ediyorum</span>"
+  },
+  "TermOfUse": "Kullanım koşulları",
+  "PrivacyPolicy": "Gizlilik politikası",
+  "TermOfUseAndPrivacyPolicy": "<termofuselink /> ve <privacypolicylink />",
   "ApplicationForm": "Başvuru formu",
   "JobApplication": "İş başvurusu",
   "Attachment": "Ek dosya",

@@ -99,7 +99,7 @@
       "6": "Bist du verantwortungsbewusst und bemühst dich immer dein Bestes zu leisten?"
     }
   },
-
+  "Copyright": "Urheberrechte",
   "Close": "schließen",
   "YourFullName": "Ihr vollständiger Name",
   "YourEmail": "Ihre E-Mail-Adresse",
@@ -136,11 +136,16 @@
   "Medium": "Mittel",
   "Little": "Wenig",
   "GermanLanguageLevel": "Deutsches Sprachniveau",
-  "Kvkk": "Türkei Cumhıriyer Text der Verfassung der Beleuchtung im Rahmen des Datenschutzgesetzes Nr. 6698 des",
-  "ConfirmationKvkk": "<span>In Bezug auf die Arbeit, die ich mit araclıg Anwendung evb.com.t <kvkklink /> Ich habe gelesen, verstanden</span>",
+  "JobApplicationConfirmation": {
+    "Kvkk": "Türkei Cumhıriyer Text der Verfassung der Beleuchtung im Rahmen des Datenschutzgesetzes Nr. 6698 des",
+    "ConfirmationKvkk": "<span>In Bezug auf die Arbeit, die ich mit araclıg Anwendung evb.com.t <kvkklink /> Ich habe gelesen, verstanden</span>",
+    "TermOfUse": "Nutzungsbedingungen",
+    "PrivacyPolicy": "Datenschutzbestimmungen ",
+    "ConfirmationTermOfUseAndPrivacyPolicy": "<span>Ich habe die <termofuselink /> und <privacypolicylink /> von evb.com.tr gelesen und akzeptiert</span>"
+  },
   "TermOfUse": "Nutzungsbedingungen",
-  "PrivacyPolicy": "Datenschutzbestimmungen ",
-  "ConfirmationTermOfUseAndPrivacyPolicy": "<span>Ich habe die <termofuselink /> und <privacypolicylink /> von evb.com.tr gelesen und akzeptiert</span>",
+  "PrivacyPolicy": "Datenschutzbestimmungen",
+  "TermOfUseAndPrivacyPolicy": "<termofuselink /> und <privacypolicylink />",
   "ApplicationForm": "Bewerbungsbogen",
   "JobApplication": "Bewerbung",
   "Attachment": "Anhang",

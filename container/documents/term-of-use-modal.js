@@ -4,13 +4,12 @@ import { withTranslation, Trans } from '../../i18n'
 
 import Modal from '../../components/form/Modal'
 
-function TermOfUseModal({ t }) {
+function TermOfUseModal({ t, label }) {
   return (
     <Modal
-      label={t('TermOfUse')}
+      label={label}
       title={
         <Trans
-          ns="documents"
           components={{
             strong: <strong />
           }}
@@ -20,7 +19,6 @@ function TermOfUseModal({ t }) {
       }
     >
       <Trans
-        ns="documents"
         components={{
           p: <p />,
           strong: <strong />,
@@ -43,12 +41,9 @@ function TermOfUseModal({ t }) {
   )
 }
 
-// TermOfUseModal.getInitialProps = async () => ({
-//   namespacesRequired: ['common']
-// })
-
 TermOfUseModal.propTypes = {
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired
 }
 
-export default withTranslation(['common', 'documents'])(TermOfUseModal)
+export default withTranslation('documents')(TermOfUseModal)

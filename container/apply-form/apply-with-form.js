@@ -289,10 +289,12 @@ function ApplyWithForm({ t }) {
                 <Trans
                   components={{
                     span: <span />,
-                    kvkklink: <KvkkModal />
+                    kvkklink: (
+                      <KvkkModal label={t('JobApplicationConfirmation.Kvkk')} />
+                    )
                   }}
                 >
-                  {t('ConfirmationKvkk')}
+                  {t('JobApplicationConfirmation.ConfirmationKvkk')}
                 </Trans>
               }
             />
@@ -303,11 +305,21 @@ function ApplyWithForm({ t }) {
                 <Trans
                   components={{
                     span: <span />,
-                    termofuselink: <TermOfUseModal />,
-                    privacypolicylink: <PrivacyPolicyModal />
+                    termofuselink: (
+                      <TermOfUseModal
+                        label={t('JobApplicationConfirmation.TermOfUse')}
+                      />
+                    ),
+                    privacypolicylink: (
+                      <PrivacyPolicyModal
+                        label={t('JobApplicationConfirmation.PrivacyPolicy')}
+                      />
+                    )
                   }}
                 >
-                  {t('ConfirmationTermOfUseAndPrivacyPolicy')}
+                  {t(
+                    'JobApplicationConfirmation.ConfirmationTermOfUseAndPrivacyPolicy'
+                  )}
                 </Trans>
               }
             />

@@ -64,7 +64,7 @@
     display: inline;
     padding: 5px;
 
-    svg {
+    .social-icon {
       width: 30px;
       height: 30px;
     }
@@ -103,13 +103,18 @@
     justify-content: space-between;
     padding: 15px;
 
-    span {
+    .bottom-text,
+    .bottom-text a {
       --min: 0.6rem;
       --val: 2vw;
       --max: 0.9rem;
 
       font-weight: 600;
       color: var(--c-gray-300);
+    }
+
+    .bottom-text a {
+      text-decoration: underline;
     }
   }
 }

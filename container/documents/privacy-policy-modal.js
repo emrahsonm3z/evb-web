@@ -4,13 +4,12 @@ import { withTranslation, Trans } from '../../i18n'
 
 import Modal from '../../components/form/Modal'
 
-function PrivacyPolicyModal({ t }) {
+function PrivacyPolicyModal({ t, label }) {
   return (
     <Modal
-      label={t('PrivacyPolicy')}
+      label={label}
       title={
         <Trans
-          ns="documents"
           components={{
             strong: <strong />
           }}
@@ -20,7 +19,6 @@ function PrivacyPolicyModal({ t }) {
       }
     >
       <Trans
-        ns="documents"
         components={{
           p: <p />,
           strong: <strong />,
@@ -43,12 +41,9 @@ function PrivacyPolicyModal({ t }) {
   )
 }
 
-// PrivacyPolicyModal.getInitialProps = async () => ({
-//   namespacesRequired: ['common']
-// })
-
 PrivacyPolicyModal.propTypes = {
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired
 }
 
-export default withTranslation(['common', 'documents'])(PrivacyPolicyModal)
+export default withTranslation('documents')(PrivacyPolicyModal)

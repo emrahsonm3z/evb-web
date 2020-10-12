@@ -97,22 +97,22 @@ const MENU = [
 const CONTACT_INFORMATIONS = [
   {
     Id: 1,
-    Icon: <Location />,
+    Icon: require('../components/icons/Location').default,
     Text: '1474 sk. No:11 35220 Alsancak İZMİR'
   },
   {
     Id: 2,
-    Icon: <Envelope />,
+    Icon: require('../components/icons/Envelope').default,
     Text: 'info@itsbilisim.com'
   },
   {
     Id: 3,
-    Icon: <Phone />,
+    Icon: require('../components/icons/Phone').default,
     Text: ' 0 (232) 488-21-00'
   },
   {
     Id: 4,
-    Icon: <Fax />,
+    Icon: require('../components/icons/Fax').default,
     Text: '0 (232) 488-21-01'
   }
 ]
@@ -121,22 +121,22 @@ const SOCIAL_MEDIAS = [
   {
     Title: 'facebook',
     Url: '#',
-    Icon: <Facebook />
+    Icon: require('../components/icons/social-media/Facebook').default
   },
   {
     Title: 'instagram',
     Url: '#',
-    Icon: <Instagram />
+    Icon: require('../components/icons/social-media/Instagram').default
   },
   {
     Title: 'twitter',
     Url: '#',
-    Icon: <Twitter />
+    Icon: require('../components/icons/social-media/Twitter').default
   },
   {
     Title: 'linkedin',
     Url: '#',
-    Icon: <Linkedin />
+    Icon: require('../components/icons/social-media/Linkedin').default
   }
 ]
 

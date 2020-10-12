@@ -4,13 +4,12 @@ import { withTranslation, Trans } from '../../i18n'
 
 import Modal from '../../components/form/Modal'
 
-function KvkkModal({ t }) {
+function KvkkModal({ t, label }) {
   return (
     <Modal
-      label={t('Kvkk')}
+      label={label}
       title={
         <Trans
-          ns="documents"
           components={{
             strong: <strong />
           }}
@@ -20,7 +19,6 @@ function KvkkModal({ t }) {
       }
     >
       <Trans
-        ns="documents"
         components={{
           p: <p />,
           strong: <strong />,
@@ -43,12 +41,9 @@ function KvkkModal({ t }) {
   )
 }
 
-// KvkkModal.getInitialProps = async () => ({
-//   namespacesRequired: ['common', 'documents']
-// })
-
 KvkkModal.propTypes = {
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired
 }
 
-export default withTranslation(['common', 'documents'])(KvkkModal)
+export default withTranslation('documents')(KvkkModal)
