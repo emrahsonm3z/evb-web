@@ -10,6 +10,7 @@ import { withTranslation, Trans } from '../../i18n'
 import { TermOfUseModal, PrivacyPolicyModal } from '../../container/documents'
 
 import { CONTACT_INFORMATIONS, SOCIAL_MEDIAS } from '../../constants'
+import { Download } from '../icons'
 
 function Footer({ t }) {
   const router = useRouter()
@@ -44,6 +45,16 @@ function Footer({ t }) {
                     <span>{item.Text}</span>
                   </div>
                 ))}
+                <div className={styles.info}>
+                  <Download />
+                  <a
+                    href="docs/ilgili-kisi-basvuru-form.docx"
+                    download="EVB ENERJİ - İlgili Kişi Başvuru Formu.docx"
+                    className={styles['contact-apply-form']}
+                  >
+                    İlgili kişi başvuru formu
+                  </a>
+                </div>
               </div>
             </div>
             <ul className={styles.socialMedias}>

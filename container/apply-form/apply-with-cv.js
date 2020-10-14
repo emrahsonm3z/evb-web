@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Formik, Form } from 'formik'
 import cn from 'classnames'
 import filesize from 'filesize'
-
 import * as Yup from 'yup'
+import axios from 'axios'
 
 import { withTranslation, Trans } from '../../i18n'
-import { MAX_FULLNAME, MAX_EMAIL, PHONE_REG_EXP } from '../../constants'
+// import mailer from '../../utils/sendEmail'
 import { Checkbox, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
@@ -15,19 +15,30 @@ import InputFeedback from '../../components/form/InputFeedback'
 import ErrorFocus from '../../components/form/ErrorFocus'
 
 import { KvkkModal, TermOfUseModal, PrivacyPolicyModal } from '../documents'
+import {
+  MAX_FULLNAME,
+  MAX_EMAIL,
+  PHONE_REG_EXP,
+  FILE_SIZE,
+  SUPPORTED_FORMATS
+} from '../../constants'
+const STORAGE_KEY = 'apply-form'
 
-import { FILE_SIZE, SUPPORTED_FORMATS } from '../../constants'
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
 function ApplyWithCV({ t }) {
+  const [formLoading, setFormLoading] = useState(false)
+  const [statusMessage, setStatusMessage] = useState('')
+
   return (
     <Formik
       initialValues={{
-        NameAndSurname: '',
-        EmailAddress: '',
-        Phonenumber: '',
+        NameAndSurname: 'emrah sönmez',
+        EmailAddress: 'emrahsonm3z@gmail.com',
+        Phonenumber: '905443755025',
         Attachment: null,
-        Kvkk: false,
-        TermOfUseAndPrivacyPolicy: false
+        Kvkk: true,
+        TermOfUseAndPrivacyPolicy: true
       }}
       validationSchema={Yup.object({
         NameAndSurname: Yup.string()
@@ -62,22 +73,32 @@ function ApplyWithCV({ t }) {
         )
       })}
       onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(
-            JSON.stringify(
-              {
-                fileName: values.Attachment.name,
-                type: values.Attachment.type,
-                size: `${values.Attachment.size} bytes`,
-                ...values
-              },
-              null,
-              2
-            )
-          )
+        setFormLoading(true)
 
-          setSubmitting(false)
-        }, 400)
+        let formData = new FormData()
+        formData.append('NameAndSurname', values.NameAndSurname)
+        formData.append('EmailAddress', values.EmailAddress)
+        formData.append('Phonenumber', values.Phonenumber)
+        formData.append('Attachment', values.Attachment)
+
+        const response = axios
+          .patch('/api/apply', formData, {
+            headers: {
+              'Content-Type': 'multipart/form-data'
+            }
+          })
+          .then(function (response) {
+            setFormLoading(false)
+            setSubmitting(false)
+
+            console.log(response)
+          })
+          .catch(function (error) {
+            setStatusMessage(error.message)
+            setFormLoading(false)
+
+            console.log(error)
+          })
       }}
     >
       {({

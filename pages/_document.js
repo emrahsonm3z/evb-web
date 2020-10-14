@@ -62,7 +62,13 @@ class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/icons/apple-touch-icon.png"
+            href="/apple-icon-180x180.png"
+          ></link>
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/android-icon-192x192.png"
           />
           <meta
             name="msapplication-config"

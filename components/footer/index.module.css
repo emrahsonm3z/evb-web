@@ -40,19 +40,33 @@
           align-items: center;
 
           svg {
-            height: 1.2rem;
-            margin-right: 7px;
+            fill: var(--c-white);
+            height: 1.3rem;
+            width: 1.3rem;
+            margin-right: 12px;
           }
 
-          span {
+          span,
+          a {
             --min: 0.9em;
             --val: 2.5vw;
             --max: 1.1rem;
+
+            color: var(--c-white);
+
+            &:hover {
+              color: var(--c-white);
+            }
           }
         }
       }
     }
   }
+}
+
+.contact-apply-form {
+  text-decoration: underline;
+  padding: 10px 0;
 }
 
 .socialMedias {

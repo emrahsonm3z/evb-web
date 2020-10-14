@@ -7,11 +7,17 @@ import SubTitle from '../../components/title/subtitle'
 import ApplyWithCV from './apply-with-cv'
 import ApplyWithForm from './apply-with-form'
 
+import ApplyFormResponse from './response'
+import ApplyFormRequest from './request'
+
 function ApplyForm({ t }) {
   const [showApplyWithForm, setShowApplyWithForm] = useState(true)
 
   return (
     <div className="container">
+      {/* <ApplyFormRequest /> */}
+      {/* <ApplyFormResponse /> */}
+
       <SubTitle title={t('JobApplication')} />
 
       {/* <Loading /> */}
