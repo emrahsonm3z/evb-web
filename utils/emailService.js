@@ -1,9 +1,6 @@
 import { createTransport } from 'nodemailer'
 import { renderToStaticMarkup } from 'react-dom/server'
 
-// const { createTransport } = require('nodemailer')
-// const { renderToStaticMarkup } = require('react-dom/server')
-
 function renderBody(body) {
   const doctype =
     '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" ' +
@@ -29,7 +26,5 @@ function emailService(config, emails) {
     }
   }
 }
-
-// module.exports = emailService
 
 export default emailService

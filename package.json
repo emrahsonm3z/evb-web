@@ -20,6 +20,7 @@
     "filesize": "^6.1.0",
     "flickity": "^2.2.1",
     "formik": "^2.1.6",
+    "formik-wizard": "^3.1.2",
     "i18next-browser-languagedetector": "^6.0.1",
     "multer": "^1.4.2",
     "next": "9.5.3",

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
+import steps from './steps'
 import { withTranslation } from '../../i18n'
 
 import SubTitle from '../../components/title/subtitle'
@@ -29,7 +30,6 @@ function ApplyForm({ t }) {
                 id="apply-with-form"
                 type="radio"
                 name="apply-type"
-                value={true}
                 defaultChecked
                 onChange={() => {
                   setShowApplyWithForm(true)
@@ -52,7 +52,6 @@ function ApplyForm({ t }) {
                 id="apply-with-cv"
                 type="radio"
                 name="apply-type"
-                value={false}
                 onChange={() => {
                   setShowApplyWithForm(false)
                 }}

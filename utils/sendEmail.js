@@ -1,9 +1,6 @@
 import Mailer from './emailService'
 import emailTemplateList from '../mail-template'
 
-// const Mailer = require('./emailService')
-// const emailTemplateList = require('../mail-template')
-
 const isProd = process.env.NODE_ENV === 'production'
 
 const mailerConfig = {
@@ -35,5 +32,4 @@ const mailerConfig = {
 
 const mailer = Mailer(mailerConfig, emailTemplateList)
 
-// module.exports = mailer
 export default mailer

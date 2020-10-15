@@ -7,7 +7,6 @@ import * as Yup from 'yup'
 import axios from 'axios'
 
 import { withTranslation, Trans } from '../../i18n'
-// import mailer from '../../utils/sendEmail'
 import { Checkbox, TextInput } from '../../components/form'
 
 import styles from './index.module.css'
@@ -29,7 +28,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json())
 function ApplyWithCV({ t }) {
   const [formLoading, setFormLoading] = useState(false)
   const [statusMessage, setStatusMessage] = useState('')
-
+  const [preLoad, setPreLoad] = useState(false)
   return (
     <Formik
       initialValues={{

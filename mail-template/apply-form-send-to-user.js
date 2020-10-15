@@ -1,9 +1,6 @@
 import React from 'react'
 import Layout from './layout'
 
-// const React = require('react')
-// const Layout = require('./layout')
-
 const ApplyFormSendToUser = ({ form }) => {
   return {
     subject: `İş başvurunuz alınmıştır`,
@@ -26,5 +23,4 @@ const ApplyFormSendToUser = ({ form }) => {
     )
   }
 }
-// module.exports = ApplyFormSendToUser
 export default ApplyFormSendToUser
