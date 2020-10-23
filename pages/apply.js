@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 import cn from 'classnames'
 
 import styles from './apply.module.css'
-import ApplyForm from '../container/apply-form'
+import ApplyForm from '../container/apply-form3'
 
 const Apply = () => (
   <Layout>

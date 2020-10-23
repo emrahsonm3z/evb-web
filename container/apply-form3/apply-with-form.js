@@ -37,7 +37,7 @@ const SELECTED_VALUES = {
 }
 
 const initialValues =
-  process.env.NODE_ENV === 'production'
+  process.env.NODE_ENV !== 'production'
     ? {
         NameAndSurname: 'Emrah Sönmez',
         Phonenumber: '5443755025',
