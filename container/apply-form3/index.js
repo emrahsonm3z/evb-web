@@ -4,11 +4,12 @@ import PropTypes from 'prop-types'
 import { withTranslation } from '../../i18n'
 
 import SubTitle from '../../components/title/subtitle'
-import ApplyWithCV from './apply-with-cv'
-import ApplyWithForm from './apply-with-form'
+import ApplyFormWithCV from './apply-with-cv'
+import ApplyFormWithForm from './apply-with-form'
+// import ApplyWithForm from './apply-with-form'
 
-import ApplyFormResponse from './response'
-import ApplyFormRequest from './request'
+// import ApplyFormResponse from './response'
+// import ApplyFormRequest from './request'
 
 function ApplyForm({ t }) {
   const [showApplyWithForm, setShowApplyWithForm] = useState(true)
@@ -69,7 +70,7 @@ function ApplyForm({ t }) {
         </label>
       </div>
 
-      {showApplyWithForm ? <ApplyWithForm /> : <ApplyWithCV />}
+      {showApplyWithForm ? <ApplyFormWithForm /> : <ApplyFormWithCV />}
     </div>
   )
 }

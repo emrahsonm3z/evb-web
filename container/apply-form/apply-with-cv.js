@@ -21,9 +21,6 @@ import {
   FILE_SIZE,
   SUPPORTED_FORMATS
 } from '../../constants'
-const STORAGE_KEY = 'apply-form'
-
-const fetcher = (url) => fetch(url).then((res) => res.json())
 
 function ApplyWithCV({ t }) {
   const [formLoading, setFormLoading] = useState(false)

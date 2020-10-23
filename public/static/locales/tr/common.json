@@ -152,5 +152,8 @@
   "ApplyWithForm": "Form ile başvuru",
   "ApplyWithFormDesc": "Hakkında merak ettiklerimizi formu doldurarak bize bildir",
   "ApplyWithResume": "Özgeçmiş ile başvuru",
-  "ApplyWithResumeDesc": "Güncel özgeçmişin ile başvurunu tamamla"
+  "ApplyWithResumeDesc": "Güncel özgeçmişin ile başvurunu tamamla",
+  "Next": "Sonraki",
+  "Previous": "Önceki",
+  "Summary": "Özet"
 }

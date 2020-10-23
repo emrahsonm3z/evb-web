@@ -153,5 +153,8 @@
   "ApplyWithForm": "Bewerbung mit Formular",
   "ApplyWithFormDesc": "Lassen Sie uns wissen, worüber Sie sich wundern, indem Sie das Formular ausfüllen",
   "ApplyWithResume": "Bewerbung mit Lebenslauf",
-  "ApplyWithResumeDesc": "Vervollständigen Sie Ihre Bewerbung mit Ihrem aktuellen Lebenslauf"
+  "ApplyWithResumeDesc": "Vervollständigen Sie Ihre Bewerbung mit Ihrem aktuellen Lebenslauf",
+  "Next": "Nächster",
+  "Previous": "Bisherige",
+  "Summary": "Zusammenfassung"
 }

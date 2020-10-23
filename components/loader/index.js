@@ -4,10 +4,10 @@ import Loader from 'react-loader'
 function Loading() {
   return (
     <Loader
-      lines={13}
-      length={10}
-      width={5}
-      radius={15}
+      lines={20}
+      length={15}
+      width={7}
+      radius={30}
       corners={1}
       rotate={0}
       direction={1}

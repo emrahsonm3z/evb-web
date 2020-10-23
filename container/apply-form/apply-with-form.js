@@ -5,10 +5,14 @@ import * as Yup from 'yup'
 
 import { withTranslation, Trans } from '../../i18n'
 import { MAX_FULLNAME, MAX_EMAIL, PHONE_REG_EXP } from '../../constants'
-import { Checkbox, RadioButton, TextInput } from '../../components/form'
+import {
+  Checkbox,
+  RadioButton,
+  TextInput,
+  RadioButtonGroup
+} from '../../components/form'
 
 import styles from './index.module.css'
-import RadioButtonGroup from '../../components/form/RadioButtonGroup'
 import { KvkkModal, TermOfUseModal, PrivacyPolicyModal } from '../documents'
 import ErrorFocus from '../../components/form/ErrorFocus'
 

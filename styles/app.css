@@ -473,7 +473,8 @@ input[type="checkbox"] {
   &.option-plain {
     display: flex;
     align-items: baseline;
-    width: 300px;
+    max-width: 400px;
+    width: 100%;
     border: 0;
     padding: 0;
 
@@ -771,4 +772,16 @@ input[type="month"].form-control {
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255 255 255 / 0.5);
+  z-index: 999;
 }

@@ -14,6 +14,15 @@ function emailService(config, emails) {
 
   const transporter = createTransport(transportConfig, defaults)
 
+  // verify connection configuration
+  transporter.verify(function (error, success) {
+    if (error) {
+      console.log(error)
+    } else {
+      console.log('Server is ready to take our messages')
+    }
+  })
+
   return {
     send(template, props, message) {
       const { subject, body } = emails[template](props)
