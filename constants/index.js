@@ -120,23 +120,24 @@ const CONTACT_INFORMATIONS = [
 const SOCIAL_MEDIAS = [
   {
     Title: 'facebook',
-    Url: '#',
+    Url: 'https://tr-tr.facebook.com/enerjivebilisim',
     Icon: require('../components/icons/social-media/Facebook').default
   },
   {
     Title: 'instagram',
-    Url: '#',
+    Url: 'https://www.instagram.com/evbenerjivebilisim',
     Icon: require('../components/icons/social-media/Instagram').default
   },
   {
-    Title: 'twitter',
-    Url: '#',
-    Icon: require('../components/icons/social-media/Twitter').default
+    Title: 'linkedin',
+    Url: 'https://lu.linkedin.com/company/evb-enerji-ve-bilisim-a-s',
+    Icon: require('../components/icons/social-media/Linkedin').default
   },
   {
-    Title: 'linkedin',
-    Url: '#',
-    Icon: require('../components/icons/social-media/Linkedin').default
+    Title: 'kariyer.net',
+    Url:
+      'https://www.kariyer.net/firma-profil/evb-enerji-bilisim-ve-iletisim-hizmetleri-a-s-18587-212063',
+    Icon: require('../components/icons/social-media/Kariyer').default
   }
 ]
 
@@ -218,7 +219,12 @@ const OFFICES = [
   }
 ]
 
+const I18N_NAME = 'evb-lang'
+const I18N_INITIAL_LANG = 'tr'
+
 export {
+  I18N_NAME,
+  I18N_INITIAL_LANG,
   MENU_PREFIX,
   MENU,
   LANGUAGES,

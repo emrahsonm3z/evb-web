@@ -58,9 +58,9 @@ const NavLink = ({ to, text, onClick }) => (
   </Link>
 )
 
-const Header = ({ t }) => {
+const Header = ({ t, lang }) => {
   const [isActive, setIsActive] = useState(false)
-  const [language, setLanguage] = useState(i18n.language)
+  const [language, setLanguage] = useState(lang)
 
   const router = useRouter()
 

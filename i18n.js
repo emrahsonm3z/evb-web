@@ -1,20 +1,28 @@
 const NextI18Next = require('next-i18next').default
-// const LngDetector = require('i18next-browser-languagedetector').default
+const LanguageDetector = require('i18next-browser-languagedetector').default
 const { localeSubpaths } = require('next/config').default().publicRuntimeConfig
+const { initReactI18next } = require('react-i18next')
+const Cookies = require('js-cookie')
 const path = require('path')
+const { I18N_NAME, I18N_INITIAL_LANG } = require('./constants')
 
 const option = {
-  defaultLanguage: 'tr',
+  // use: [LanguageDetector, initReactI18next],
+  ignoreRoutes: ['/_next', '/static', '/public'],
+  lng: Cookies.get(I18N_NAME),
+  defaultLanguage: I18N_INITIAL_LANG,
   otherLanguages: ['de'],
-  fallbackLng: 'tr',
+  fallbackLng: I18N_INITIAL_LANG,
   defaultNS: 'common',
   localeSubpaths,
   localePath: path.resolve('./public/static/locales'),
+  // debug: process.env.NODE_ENV === 'development',
   serverLanguageDetection: false,
   detection: {
-    order: ['cookie'],
-    lookupCookie: 'lang',
-    caches: ['cookie'],
+    order: ['cookie', 'localStorage'],
+    lookupCookie: I18N_NAME,
+    lookupLocalStorage: I18N_NAME,
+    caches: ['cookie', 'localStorage'],
     cookieExpirationDate: new Date().setMonth(new Date().getMonth() + 12),
     cookieSameSite: 'strict'
   },
@@ -25,4 +33,5 @@ const option = {
     useSuspense: false
   }
 }
+
 module.exports = new NextI18Next(option)

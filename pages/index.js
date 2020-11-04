@@ -1,5 +1,3 @@
-import Layout from '../components/layout'
-
 import styles from './index.module.css'
 
 import HeroSlider from '../container/hero-slider'
@@ -12,8 +10,8 @@ import Team from '../container/team'
 import FaqSlider from '../container/faq-slider'
 import Expectations from '../container/expectations'
 
-const Homepage = () => (
-  <Layout>
+const Homepage = ({ lang }) => (
+  <>
     <section className={styles.section}>
       <HeroSlider />
     </section>
@@ -21,7 +19,7 @@ const Homepage = () => (
       <VisionSlider />
     </section>
     <section className={styles.section}>
-      <Parallax />
+      <Parallax lang={lang} />
     </section>
     <section className={styles.section} id="ourservices">
       <Tasks />
@@ -41,7 +39,7 @@ const Homepage = () => (
     <section className={styles.section}>
       <Expectations />
     </section>
-  </Layout>
+  </>
 )
 
 Homepage.getInitialProps = async () => ({

@@ -1,3 +1,76 @@
+.socialMedias {
+  margin-top: 90px;
+  list-style: none;
+  margin-left: 5px;
+  display: flex;
+
+  li {
+    padding: 5px;
+
+    .social-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  li + li {
+    margin-left: 5px;
+  }
+
+  a {
+    color: var(--c-white);
+    transition: color var(--fade)  ease;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--c-gray-500);
+    }
+  }
+}
+
+.contact-apply-form {
+  text-decoration: underline;
+  padding: 10px 0;
+}
+
+.logo {
+  display: block;
+  height: 120px;
+
+  img {
+    display: inline-block;
+    height: 100%;
+  }
+}
+
+.bottom {
+  background-color: var(--c-primary-300);
+  display: flex;
+  justify-content: stretch;
+  color: var(--c-white);
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+    .bottom-text,
+    .bottom-text a {
+      --min: 0.6rem;
+      --val: 2vw;
+      --max: 0.9rem;
+
+      font-weight: 600;
+      color: var(--c-gray-300);
+    }
+
+    .bottom-text a {
+      text-decoration: underline;
+    }
+  }
+}
+
 .footer {
   padding: 20px 0;
   background-color: var(--c-primary-500);
@@ -60,75 +133,6 @@
           }
         }
       }
-    }
-  }
-}
-
-.contact-apply-form {
-  text-decoration: underline;
-  padding: 10px 0;
-}
-
-.socialMedias {
-  margin-top: 90px;
-  list-style: none;
-  margin-left: 5px;
-
-  li {
-    display: inline;
-    padding: 5px;
-
-    .social-icon {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  a {
-    color: var(--c-white);
-    transition: color var(--fade)  ease;
-
-    &:hover {
-      cursor: pointer;
-      color: var(--c-gray-500);
-    }
-  }
-}
-
-.logo {
-  display: block;
-  height: 120px;
-
-  img {
-    display: inline-block;
-    height: 100%;
-  }
-}
-
-.bottom {
-  background-color: var(--c-primary-300);
-  display: flex;
-  justify-content: stretch;
-  color: var(--c-white);
-
-  & > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-
-    .bottom-text,
-    .bottom-text a {
-      --min: 0.6rem;
-      --val: 2vw;
-      --max: 0.9rem;
-
-      font-weight: 600;
-      color: var(--c-gray-300);
-    }
-
-    .bottom-text a {
-      text-decoration: underline;
     }
   }
 }

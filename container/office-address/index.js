@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+
 import styles from './index.module.css'
 
 import Figure from '../../components/figure'
@@ -8,8 +9,8 @@ import { withTranslation, i18n } from '../../i18n'
 
 import { OFFICES } from '../../constants'
 
-function OfficeAddresses({ t }) {
-  const [locale, setLocale] = useState('tr')
+function OfficeAddresses({ t, lang }) {
+  const [locale, setLocale] = useState(lang)
   useEffect(() => {
     setLocale(i18n.language)
   }, [i18n.language])
@@ -34,9 +35,11 @@ function OfficeAddresses({ t }) {
   )
 }
 
-OfficeAddresses.getInitialProps = async () => ({
-  namespacesRequired: ['common']
-})
+OfficeAddresses.getInitialProps = async () => {
+  return {
+    namespacesRequired: ['common']
+  }
+}
 
 OfficeAddresses.propTypes = {
   t: PropTypes.func.isRequired

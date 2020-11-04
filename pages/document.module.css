@@ -1,0 +1,50 @@
+.section {
+  b {
+    font-weight: 600;
+  }
+
+  &:first-child {
+    margin-top: 80px;
+
+    @media (--tm) {
+      & {
+        margin-top: 66px;
+      }
+    }
+  }
+}
+
+.document {
+  background-color: #f7f7f7;
+
+  .title {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: var(--c-gray-600);
+  }
+
+  .content {
+    padding: 25px 30px;
+    margin: 30px auto 0;
+    background-color: #fff;
+  }
+
+  p {
+    min-height: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  a {
+    color: var(--c-primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+}

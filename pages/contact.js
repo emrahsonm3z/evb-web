@@ -1,14 +1,13 @@
-import Layout from '../components/layout'
 import cn from 'classnames'
 
 import styles from './contact.module.css'
 import OfficeAddress from '../container/office-address'
 import ContactForm from '../container/contact-form'
 
-const Contact = () => (
-  <Layout>
+const Contact = ({ lang }) => (
+  <>
     <section className={cn([styles.section, styles['our-offices']])}>
-      <OfficeAddress />
+      <OfficeAddress lang={lang} />
     </section>
     <section className={styles.section}>
       <ContactForm />
@@ -26,7 +25,7 @@ const Contact = () => (
         ></iframe>
       </div>
     </section>
-  </Layout>
+  </>
 )
 
 Contact.getInitialProps = async () => ({

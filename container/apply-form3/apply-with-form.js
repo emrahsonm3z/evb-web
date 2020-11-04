@@ -114,34 +114,34 @@ const ApplyFormWithForm = ({ t }) => {
         setFormLoading(true)
         actions.setSubmitting(false)
         console.log('on submit started')
-        // let formData = new FormData()
+        let formData = new FormData()
 
-        // Object.entries(values).map(([key, value]) => {
-        //   if (typeof value === 'string') {
-        //     formData.append(key, value)
-        //   }
-        // })
+        Object.entries(values).map(([key, value]) => {
+          if (typeof value === 'string') {
+            formData.append(key, value)
+          }
+        })
 
-        // const response = axios
-        //   .post('/api/apply', formData, {
-        //     headers: {
-        //       'Content-Type': 'multipart/form-data'
-        //     }
-        //   })
-        //   .then(function (response) {
-        //     setFormLoading(false)
-        //     actions.setSubmitting(true)
+        const response = axios
+          .post('/api/apply', formData, {
+            headers: {
+              'Content-Type': 'multipart/form-data'
+            }
+          })
+          .then(function (response) {
+            setFormLoading(false)
+            actions.setSubmitting(true)
 
-        //     console.log('1', response)
-        //   })
-        //   .catch(function (error) {
-        //     setStatusMessage(error.message)
-        //     setFormLoading(false)
-        //     actions.setSubmitting(false)
+            console.log('1', response)
+          })
+          .catch(function (error) {
+            setStatusMessage(error.message)
+            setFormLoading(false)
+            actions.setSubmitting(false)
 
-        //     console.log('error', error)
-        //   })
-        // console.log('2', response)
+            console.log('error', error)
+          })
+        console.log('2', response)
 
         setTimeout(function () {
           setFormLoading(false)

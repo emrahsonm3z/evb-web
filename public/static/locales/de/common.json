@@ -156,5 +156,8 @@
   "ApplyWithResumeDesc": "Vervollständigen Sie Ihre Bewerbung mit Ihrem aktuellen Lebenslauf",
   "Next": "Nächster",
   "Previous": "Bisherige",
-  "Summary": "Zusammenfassung"
+  "Summary": "Zusammenfassung",
+  "UpdatedAt": "Aktualisiert am",
+  "and": "und",
+  "ContactApplicationForm": "Kontaktantragsformular"
 }

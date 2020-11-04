@@ -155,5 +155,8 @@
   "ApplyWithResumeDesc": "Güncel özgeçmişin ile başvurunu tamamla",
   "Next": "Sonraki",
   "Previous": "Önceki",
-  "Summary": "Özet"
+  "Summary": "Özet",
+  "UpdatedAt": "Son güncelleme",
+  "and": "ve",
+  "ContactApplicationForm": "İlgili kişi başvuru formu"
 }

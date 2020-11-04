@@ -1,5 +1,15 @@
-import KvkkModal from './kvkk-modal'
-import TermOfUseModal from './term-of-use-modal'
-import PrivacyPolicyModal from './privacy-policy-modal'
+import KvkkDocument from './kvkk'
+import KvkkModal from './kvkk/modal'
+import PrivacyPolicyDocument from './privacy-policy'
+import PrivacyPolicyModal from './privacy-policy/modal'
+import TermOfUseDocument from './term-of-use'
+import TermOfUseModal from './term-of-use/modal'
 
-export { KvkkModal, TermOfUseModal, PrivacyPolicyModal }
+export {
+  KvkkDocument,
+  KvkkModal,
+  TermOfUseDocument,
+  TermOfUseModal,
+  PrivacyPolicyDocument,
+  PrivacyPolicyModal
+}

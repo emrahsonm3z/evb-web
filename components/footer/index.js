@@ -6,8 +6,7 @@ import { useRouter } from 'next/router'
 
 import styles from './index.module.css'
 
-import { withTranslation, Trans } from '../../i18n'
-import { TermOfUseModal, PrivacyPolicyModal } from '../../container/documents'
+import { withTranslation } from '../../i18n'
 
 import { CONTACT_INFORMATIONS, SOCIAL_MEDIAS } from '../../constants'
 import { Download } from '../icons'
@@ -49,10 +48,12 @@ function Footer({ t }) {
                   <Download />
                   <a
                     href="docs/ilgili-kisi-basvuru-form.docx"
-                    download="EVB ENERJİ - İlgili Kişi Başvuru Formu.docx"
+                    download={`EVB ENERJİ - ${t(
+                      'ContactApplicationForm'
+                    )}.docx`}
                     className={styles['contact-apply-form']}
                   >
-                    İlgili kişi başvuru formu
+                    {t('ContactApplicationForm')}
                   </a>
                 </div>
               </div>
@@ -60,7 +61,7 @@ function Footer({ t }) {
             <ul className={styles.socialMedias}>
               {SOCIAL_MEDIAS.map((media) => (
                 <li key={media.Title}>
-                  <a href={media.Url}>
+                  <a href={media.Url} title={media.Title} target="_blank">
                     <media.Icon className={styles['social-icon']} />
                   </a>
                 </li>
@@ -75,27 +76,19 @@ function Footer({ t }) {
             {t('Copyright')} © EVB ENERJİ evb.com.tr
           </span>
           <span className={styles['bottom-text']}>
-            <Trans
-              components={{
-                span: <span />,
-                termofuselink: <TermOfUseModal label={t('TermOfUse')} />,
-                privacypolicylink: (
-                  <PrivacyPolicyModal label={t('PrivacyPolicy')} />
-                )
-              }}
-            >
-              {t('TermOfUseAndPrivacyPolicy')}
-            </Trans>
+            <Link href="/term-of-use">
+              <a>{t('TermOfUse')}</a>
+            </Link>{' '}
+            {t('and')}{' '}
+            <Link href="/privacy-policy">
+              <a>{t('PrivacyPolicy')}</a>
+            </Link>
           </span>
         </div>
       </div>
     </footer>
   )
 }
-
-Footer.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'documents']
-})
 
 Footer.propTypes = {
   t: PropTypes.func.isRequired

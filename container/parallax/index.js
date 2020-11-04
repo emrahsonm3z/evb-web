@@ -11,11 +11,12 @@ import {
   NUMBER_OF_CUSTOMER
 } from '../../constants'
 
-function Parallax({ t }) {
-  const [locale, setLocale] = useState('tr')
+function Parallax({ t, lang }) {
+  const [locale, setLocale] = useState(lang)
   useEffect(() => {
     setLocale(i18n.language)
   }, [i18n.language])
+
   return (
     <div className={styles.block}>
       <div className={cn(['container', styles.content])}>
