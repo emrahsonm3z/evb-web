@@ -159,5 +159,7 @@
   "Summary": "Zusammenfassung",
   "UpdatedAt": "Aktualisiert am",
   "and": "und",
-  "ContactApplicationForm": "Kontaktantragsformular"
+  "ContactApplicationForm": "Kontaktantragsformular",
+  "ApplicationHasBeenSuccessfully": "Ihre Bewerbung wurde erfolgreich erhalten",
+  "ReturnToHomepage": "Zur Startseite zurückkehren"
 }

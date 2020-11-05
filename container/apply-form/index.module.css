@@ -5,29 +5,82 @@
 .form {
   display: grid;
   grid-column-gap: 40px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-
-  @media (--m) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 
   @media (--dt) {
-    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
   }
 
-  .submitBtn {
+  @media (--m) {
+    padding: 10px 30px 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .actionBtn {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin: 20px 0;
 
     :global {
       .btn {
-        width: 150px;
+        width: clamp(110px, 15vw, 150px);
         font-weight: 600;
       }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (--tm) {
+      justify-content: center;
+    }
+
+    .actionBtn + .actionBtn {
+      margin-left: 20px;
+    }
+  }
+
+  @media (--dt) {
+    grid-template-columns: 1fr 1fr;
+
+    :global {
+      .form-group:nth-child(odd) {
+        grid-column: 1 / 2;
+      }
+
+      .form-group:nth-child(even) {
+        grid-column: 2 / 3;
+      }
+    }
+
+    .list {
+      grid-column: 1 / -1;
+    }
+
+    /* :global {
+      div:not(.form-group) {
+        grid-column: 1 / -1;
+      }
+    } */
+
+    /*
+    &:not(:global(.form-group)) {
+      grid-column: 1 / -1;
+    } */
+
+    .full-width-column {
+      grid-column: 1 / -1;
+    }
+
+    .buttons {
+      grid-column: 1 / -1;
     }
   }
 }
@@ -51,4 +104,12 @@
   font-size: 0.9rem;
   font-weight: 600;
   margin-left: 5px;
+}
+
+.wizard-title {
+  margin-top: -20px;
+
+  @media (--m) {
+    margin-left: -10px;
+  }
 }

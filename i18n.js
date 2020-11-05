@@ -1,17 +1,19 @@
 const NextI18Next = require('next-i18next').default
-const LanguageDetector = require('i18next-browser-languagedetector').default
+// const LanguageDetector = require('i18next-browser-languagedetector').default
+// const { initReactI18next } = require('react-i18next')
 const { localeSubpaths } = require('next/config').default().publicRuntimeConfig
-const { initReactI18next } = require('react-i18next')
 const Cookies = require('js-cookie')
 const path = require('path')
-const { I18N_NAME, I18N_INITIAL_LANG } = require('./constants')
+const { I18N_NAME, I18N_INITIAL_LANG, LANGUAGES } = require('./constants')
 
 const option = {
   // use: [LanguageDetector, initReactI18next],
   ignoreRoutes: ['/_next', '/static', '/public'],
   lng: Cookies.get(I18N_NAME),
   defaultLanguage: I18N_INITIAL_LANG,
-  otherLanguages: ['de'],
+  otherLanguages: LANGUAGES.filter((c) => c.lang !== I18N_INITIAL_LANG).map(
+    (c) => c.lang
+  ),
   fallbackLng: I18N_INITIAL_LANG,
   defaultNS: 'common',
   localeSubpaths,

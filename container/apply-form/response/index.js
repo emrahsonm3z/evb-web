@@ -10,9 +10,11 @@ function ApplyFormResponse({ t }) {
   return (
     <div className={styles.block}>
       <Checkmark className={styles.icon} />
-      <span className={styles.title}>Başvurunuz başarıyla alınmıştır</span>
+      <span className={styles.title}>
+        {t('ApplicationHasBeenSuccessfully')}
+      </span>
       <Link href="/">
-        <a className={styles['back-to-home']}>Anasayfaya dön</a>
+        <a className={styles['back-to-home']}>{t('ReturnToHomepage')}</a>
       </Link>
     </div>
   )

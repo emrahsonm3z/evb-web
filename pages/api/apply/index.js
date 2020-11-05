@@ -1,7 +1,7 @@
 import nextConnect from 'next-connect'
 import multer from 'multer'
-import Email from 'email-templates'
-import path from 'path'
+
+import Mailer from '../../../utils/sendEmail'
 
 import i18next from '../../../i18n'
 import { I18N_INITIAL_LANG, I18N_NAME } from '../../../constants'
@@ -11,63 +11,22 @@ const upload = multer()
 const handler = nextConnect()
 
 handler.post(upload.any(), async (req, res) => {
-  const email = new Email({
-    juiceResources: {
-      webResources: {
-        relativeTo: path.resolve('emails'),
-        images: true
-      }
+  Mailer.send({
+    template: 'new-job-apply',
+    message: {
+      to: 'emrahsonm3z@gmail.com'
+      // to: "emrah.sonmez@itsbilisim.com",
     },
-    // transport: {
-    //   jsonTransport: true,
-    // },
-    // preview: true,
-    i18n: {
-      directory: path.resolve('public/static/locales/email'),
-      defaultLocale: 'tr',
-      locales: ['tr', 'de']
-    },
-
-    send: true,
-    transport: {
-      host: 'mail.evb.com.tr',
-      port: 587,
-      auth: {
-        user: 'kariyer@evb.com.tr',
-        pass: '!q2w3e4R'
-      }
-      // host: "smtp.office365.com",
-      // port: 587,
-      // auth: {
-      //   user: "bilgi@enucuzu.com",
-      //   pass: "Faz65223",
-      // },
-      // secure: true,
-      // // ignoreTLS: true,
-      // tls: {
-      //   rejectUnauthorized: false,
-      // },
+    locals: {
+      locale: req.cookies[I18N_NAME] || I18N_INITIAL_LANG,
+      name: req.body.NameAndSurname || ''
     }
   })
-
-  email
-    .send({
-      template: 'evb',
-      message: {
-        from: 'EVB Kariyer <kariyer@evb.com.tr>',
-        to: 'emrahsonm3z@gmail.com'
-        // to: "emrah.sonmez@itsbilisim.com",
-      },
-      locals: {
-        // locale: i18next.i18n.language,
-        locale: req.cookies[I18N_NAME] || I18N_INITIAL_LANG,
-        name: req.body.NameAndSurname || ''
-      }
-    })
     .then((res) => {
-      // console.log("res.originalMessage", res.originalMessage);
+      // console.log('res.originalMessage', res.originalMessage)
     })
     .catch(console.error)
+
   // console.log('asd', i18next.i18n.t('and'))
 
   // let form = {}

@@ -1,7 +1,7 @@
 import cn from 'classnames'
 
 import styles from './apply.module.css'
-import ApplyForm from '../container/apply-form3'
+import ApplyForm from '../container/apply-form'
 
 const Apply = () => (
   <>

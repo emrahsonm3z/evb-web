@@ -29,8 +29,12 @@
 
   .content {
     padding: 25px 30px;
-    margin: 30px auto 0;
+    margin: 30px auto 50px;
     background-color: #fff;
+
+    @media (--m) {
+      margin-bottom: 0;
+    }
   }
 
   p {

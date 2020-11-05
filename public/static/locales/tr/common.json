@@ -158,5 +158,7 @@
   "Summary": "Özet",
   "UpdatedAt": "Son güncelleme",
   "and": "ve",
-  "ContactApplicationForm": "İlgili kişi başvuru formu"
+  "ContactApplicationForm": "İlgili kişi başvuru formu",
+  "ApplicationHasBeenSuccessfully": "Başvurunuz başarıyla alınmıştır",
+  "ReturnToHomepage": "Anasayfaya dön"
 }

@@ -1,13 +1,7 @@
 import * as Icons from '../components/icons/flags'
-import { Envelope, Fax, Location, Phone } from '../components/icons'
-import {
-  Facebook,
-  Instagram,
-  Twitter,
-  Linkedin
-} from '../components/icons/social-media'
 
-import { useTransition } from '../i18n'
+const I18N_NAME = 'evb-lang'
+const I18N_INITIAL_LANG = 'tr'
 
 const LANGUAGES = [
   {
@@ -218,9 +212,6 @@ const OFFICES = [
     bg: '/assets/istanbul-avrupa.jpg'
   }
 ]
-
-const I18N_NAME = 'evb-lang'
-const I18N_INITIAL_LANG = 'tr'
 
 export {
   I18N_NAME,

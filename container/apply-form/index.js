@@ -4,23 +4,16 @@ import PropTypes from 'prop-types'
 import { withTranslation } from '../../i18n'
 
 import SubTitle from '../../components/title/subtitle'
-import ApplyWithCV from './apply-with-cv'
-import ApplyWithForm from './apply-with-form'
-
-import ApplyFormResponse from './response'
-import ApplyFormRequest from './request'
+import ApplyFormWithCV from './apply-with-cv'
+import ApplyFormWithForm from './apply-with-form'
 
 function ApplyForm({ t }) {
   const [showApplyWithForm, setShowApplyWithForm] = useState(true)
 
   return (
     <div className="container">
-      {/* <ApplyFormRequest /> */}
-      {/* <ApplyFormResponse /> */}
-
       <SubTitle title={t('JobApplication')} />
 
-      {/* <Loading /> */}
       <div className="form-group d-flex flex-row flex-wrap">
         <label className="option option-plain" htmlFor="apply-with-form">
           <span className="option-control">
@@ -69,7 +62,7 @@ function ApplyForm({ t }) {
         </label>
       </div>
 
-      {showApplyWithForm ? <ApplyWithForm /> : <ApplyWithCV />}
+      {showApplyWithForm ? <ApplyFormWithForm /> : <ApplyFormWithCV />}
     </div>
   )
 }
