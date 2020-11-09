@@ -6,10 +6,10 @@ const mailerConfig = {
   defaults: {
     from: {
       name: isProd
-        ? process.env.EMAIL_FROM_NAME
+        ? process.env.EMAIL_SYSTEM_FROM_NAME
         : process.env.EMAIL_TEST_FROM_NAME,
       address: isProd
-        ? process.env.EMAIL_FROM_ADDRESS
+        ? process.env.EMAIL_SYSTEM_FROM_ADDRESS
         : process.env.EMAIL_TEST_FROM_ADDRESS
     }
   },

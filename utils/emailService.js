@@ -40,19 +40,10 @@ function emailService(config) {
   })
 
   return {
-    send({
-      template,
-      message = {
-        from: 'EVB <system@evb.com.tr>'
-      },
-      locals = { locale: I18N_INITIAL_LANG }
-    }) {
+    send(mailOptions) {
+      console.log('mailOptions', mailOptions)
       return email
-        .send({
-          template: template,
-          message: { ...message },
-          locals: { ...locals }
-        })
+        .send(mailOptions)
         .then((res) => {
           // console.log("res.originalMessage", res.originalMessage);
         })

@@ -113,6 +113,7 @@ const ApplyFormWithForm = ({ t }) => {
         scroll.scrollToTop()
         setFormLoading(true)
         actions.setSubmitting(false)
+
         console.log('on submit started')
         let formData = new FormData()
 

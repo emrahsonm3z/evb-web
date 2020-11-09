@@ -14,8 +14,11 @@ handler.post(upload.any(), async (req, res) => {
   Mailer.send({
     template: 'new-job-apply',
     message: {
-      to: 'emrahsonm3z@gmail.com'
-      // to: "emrah.sonmez@itsbilisim.com",
+      to: { name: 'Emrah Sönmez', address: 'emrahsonm3z@gmail.com' },
+      from: {
+        name: process.env.EMAIL_SYSTEM_FROM_NAME,
+        address: process.env.EMAIL_SYSTEM_FROM_ADDRESS
+      }
     },
     locals: {
       locale: req.cookies[I18N_NAME] || I18N_INITIAL_LANG,
@@ -26,6 +29,25 @@ handler.post(upload.any(), async (req, res) => {
       // console.log('res.originalMessage', res.originalMessage)
     })
     .catch(console.error)
+
+  // Mailer.send({
+  //   template: 'job-apply-completed',
+  //   message: {
+  //     to: { name: 'Emrah Sönmez', address: 'emrahsonm3z@gmail.com' },
+  //     from: {
+  //       name: process.env.EMAIL_CAREER_FROM_NAME,
+  //       address: process.env.EMAIL_CAREER_FROM_ADDRESS
+  //     }
+  //   },
+  //   locals: {
+  //     locale: req.cookies[I18N_NAME] || I18N_INITIAL_LANG,
+  //     name: req.body.NameAndSurname || ''
+  //   }
+  // })
+  //   .then((res) => {
+  //     // console.log('res.originalMessage', res.originalMessage)
+  //   })
+  //   .catch(console.error)
 
   // console.log('asd', i18next.i18n.t('and'))
 
