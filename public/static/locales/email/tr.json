@@ -1,3 +1,18 @@
 {
-  "dear": "Sayın {{name}}"
+  "dear": "Sayın {{name}}",
+  "NewJobApplication": "Yeni iş başvurusu",
+  "ApplicationReceivedSuccessfully": "Başvurunuz başarılı bir şekilde alınmıştır",
+  "ContactUs": "Bize ulaşın",
+  "FollowUs": "Bizi takip et",
+  "TermsOfUse": "Kullanım koşulları",
+  "PrivacyPolicy": "Gizlilik politikası",
+  "Unsubscribe": "Abonelikten çık",
+  "NotificationAlert": "Bu yalnızca bildirim amaçlı bir e-postadır, lütfen bu iletiyi yanıtlamayın.",
+  "Copyright": "Telif hakkı",
+  "DearSir": "Sayın yetkili",
+  "JobApplyCompleted.Message.1": "Yeni iş başvurusu vardır. Lütfen ek dosyayı kontrol etmeyi unutmayız.",
+  "NewJobApply.Message.1": "Öncelikle aramıza katılmak istediğiniz için çok mutluyuz. Başvurunuzu en kısa sürede değerlendirip tarafınıza dönüş yapacağız.",
+  "NewJobApply.Message.2": "Bizimle ilgili merak ettiğiniz bilgilere sitemizden ulaşabilirsiniz. Daha detaylı bilgi almak isterseniz iletişim bilgilerimizle bize ulaşabilirsiniz.",
+  "HopeToSeeYouAgain": "Tekrar görüşmek dileğiyle",
+  "Career": "Kariyer"
 }

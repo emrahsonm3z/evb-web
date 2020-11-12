@@ -1,3 +1,18 @@
 {
-  "dear": "Sehr geehrter {{name}}"
+  "dear": "Sehr geehrter {{name}}",
+  "NewJobApplication": "neue Bewerbung",
+  "ApplicationReceivedSuccessfully": "Ihre Bewerbung wurde erfolgreich empfangen",
+  "ContactUs": "Kontaktiere uns",
+  "FollowUs": "Folge uns",
+  "TermsOfUse": "Nutzungsbedingungen",
+  "PrivacyPolicy": "Datenschutz-Bestimmungen",
+  "Unsubscribe": "Abmelden",
+  "NotificationAlert": "Dies ist nur eine Benachrichtigungs-E-Mail. Bitte antworten Sie nicht auf diese Nachricht.",
+  "Copyright": "Copyright",
+  "DearSir": "Sehr geehrter Herr",
+  "JobApplyCompleted.Message.1": "Es gibt eine neue Bewerbung. Bitte vergessen Sie nicht, den Anhang zu überprüfen.",
+  "NewJobApply.Message.1": "Zunächst freuen wir uns sehr, dass Sie sich uns anschließen möchten. Wir werden Ihre Bewerbung so schnell wie möglich prüfen und uns bei Ihnen melden.",
+  "NewJobApply.Message.2": "Informationen zu uns finden Sie auf unserer Website. Wenn Sie detailliertere Informationen erhalten möchten, können Sie uns mit unseren Kontaktinformationen kontaktieren.",
+  "HopeToSeeYouAgain": "Ich hoffe, wir sehen uns wieder",
+  "Career": "Karriere"
 }

@@ -87,41 +87,30 @@ const ApplyFormWithCV = ({ t }) => {
         setFormLoading(true)
         actions.setSubmitting(false)
 
-        // let formData = new FormData()
+        let formData = new FormData()
 
-        // Object.entries(values).map(([key, value]) => {
-        //   if (typeof value === 'string') {
-        //     formData.append(`${key}.key`, t(key))
-        //     formData.append(`${key}.value`, t(value))
-        //   }
+        Object.entries(values).map(([key, value]) => {
+          if (typeof value === 'string' || value instanceof File) {
+            formData.append(key, value)
+          }
+        })
 
-        //   if (value instanceof File) {
-        //     formData.append(`${key}.key`, t(key))
-        //     formData.append(key, value)
-        //   }
-        // })
-
-        // const response = axios
-        //   .post('/api/apply', formData, {
-        //     headers: {
-        //       Accept: 'application/json',
-        //       'Content-Type': 'multipart/form-data'
-        //     }
-        //   })
-        //   .then(function (response) {
-        //     setFormLoading(false)
-        //     actions.setSubmitting(true)
-
-        //     console.log('1', response)
-        //   })
-        //   .catch(function (error) {
-        //     setStatusMessage(error.message)
-        //     setFormLoading(false)
-        //     actions.setSubmitting(false)
-
-        //     console.log('error', error)
-        //   })
-        // console.log('2', response)
+        const response = axios
+          .post('/api/apply', formData, {
+            headers: {
+              Accept: 'application/json',
+              'Content-Type': 'multipart/form-data'
+            }
+          })
+          .then(function (response) {
+            setFormLoading(false)
+            actions.setSubmitting(true)
+          })
+          .catch(function (error) {
+            setStatusMessage(error.message)
+            setFormLoading(false)
+            actions.setSubmitting(false)
+          })
 
         setTimeout(function () {
           setFormLoading(false)

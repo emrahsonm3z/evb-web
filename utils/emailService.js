@@ -31,17 +31,17 @@ function emailService(config) {
       defaultLocale: I18N_INITIAL_LANG,
       locales: LANGUAGES.map((c) => c.lang)
     },
+    // htmlToText: true,
     // transport: {
     //   jsonTransport: true
     // },
     // preview: true,
-
+    // send: true,
     transport: transporter
   })
 
   return {
     send(mailOptions) {
-      console.log('mailOptions', mailOptions)
       return email
         .send(mailOptions)
         .then((res) => {

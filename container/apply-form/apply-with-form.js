@@ -114,7 +114,6 @@ const ApplyFormWithForm = ({ t }) => {
         setFormLoading(true)
         actions.setSubmitting(false)
 
-        console.log('on submit started')
         let formData = new FormData()
 
         Object.entries(values).map(([key, value]) => {
@@ -132,22 +131,16 @@ const ApplyFormWithForm = ({ t }) => {
           .then(function (response) {
             setFormLoading(false)
             actions.setSubmitting(true)
-
-            console.log('1', response)
           })
           .catch(function (error) {
             setStatusMessage(error.message)
             setFormLoading(false)
             actions.setSubmitting(false)
-
-            console.log('error', error)
           })
-        console.log('2', response)
 
         setTimeout(function () {
           setFormLoading(false)
           actions.setSubmitting(true)
-          console.log('on submit finished')
         }, 3000)
       }}
       formLoading={formLoading}

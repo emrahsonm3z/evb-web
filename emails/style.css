@@ -52,7 +52,7 @@ s {
 html,
 body {
   width: 100%;
-  font-family: 'trebuchet ms', 'lucida grande', 'lucida sans unicode', 'lucida sans', tahoma, sans-serif;
+  font-family: roboto, 'helvetica neue', helvetica, arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -104,7 +104,7 @@ h5 {
   margin: 0;
   line-height: 120%;
   mso-line-height-rule: exactly;
-  font-family: 'trebuchet ms', 'lucida grande', 'lucida sans unicode', 'lucida sans', tahoma, sans-serif;
+  font-family: roboto, 'helvetica neue', helvetica, arial, sans-serif;
 }
 
 p,
@@ -294,8 +294,8 @@ a {
 
 /* END CONFIG STYLES */
 a {
-  font-family: 'trebuchet ms', 'lucida grande', 'lucida sans unicode', 'lucida sans', tahoma, sans-serif;
-  font-size: 14px;
+  font-family: roboto, 'helvetica neue', helvetica, arial, sans-serif;
+  font-size: 16px;
   text-decoration: underline;
 }
 
@@ -335,8 +335,8 @@ h3 a {
 p,
 ul li,
 ol li {
-  font-size: 14px;
-  font-family: 'trebuchet ms', 'lucida grande', 'lucida sans unicode', 'lucida sans', tahoma, sans-serif;
+  font-size: 16px;
+  font-family: roboto, 'helvetica neue', helvetica, arial, sans-serif;
   line-height: 150%;
 }
 
@@ -391,12 +391,12 @@ ol li {
 .es-header-body ul li,
 .es-header-body ol li {
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .es-header-body a {
   color: #1376c8;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .es-footer {
@@ -414,12 +414,12 @@ ol li {
 .es-footer-body ul li,
 .es-footer-body ol li {
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .es-footer-body a {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .es-infoblock,
@@ -444,7 +444,7 @@ a.es-button {
   background: #31cb4b;
   border-radius: 30px;
   font-size: 18px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: roboto, 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 120%;
@@ -836,5 +836,5 @@ a.es-button {
 
 /* END RESPONSIVE STYLES */
 button.es-button {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: roboto, 'helvetica neue', helvetica, arial, sans-serif;
 }
