@@ -45,13 +45,15 @@ h2,
 h3,
 a,
 p,
-span {
+span,
+li {
   font-size: clamp(var(--min), var(--val), var(--max));
 }
 
 a,
 span,
-p {
+p,
+li {
   --min: 0.8rem;
   --val: 1.5vw;
   --max: 1.2rem;

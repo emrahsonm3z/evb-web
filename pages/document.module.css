@@ -51,4 +51,12 @@
     font-weight: 600;
     text-decoration: none;
   }
+
+  li {
+    margin-left: 40px;
+
+    @media (--m) {
+      margin-left: 20px;
+    }
+  }
 }
