@@ -64,7 +64,7 @@ const Meta = (props) => (
     <meta name="msapplication-config" content="/icons/browserconfig.xml"></meta>
 
     {/* analytic */}
-    {SiteConfig.googleAnalytic && (
+    {SiteConfig.googleAnalytic && SiteConfig.googleAnalytic !== 'X-XXXXXXXXXX' && (
       <>
         <script
           async
