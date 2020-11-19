@@ -25,6 +25,7 @@ function OfficeAddresses({ t, lang }) {
               <Figure
                 src={office.bg}
                 title={office.city[locale]}
+                alt={office.city[locale]}
                 address={office.address}
               />
             </div>

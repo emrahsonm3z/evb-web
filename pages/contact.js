@@ -1,11 +1,20 @@
+import PropTypes from 'prop-types'
 import cn from 'classnames'
 
 import styles from './contact.module.css'
 import OfficeAddress from '../container/office-address'
 import ContactForm from '../container/contact-form'
+import Meta from '../components/Meta'
+import { withTranslation } from '../i18n'
+import { HOST_URL } from '../constants'
 
-const Contact = ({ lang }) => (
+const Contact = ({ t, lang }) => (
   <>
+    <Meta
+      title={t('Contact.Title')}
+      desc={t('Contact.Description')}
+      canonical={`${HOST_URL}/contact`}
+    />
     <section className={cn([styles.section, styles['our-offices']])}>
       <OfficeAddress lang={lang} />
     </section>
@@ -29,7 +38,11 @@ const Contact = ({ lang }) => (
 )
 
 Contact.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'validation', 'documents']
+  namespacesRequired: ['page_info', 'common', 'validation', 'documents']
 })
 
-export default Contact
+Contact.propTypes = {
+  t: PropTypes.func.isRequired
+}
+
+export default withTranslation('page_info')(Contact)

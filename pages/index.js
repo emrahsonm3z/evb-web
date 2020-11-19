@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import styles from './index.module.css'
 
 import HeroSlider from '../container/hero-slider'
@@ -9,9 +10,17 @@ import IntensiveTraining from '../container/intensive-training'
 import Team from '../container/team'
 import FaqSlider from '../container/faq-slider'
 import Expectations from '../container/expectations'
+import Meta from '../components/Meta'
+import { withTranslation } from '../i18n'
+import { HOST_URL } from '../constants'
 
-const Homepage = ({ lang }) => (
+const Homepage = ({ t, lang }) => (
   <>
+    <Meta
+      title={t('Home.Title')}
+      desc={t('Home.Description')}
+      canonical={`${HOST_URL}`}
+    />
     <section className={styles.section}>
       <HeroSlider />
     </section>
@@ -43,7 +52,11 @@ const Homepage = ({ lang }) => (
 )
 
 Homepage.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'documents']
+  namespacesRequired: ['page_info', 'common', 'documents']
 })
 
-export default Homepage
+Homepage.propTypes = {
+  t: PropTypes.func.isRequired
+}
+
+export default withTranslation('page_info')(Homepage)

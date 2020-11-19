@@ -22,7 +22,10 @@ function Expectations({ t }) {
             </ul>
           </div>
           <div className={styles.img}>
-            <img src="assets/hearings_scaled.jpg"></img>
+            <img
+              alt={t('Expectations.Title')}
+              src="assets/hearings_scaled.jpg"
+            ></img>
           </div>
         </div>
       </div>

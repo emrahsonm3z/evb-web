@@ -27,13 +27,19 @@ function Footer({ t }) {
                       scroll.scrollToTop()
                     }}
                   >
-                    <img src="/assets/logo-white.png"></img>
+                    <img
+                      alt="Evb enerji ve bilişim"
+                      src="/assets/logo-white.png"
+                    ></img>
                   </a>
                 </Link>
               ) : (
                 <Link href="/">
                   <a>
-                    <img src="/assets/logo-white.png"></img>
+                    <img
+                      alt="Evb enerji ve bilişim"
+                      src="/assets/logo-white.png"
+                    ></img>
                   </a>
                 </Link>
               )}
@@ -48,7 +54,7 @@ function Footer({ t }) {
                   <Download />
                   <a
                     href="docs/ilgili-kisi-basvuru-form.docx"
-                    download={`EVB ENERJİ - ${t(
+                    download={`EVB ENERJİ VE BİLİŞİM  - ${t(
                       'ContactApplicationForm'
                     )}.docx`}
                     className={styles['contact-apply-form']}
@@ -73,7 +79,7 @@ function Footer({ t }) {
       <div className={styles.bottom}>
         <div className="container">
           <span className={styles['bottom-text']}>
-            {t('Copyright')} © EVB ENERJİ evb.com.tr
+            {t('Copyright')} © EVB ENERJİ VE BİLİŞİM evb.com.tr
           </span>
           <span className={styles['bottom-text']}>
             <Link href="/term-of-use">

@@ -15,7 +15,10 @@ function IntensiveTraining({ t }) {
           <p>{t('IntensiveTraining.Content')}</p>
         </div>
         <div className={styles.img}>
-          <img src="assets/service.jpg"></img>
+          <img
+            alt={t('IntensiveTraining.Title')}
+            src="assets/service.jpg"
+          ></img>
         </div>
       </div>
     </div>

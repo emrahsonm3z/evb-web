@@ -3,9 +3,16 @@ import cn from 'classnames'
 import { withTranslation } from '../i18n'
 import styles from './document.module.css'
 import { PrivacyPolicyDocument } from '../container/documents'
+import Meta from '../components/Meta'
+import { HOST_URL } from '../constants'
 
 const PrivacyPolicy = ({ t }) => (
   <>
+    <Meta
+      title={t('PrivacyPolicy.Title', { ns: 'page_info' })}
+      desc={t('PrivacyPolicy.Description', { ns: 'page_info' })}
+      canonical={`${HOST_URL}/privacy-policy`}
+    />
     <section className={cn([styles.section, styles['document']])}>
       <h1 className={styles.title}>{t('PrivacyPolicy.Title')}</h1>
       <h3 className={styles.subtitle}>
@@ -19,11 +26,13 @@ const PrivacyPolicy = ({ t }) => (
 )
 
 PrivacyPolicy.getInitialProps = async () => ({
-  namespacesRequired: ['documents', 'common']
+  namespacesRequired: ['page_info', 'documents', 'common']
 })
 
 PrivacyPolicy.prototype = {
   t: PropTypes.func.isRequired
 }
 
-export default withTranslation(['documents', 'common'])(PrivacyPolicy)
+export default withTranslation(['documents', 'page_info', 'common'])(
+  PrivacyPolicy
+)

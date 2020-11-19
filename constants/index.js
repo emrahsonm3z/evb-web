@@ -1,5 +1,8 @@
 import * as Icons from '../components/icons/flags'
 
+const HOST_URL = 'https://www.evb.com.tr'
+const ORGANIZATION = 'Evb enerji ve bilisim'
+
 const I18N_NAME = 'evb-lang'
 const I18N_INITIAL_LANG = 'tr'
 
@@ -232,5 +235,7 @@ export {
   NUMBER_OF_EMPLOYEE,
   NUMBER_OF_CUSTOMER,
   FAQS_SLIDER_ITEMS,
-  OFFICES
+  OFFICES,
+  HOST_URL,
+  ORGANIZATION
 }

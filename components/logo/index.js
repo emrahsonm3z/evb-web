@@ -8,6 +8,7 @@ function Logo({ reverse = false, href, onClick, className }) {
     <Link href={href}>
       <a onClick={onClick} className={cn([styles.logo, className])}>
         <img
+          alt="Evb enerji ve bilişim"
           src={!reverse ? '/assets/logo.png' : '/assets/logo-white.png'}
         ></img>
       </a>

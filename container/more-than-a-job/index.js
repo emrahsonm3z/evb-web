@@ -10,10 +10,13 @@ function MoreThanAJob({ t }) {
     <div className="container">
       <div className={styles.block}>
         <div className={styles.img}>
-          <img src="assets/yoga.jpg"></img>
+          <img alt={t('MoreThanAJob.Title')} src="assets/yoga.jpg"></img>
         </div>
         <div className={styles.img}>
-          <img src="assets/office_taco_party.jpg"></img>
+          <img
+            alt={t('MoreThanAJob.Title')}
+            src="assets/office_taco_party.jpg"
+          ></img>
         </div>
         <div className={styles.text}>
           <h2>{t('MoreThanAJob.Title')}</h2>

@@ -96,7 +96,7 @@ const Header = ({ t, lang }) => {
                   scroll.scrollToTop()
                 }}
               >
-                <img src="/assets/logo.png"></img>
+                <img alt="Evb enerji ve bilişim" src="/assets/logo.png"></img>
               </a>
             </Link>
           ) : (
@@ -106,7 +106,7 @@ const Header = ({ t, lang }) => {
                   setIsActive(false)
                 }}
               >
-                <img src="/assets/logo.png"></img>
+                <img alt="Evb enerji ve bilişim" src="/assets/logo.png"></img>
               </a>
             </Link>
           )}
