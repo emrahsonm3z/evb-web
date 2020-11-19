@@ -4,7 +4,7 @@ import cn from 'classnames'
 import styles from './contact.module.css'
 import OfficeAddress from '../container/office-address'
 import ContactForm from '../container/contact-form'
-import Meta from '../components/Meta'
+import Meta from '../components/meta'
 import { withTranslation } from '../i18n'
 import { HOST_URL } from '../constants'
 

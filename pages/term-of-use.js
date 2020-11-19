@@ -4,7 +4,7 @@ import { withTranslation } from '../i18n'
 import styles from './document.module.css'
 
 import { TermOfUseDocument } from '../container/documents'
-import Meta from '../components/Meta'
+import Meta from '../components/meta'
 import { HOST_URL } from '../constants'
 
 const TermOfUse = ({ t }) => (

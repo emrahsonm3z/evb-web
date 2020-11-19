@@ -10,7 +10,7 @@ import IntensiveTraining from '../container/intensive-training'
 import Team from '../container/team'
 import FaqSlider from '../container/faq-slider'
 import Expectations from '../container/expectations'
-import Meta from '../components/Meta'
+import Meta from '../components/meta'
 import { withTranslation } from '../i18n'
 import { HOST_URL } from '../constants'
 

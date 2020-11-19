@@ -3,7 +3,7 @@ import cn from 'classnames'
 import { withTranslation } from '../i18n'
 import styles from './document.module.css'
 import { PrivacyPolicyDocument } from '../container/documents'
-import Meta from '../components/Meta'
+import Meta from '../components/meta'
 import { HOST_URL } from '../constants'
 
 const PrivacyPolicy = ({ t }) => (

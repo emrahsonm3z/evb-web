@@ -4,7 +4,7 @@ import cn from 'classnames'
 import styles from './apply.module.css'
 import ApplyForm from '../container/apply-form'
 import { withTranslation } from '../i18n'
-import Meta from '../components/Meta'
+import Meta from '../components/meta'
 import { HOST_URL } from '../constants'
 
 const Apply = ({ t }) => (
