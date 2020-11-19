@@ -53,13 +53,13 @@ const Meta = (props) => (
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/apple-icon-180x180.png"
+      href="/icons/apple-icon-180x180.png"
     ></link>
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/android-icon-192x192.png"
+      href="/icons/android-icon-192x192.png"
     />
     <meta name="msapplication-config" content="/icons/browserconfig.xml"></meta>
 
