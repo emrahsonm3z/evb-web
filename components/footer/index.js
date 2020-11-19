@@ -67,7 +67,12 @@ function Footer({ t }) {
             <ul className={styles.socialMedias}>
               {SOCIAL_MEDIAS.map((media) => (
                 <li key={media.Title}>
-                  <a href={media.Url} title={media.Title} target="_blank">
+                  <a
+                    href={media.Url}
+                    title={media.Title}
+                    target="_blank"
+                    rel="noopener"
+                  >
                     <media.Icon className={styles['social-icon']} />
                   </a>
                 </li>

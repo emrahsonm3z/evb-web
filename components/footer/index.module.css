@@ -57,12 +57,13 @@
 
     .bottom-text,
     .bottom-text a {
-      --min: 0.6rem;
+      --min: 0.8rem;
       --val: 2vw;
       --max: 0.9rem;
 
       font-weight: 600;
       color: var(--c-gray-300);
+      text-align: center;
     }
 
     .bottom-text a {

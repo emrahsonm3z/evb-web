@@ -1,6 +1,6 @@
 import * as Icons from '../components/icons/flags'
 
-const HOST_URL = 'https://www.evb.com.tr'
+const HOST_URL = 'https://evb.vercel.app/'
 const ORGANIZATION = 'Evb enerji ve bilisim'
 
 const I18N_NAME = 'evb-lang'

@@ -6,7 +6,7 @@
   }
 
   p {
-    --min: 0.7rem;
+    --min: 0.8rem;
     --val: 1.5vw;
     --max: 1rem;
 
@@ -81,7 +81,7 @@
 
       h3,
       span {
-        --min: 0.7rem;
+        --min: 0.8rem;
         --val: 1.5vw;
         --max: 1rem;
 
