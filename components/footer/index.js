@@ -21,7 +21,7 @@ function Footer({ t }) {
           <div className={styles.body}>
             <div className={styles.left}>
               {router.pathname == '/' ? (
-                <Link href="">
+                <Link href="/">
                   <a
                     onClick={() => {
                       scroll.scrollToTop()

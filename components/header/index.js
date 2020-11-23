@@ -51,7 +51,7 @@ const SectionLinkFromAnotherPage = ({ text, onClick }) => {
 }
 
 const NavLink = ({ to, text, onClick }) => (
-  <Link href={to}>
+  <Link href={`/${to}`}>
     <a className={cn([styles['menu-link']])} onClick={onClick}>
       <LinkLabel text={text} />
     </a>
@@ -69,7 +69,6 @@ const Header = ({ t, lang }) => {
     i18n.changeLanguage(lang)
     setLanguage(lang)
   }
-
   return (
     <header
       id="header"
@@ -89,7 +88,7 @@ const Header = ({ t, lang }) => {
         </a>
         <div className={cn([styles.logo, styles['hover-masks-logo']])}>
           {router.pathname == '/' ? (
-            <Link href="">
+            <Link href="/">
               <a
                 onClick={() => {
                   setIsActive(false)
