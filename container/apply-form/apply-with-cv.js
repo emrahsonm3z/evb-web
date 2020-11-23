@@ -111,12 +111,6 @@ const ApplyFormWithCV = ({ t }) => {
             setFormLoading(false)
             actions.setSubmitting(false)
           })
-
-        setTimeout(function () {
-          setFormLoading(false)
-          actions.setSubmitting(true)
-          console.log('on submit finished')
-        }, 3000)
       }}
       formLoading={formLoading}
     >
