@@ -6,13 +6,8 @@ function Figure({ src, title, alt, address }) {
   return (
     <div className={styles.grid}>
       <figure className={styles.effect}>
-        {/* <img src={src} alt={alt} className={styles['img-fluid']} /> */}
-        <Image
-          src={src}
-          alt={alt}
-          className={styles['img-fluid']}
-          layout="fill"
-        />
+        <img src={src} alt={alt} className={styles['img-fluid']} />
+
         <figcaption>
           <div className={styles.caption}>
             <h2>{title}</h2>

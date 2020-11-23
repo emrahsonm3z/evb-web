@@ -8,8 +8,5 @@ module.exports = {
   rewrites: async () => nextI18NextRewrites(localeSubpaths),
   publicRuntimeConfig: {
     localeSubpaths
-  },
-  images: {
-    domains: ['https://evb.vercel.app/assets/', 'http://localhost:3000/assets/']
   }
 }
