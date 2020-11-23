@@ -141,7 +141,7 @@ const ApplyFormWithForm = ({ t }) => {
         setTimeout(function () {
           setFormLoading(false)
           actions.setSubmitting(true)
-        }, 3000)
+        }, 33000)
       }}
       formLoading={formLoading}
     >

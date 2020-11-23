@@ -1,18 +1,25 @@
 import React from 'react'
 import Loader from 'react-loader'
 
-function Loading() {
+function Loading({
+  lines = 13,
+  length = 7,
+  width = 3,
+  radius = 10,
+  color = '#000',
+  speed = 1
+}) {
   return (
     <Loader
-      lines={20}
-      length={15}
-      width={7}
-      radius={30}
+      lines={lines}
+      length={length}
+      width={width}
+      radius={radius}
       corners={1}
       rotate={0}
       direction={1}
-      color="#63a140"
-      speed={1}
+      color={color}
+      speed={speed}
       trail={60}
       shadow={false}
       hwaccel={false}

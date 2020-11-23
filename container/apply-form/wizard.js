@@ -72,7 +72,16 @@ class Wizard extends React.Component {
           if (!isSubmitting) {
             return (
               <Fragment>
-                {formLoading && <Loading />}
+                {formLoading && (
+                  <Loading
+                    lines={20}
+                    length={15}
+                    width={7}
+                    radius={30}
+                    color="#63a140"
+                    speed={1}
+                  />
+                )}
                 <Form className={styles.form}>
                   {React.cloneElement(activePage, {
                     parentState: { ...props }
