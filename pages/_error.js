@@ -7,6 +7,7 @@ import styles from './error.module.css'
 import Meta from '../components/meta'
 
 const Error = ({ statusCode, t }) => {
+  console.log('statusCode', statusCode)
   if (StatusCodes.NOT_FOUND == statusCode) {
     return (
       <>
