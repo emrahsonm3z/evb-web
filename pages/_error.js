@@ -7,7 +7,7 @@ import styles from './error.module.css'
 import Meta from '../components/meta'
 
 const Error = ({ statusCode, t }) => {
-  if (StatusCodes.NOT_FOUND === statusCode) {
+  if (StatusCodes.NOT_FOUND == statusCode) {
     return (
       <>
         <Meta title={t('page-notfound')} desc={t('page-notfound')} />

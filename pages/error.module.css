@@ -36,7 +36,6 @@
   }
 
   .back-to-home {
-    border-radius: 15px;
     color: var(--c-primary);
     font-size: clamp(1.2rem, 1.5vw, 1.6rem);
     font-weight: 600;
