@@ -1,21 +1,48 @@
 import PropTypes from 'prop-types'
+import { StatusCodes } from 'http-status-codes'
+import Link from 'next/link'
 import { withTranslation } from '../i18n'
 
-const Error = ({ statusCode, t }) => (
-  <p>
-    {statusCode
-      ? t('error-with-status', { statusCode })
-      : t('error-without-status')}
-  </p>
-)
+import styles from './error.module.css'
+import Meta from '../components/meta'
 
-Error.getInitialProps = async ({ res, err }) => {
-  let statusCode = null
-  if (res) {
-    ;({ statusCode } = res)
-  } else if (err) {
-    ;({ statusCode } = err)
+const Error = ({ statusCode, t }) => {
+  if (StatusCodes.NOT_FOUND === statusCode) {
+    return (
+      <>
+        <Meta title={t('page-notfound')} desc={t('page-notfound')} />
+        <section className={styles.section}>
+          <h1>{statusCode}</h1>
+          <h3>{t('page-notfound')}</h3>
+          <Link href="/">
+            <a className={styles['back-to-home']}>{t('ReturnToHomepage')}</a>
+          </Link>
+          <img src="/assets/404.svg" alt={t('page-notfound')} />
+        </section>
+      </>
+    )
   }
+
+  return (
+    <>
+      <Meta
+        title={t('error-without-status')}
+        desc={t('error-without-status')}
+      />
+      <section className={styles.section}>
+        <img src="/assets/500.svg" alt={t('error-without-status')} />
+        <h3>{t('error-without-status')}</h3>
+        <Link href="/">
+          <a className={styles['back-to-home']}>{t('ReturnToHomepage')}</a>
+        </Link>
+      </section>
+    </>
+  )
+}
+
+Error.getInitialProps = ({ res, err }) => {
+  const statusCode = res ? res.statusCode : err ? err.statusCode : 404
+
   return {
     namespacesRequired: ['common'],
     statusCode

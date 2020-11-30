@@ -1,6 +1,7 @@
 {
   "error-with-status": "Auf dem Server ist ein Fehler ({{statusCode}}) aufgetreten",
   "error-without-status": "Auf dem Server ist ein Fehler aufgetreten",
+  "page-notfound": "Die von Ihnen gesuchte Seite wurde nicht gefunden",
   "Menu": {
     "OurServices": "Unsere Dıenstleıstungen",
     "Faqs": "Häufıg Gestellte Fragen",

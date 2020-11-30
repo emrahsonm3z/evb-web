@@ -1,6 +1,7 @@
 {
   "error-with-status": "Sunucuda {{statusCode}} hatası oluştu",
   "error-without-status": "Sunucuda bir hata oluştu",
+  "page-notfound": "Aradınız sayfa bulunamadı",
   "Menu": {
     "OurServices": "Hizmetlerimiz",
     "Faqs": "Sıkça Sorulan Sorular",
