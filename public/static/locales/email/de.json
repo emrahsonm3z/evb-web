@@ -1,6 +1,7 @@
 {
   "dear": "Sehr geehrter {{name}}",
   "NewJobApplication": "neue Bewerbung",
+  "NewSupport": "New support request",
   "ApplicationReceivedSuccessfully": "Ihre Bewerbung wurde erfolgreich empfangen",
   "ContactUs": "Kontaktiere uns",
   "FollowUs": "Folge uns",
@@ -13,6 +14,7 @@
   "JobApplyCompleted.Message.1": "Es gibt eine neue Bewerbung. Bitte vergessen Sie nicht, den Anhang zu überprüfen.",
   "NewJobApply.Message.1": "Zunächst freuen wir uns sehr, dass Sie sich uns anschließen möchten. Wir werden Ihre Bewerbung so schnell wie möglich prüfen und uns bei Ihnen melden.",
   "NewJobApply.Message.2": "Informationen zu uns finden Sie auf unserer Website. Wenn Sie detailliertere Informationen erhalten möchten, können Sie uns mit unseren Kontaktinformationen kontaktieren.",
+  "NewSupport.Message.1": "There is a new support request.",
   "HopeToSeeYouAgain": "Ich hoffe, wir sehen uns wieder",
   "Career": "Karriere"
 }

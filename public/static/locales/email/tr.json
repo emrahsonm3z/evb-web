@@ -1,6 +1,7 @@
 {
   "dear": "Sayın {{name}}",
   "NewJobApplication": "Yeni iş başvurusu",
+  "NewSupport": "Yeni destek talebi",
   "ApplicationReceivedSuccessfully": "Başvurunuz başarılı bir şekilde alınmıştır",
   "ContactUs": "Bize ulaşın",
   "FollowUs": "Bizi takip et",
@@ -10,9 +11,10 @@
   "NotificationAlert": "Bu yalnızca bildirim amaçlı bir e-postadır, lütfen bu iletiyi yanıtlamayın.",
   "Copyright": "Telif hakkı",
   "DearSir": "Sayın yetkili",
-  "JobApplyCompleted.Message.1": "Yeni iş başvurusu vardır. Lütfen ek dosyayı kontrol etmeyi unutmayız.",
+  "JobApplyCompleted.Message.1": "Yeni iş başvurusu var. Lütfen ek dosyayı kontrol etmeyi unutmayız.",
   "NewJobApply.Message.1": "Öncelikle aramıza katılmak istediğiniz için çok mutluyuz. Başvurunuzu en kısa sürede değerlendirip tarafınıza dönüş yapacağız.",
   "NewJobApply.Message.2": "Bizimle ilgili merak ettiğiniz bilgilere sitemizden ulaşabilirsiniz. Daha detaylı bilgi almak isterseniz iletişim bilgilerimizle bize ulaşabilirsiniz.",
+  "NewSupport.Message.1": "Yeni destek talebi var.",
   "HopeToSeeYouAgain": "Tekrar görüşmek dileğiyle",
   "Career": "Kariyer"
 }

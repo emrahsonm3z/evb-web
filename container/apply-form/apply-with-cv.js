@@ -103,10 +103,12 @@ const ApplyFormWithCV = ({ t }) => {
             }
           })
           .then(function (response) {
+            console.log('success')
             setFormLoading(false)
             actions.setSubmitting(true)
           })
           .catch(function (error) {
+            console.log('error')
             setStatusMessage(error.message)
             setFormLoading(false)
             actions.setSubmitting(false)

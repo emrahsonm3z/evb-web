@@ -2,12 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Flickity from 'react-flickity-component'
 import cn from 'classnames'
+import { useRouter } from 'next/router'
 
 import styles from './index.module.css'
 import { withTranslation, Trans } from '../../i18n'
 import { HERO_SLIDER_ITEMS } from '../../constants'
 
 function HeroSlider({ t }) {
+  const router = useRouter()
+
   const flickityOptions = {
     accessibility: true,
     prevNextButtons: true,
@@ -47,7 +50,12 @@ function HeroSlider({ t }) {
                 {t(`Hero.Items.${item.id}.Title`)}
               </Trans>
             </h1>
-            <button className={styles.btn}>
+            <button
+              className={styles.btn}
+              onClick={() => {
+                router.push('/apply')
+              }}
+            >
               {t(`Hero.Items.${item.id}.Button`)}
             </button>
           </div>

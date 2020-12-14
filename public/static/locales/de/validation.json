@@ -1,5 +1,6 @@
 {
   "Max": "Sollte {{max}} Zeichen oder weniger sein",
+  "Min": "Muss mindestens {{min}} Zeichen lang sein",
   "Required": "Erforderliches Feld",
   "Invalid": {
     "Email": "Falsches E-Mail-Format",

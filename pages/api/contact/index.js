@@ -27,45 +27,20 @@ handler.post(upload.any(), async (req, res) => {
   })
 
   Mailer.send({
-    template: 'job-apply-completed',
+    template: 'support',
     message: {
       to: { name: 'Emrah Sönmez', address: 'emrahsonm3z@gmail.com' },
       from: {
         name: process.env.EMAIL_CAREER_FROM_NAME,
         address: process.env.EMAIL_CAREER_FROM_ADDRESS
-      },
-      attachments: req.files.map((file) => {
-        return {
-          filename: file.originalname,
-          contentType: file.mimetype,
-          encoding: file.encoding,
-          content: Buffer.from(file.buffer)
-        }
-      })
+      }
     },
     locals: {
       locale: req.cookies[I18N_NAME] || I18N_INITIAL_LANG,
       variables: form
     }
   })
-    .then((res) => {
-      Mailer.send({
-        template: 'new-job-apply',
-        message: {
-          to: { name: 'Emrah Sönmez', address: 'emrahsonm3z@gmail.com' },
-          from: {
-            name: process.env.EMAIL_SYSTEM_FROM_NAME,
-            address: process.env.EMAIL_SYSTEM_FROM_ADDRESS
-          }
-        },
-        locals: {
-          locale: req.cookies[I18N_NAME] || I18N_INITIAL_LANG,
-          name: req.body.NameAndSurname || ''
-        }
-      })
-        .then(console.log)
-        .catch(console.error)
-    })
+    .then(console.log)
     .catch(console.error)
 
   res.end()

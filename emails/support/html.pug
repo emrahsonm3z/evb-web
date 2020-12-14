@@ -1,0 +1,81 @@
+extends ../layout.pug
+
+mixin itemBlock(items)
+  - for (var index = 0; index < items.length; index = index + 2)  {
+      tr
+        td.esd-structure.es-p20t.es-p20r.es-p20l.es-m-p5t(align="left")
+          //if mso
+            table(width="560" cellpadding="0" cellspacing="0")
+              tr
+                td(width="270" valign="top")
+          table.es-left(cellpadding="0" cellspacing="0" align="left")
+            +item(items[index].key, items[index].value)
+          //if mso
+            td(width="20")
+            td(width="270" valign="top")
+          table.es-right(cellpadding="0" cellspacing="0" align="right")
+            - if (index + 1 === items.length) {
+                td.esd-empty-container(align="center" style="display: none;")
+            -} else 
+                +item(items[index+1].key, items[index+1].value)
+          //if mso
+  - }
+
+mixin item(key, value)
+  tbody
+    tr
+      td.es-m-p20b.esd-container-frame(width="270" align="left" esd-custom-block-id="196095")
+        table(cellpadding="0" cellspacing="0" width="100%" style="border-left: 4px solid #63a140; border-radius: 8px; border-collapse: separate;")
+          tbody
+            tr
+              td.esd-block-text.es-p5t.es-p15l(align="left")
+                p(style="font-size: 16px !important; color: #333333;")
+                  b= key
+            tr
+              td.esd-block-text.es-p5b.es-p15l(align="left")
+                p(style="font-size: 14px !important; color: #666666;")= value
+
+block content
+  table.es-content(cellspacing="0" cellpadding="0" align="center")
+    tbody
+      tr
+        td.esd-stripe(align="center" esd-custom-block-id="196081")
+          table.es-content-body(width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center")
+            tbody
+              tr
+                td.esd-structure.es-p20t.es-p20r.es-p20l(align="left")
+                  table(width="100%" cellspacing="0" cellpadding="0")
+                    tbody
+                      tr
+                        td.esd-container-frame(width="560" valign="top" align="center")
+                          table(width="100%" cellspacing="0" cellpadding="0")
+                            tbody
+                              tr
+                                td.esd-block-text.es-p10t.es-p10b(align="left")
+                                  p
+                                    br
+                                    | #{t("DearSir")},
+                              tr
+                                td.esd-block-text.es-p10t.es-p10b(align="left")
+                                  p #{t("NewSupport.Message.1")}
+                              tr
+                                td.esd-block-text.es-p10t.es-p10b(align="left")
+                                  p
+                                    b evb.com.tr
+                                    br
+              +itemBlock(variables)
+              tr
+                td.esd-structure.es-p20t.es-p20r.es-p20l(align="left")
+                  table(cellpadding="0" cellspacing="0" width="100%")
+                    tbody
+                      tr
+                        td.esd-container-frame(width="560" align="center" valign="top")
+                          table(cellpadding="0" cellspacing="0" width="100%")
+                            tbody
+                              tr
+                                td.esd-block-text(align="left")
+                                  p
+                                    br
+                                    br
+                                    br
+                                    

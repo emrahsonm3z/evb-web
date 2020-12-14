@@ -161,6 +161,6 @@
   "UpdatedAt": "Aktualisiert am",
   "and": "und",
   "ContactApplicationForm": "Kontaktantragsformular",
-  "ApplicationHasBeenSuccessfully": "Ihre Bewerbung wurde erfolgreich erhalten",
+  "SuccessfullySubmitted": "Erfolgreich gesendet",
   "ReturnToHomepage": "Zur Startseite zurückkehren"
 }

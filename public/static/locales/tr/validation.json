@@ -1,5 +1,6 @@
 {
   "Max": "{{max}} karakter veya daha az olmalıdır",
+  "Min": "En az {{min}} karakter olmalıdır",
   "Required": "Gerekli alan",
   "Invalid": {
     "Email": "Hatalı e-posta formatı",
