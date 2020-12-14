@@ -15,7 +15,7 @@ const ErrorFocus = () => {
   useEffect(() => {
     const keys = Object.keys(errors)
 
-    if (keys.length > 0 && isSubmitting && !isValidating) {
+    if (keys.length > 0 && !isValidating) {
       const errorElement = document.querySelector(`[id="${keys[0]}"]`)
 
       if (errorElement) {
