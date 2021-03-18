@@ -33,7 +33,9 @@ const SELECTED_VALUES = {
   No: 'No',
   Well: 'Well',
   Medium: 'Medium',
-  Little: 'Little'
+  Little: 'Little',
+  Advanced: 'Advanced',
+  Native: 'Native'
 }
 
 const initialValues =
@@ -52,7 +54,7 @@ const initialValues =
         EducationalStatus: SELECTED_VALUES.University,
         WorkExperience: SELECTED_VALUES.Yes,
         ComputerSkills: SELECTED_VALUES.Well,
-        GermanLanguageLevel: SELECTED_VALUES.Little,
+        GermanLanguageLevel: SELECTED_VALUES.Native,
         Kvkk: true,
         TermOfUseAndPrivacyPolicy: true
       }
@@ -235,8 +237,13 @@ const ApplyFormWithForm = ({ t }) => {
               >
                 <RadioButton
                   name="RequestedOffice"
-                  label="İstanbul"
-                  value="İstanbul"
+                  label="İstanbul Avrupa"
+                  value="İstanbul Avrupa"
+                />
+                <RadioButton
+                  name="RequestedOffice"
+                  label="İstanbul Anadolu"
+                  value="İstanbul Anadolu"
                 />
                 <RadioButton
                   name="RequestedOffice"
@@ -340,18 +347,18 @@ const ApplyFormWithForm = ({ t }) => {
               >
                 <RadioButton
                   name="GermanLanguageLevel"
+                  label={t('Native')}
+                  value={SELECTED_VALUES.Native}
+                />
+                <RadioButton
+                  name="GermanLanguageLevel"
+                  label={t('Advanced')}
+                  value={SELECTED_VALUES.Advanced}
+                />
+                <RadioButton
+                  name="GermanLanguageLevel"
                   label={t('Well')}
                   value={SELECTED_VALUES.Well}
-                />
-                <RadioButton
-                  name="GermanLanguageLevel"
-                  label={t('Medium')}
-                  value={SELECTED_VALUES.Medium}
-                />
-                <RadioButton
-                  name="GermanLanguageLevel"
-                  label={t('Little')}
-                  value={SELECTED_VALUES.Little}
                 />
               </RadioButtonGroup>
               <div className={styles['full-width-column']}>

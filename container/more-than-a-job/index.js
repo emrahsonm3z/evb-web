@@ -19,7 +19,7 @@ function MoreThanAJob({ t }) {
           ></img>
         </div>
         <div className={styles.text}>
-          <h2>{t('MoreThanAJob.Title')}</h2>
+          <h3 className={styles.title}>{t('MoreThanAJob.Title')}</h3>
           <p>{t('MoreThanAJob.Content')}</p>
         </div>
       </div>

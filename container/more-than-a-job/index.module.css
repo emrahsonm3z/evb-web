@@ -23,7 +23,7 @@
   width: calc(100% - 2 * (var(--img-width) + 2 * var(--img-padding)  + var(--text-padding)));
   padding: var(--text-padding);
 
-  h2 {
+  .title {
     color: var(--c-primary);
   }
 }
