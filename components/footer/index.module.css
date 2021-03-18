@@ -57,9 +57,8 @@
 
     .bottom-text,
     .bottom-text a {
-      --min: 0.8rem;
-      --val: 2vw;
-      --max: 0.9rem;
+      --min-fs: 0.75;
+      --max-fs: 0.85;
 
       font-weight: 600;
       color: var(--c-gray-300);
@@ -122,9 +121,8 @@
 
           span,
           a {
-            --min: 0.9em;
-            --val: 2.5vw;
-            --max: 1.1rem;
+            --min-fs: 0.85;
+            --max-fs: 1.05;
 
             color: var(--c-white);
 

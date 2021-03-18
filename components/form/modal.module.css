@@ -26,9 +26,8 @@
   a,
   p,
   span {
-    --min: 0.8rem;
-    --val: 1.5vw;
-    --max: 1rem;
+    --min-fs: 0.75;
+    --max-fs: 1;
   }
 
   p {

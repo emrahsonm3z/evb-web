@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 
@@ -10,21 +10,19 @@ import {
   NUMBER_OF_EMPLOYEE,
   NUMBER_OF_CUSTOMER
 } from '../../constants'
+import GlobalContext from '../../store'
 
-function Parallax({ t, lang }) {
-  const [locale, setLocale] = useState(lang)
-  useEffect(() => {
-    setLocale(i18n.language)
-  }, [i18n.language])
+function Parallax({ t }) {
+  const { language } = useContext(GlobalContext)
 
   return (
     <div className={styles.block}>
       <div className={cn(['container', styles.content])}>
         <div className={styles.item}>
-          <h1>{CITIES_WE_ARE_IN[locale]?.length}</h1>
+          <h1>{CITIES_WE_ARE_IN[language]?.length}</h1>
           <h2>{t('Locations')}</h2>
           <ul>
-            {CITIES_WE_ARE_IN[locale]?.map((item) => (
+            {CITIES_WE_ARE_IN[language]?.map((item) => (
               <li key={item}>
                 <Location />
                 <span>{item}</span>

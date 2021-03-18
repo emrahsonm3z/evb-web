@@ -38,7 +38,17 @@ function VisionSlider({ t }) {
         reloadOnUpdate
         static
       >
-        <div className={styles['carousel-cell']}>
+        {Array.from({ length: 8 }, (_, i) => i + 1).map((c) => (
+          <div key={c} className={styles['carousel-cell']}>
+            <div className={cn([styles.inner, styles.centered])}>
+              {/* <h2>{t(`VisionContainer.Items.${c}.Title`)}</h2> */}
+              <Trans components={{ span: <span />, h3: <h3 /> }}>
+                {t(`VisionContainer.Items.${c}.Content`)}
+              </Trans>
+            </div>
+          </div>
+        ))}
+        {/* <div className={styles['carousel-cell']}>
           <div className={cn([styles.inner])}>
             <h2>{t(`VisionContainer.Items.2.Title`)}</h2>
             <Trans components={{ span: <span />, h3: <h3 /> }}>
@@ -61,7 +71,7 @@ function VisionSlider({ t }) {
               {t(`VisionContainer.Items.3.Content`)}
             </Trans>
           </div>
-        </div>
+        </div> */}
       </Flickity>
     </div>
   )

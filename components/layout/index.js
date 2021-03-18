@@ -6,7 +6,7 @@ import ScrollToTop from '../scrollToTop'
 function Layout({ lang, children }) {
   return (
     <>
-      <Header lang={lang} />
+      <Header />
       <main>{children}</main>
       <Footer />
       <ScrollToTop />

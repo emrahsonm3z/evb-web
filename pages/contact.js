@@ -8,7 +8,7 @@ import Meta from '../components/meta'
 import { withTranslation } from '../i18n'
 import { HOST_URL } from '../constants'
 
-const Contact = ({ t, lang }) => (
+const Contact = ({ t }) => (
   <>
     <Meta
       title={t('Contact.Title')}
@@ -16,7 +16,7 @@ const Contact = ({ t, lang }) => (
       canonical={`${HOST_URL}/contact`}
     />
     <section className={cn([styles.section, styles['our-offices']])}>
-      <OfficeAddress lang={lang} />
+      <OfficeAddress />
     </section>
     <section className={styles.section}>
       <ContactForm />

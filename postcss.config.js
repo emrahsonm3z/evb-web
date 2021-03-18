@@ -11,11 +11,13 @@ module.exports = {
     'postcss-custom-media': {
       importFrom: [
         {
-          customMedia: { '--d': `(min-width: ${breakpoints.lg + 1}px)` } //desktop
+          customMedia: { '--d': `(min-width: ${breakpoints.lg}px)` } //desktop
         },
         {
           customMedia: {
-            '--t': `(min-width: ${breakpoints.md}px) and (max-width:${breakpoints.lg}px)` //tablet
+            '--t': `(min-width: ${breakpoints.md}px) and (max-width:${
+              breakpoints.lg - 1
+            }px)` //tablet
           }
         },
         {

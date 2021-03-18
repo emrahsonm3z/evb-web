@@ -58,11 +58,9 @@
     }
 
     span {
-      --min: 0.8rem;
-      --val: 1.3vw;
-      --max: 1rem;
+      --min-fs: 0.75;
+      --max-fs: 0.9;
 
-      font-size: clamp(var(--min), var(--val), var(--max));
       line-height: 1.4;
     }
 

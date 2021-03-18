@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 import Link from 'next/link'
@@ -11,6 +11,7 @@ import {
 import styles from './index.module.css'
 import { LANGUAGES, MENU, MENU_PREFIX } from '../../constants'
 import { i18n, withTranslation } from '../../i18n'
+import GlobalContext from '../../store'
 
 const scrollerOptions = {
   duration: 500,
@@ -58,9 +59,9 @@ const NavLink = ({ to, text, onClick }) => (
   </Link>
 )
 
-const Header = ({ t, lang }) => {
+const Header = ({ t }) => {
   const [isActive, setIsActive] = useState(false)
-  const [language, setLanguage] = useState(lang)
+  const { language, setLanguage } = useContext(GlobalContext)
 
   const router = useRouter()
 
@@ -68,6 +69,8 @@ const Header = ({ t, lang }) => {
     const lang = e.target.value
     i18n.changeLanguage(lang)
     setLanguage(lang)
+
+    document.documentElement.lang = lang
   }
   return (
     <header

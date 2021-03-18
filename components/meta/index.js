@@ -3,6 +3,10 @@ import SiteConfig from '../../site.config'
 
 const Meta = (props) => (
   <Head>
+    <meta charSet="utf-8" />
+    <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>{props.title}</title>
     <meta name="description" content={props.desc} />
 
@@ -30,6 +34,12 @@ const Meta = (props) => (
 
     {/* pwa */}
     {props.canonical && <link rel="canonical" href={`${props.canonical}`} />}
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
     <link rel="manifest" href="/manifest.json" />

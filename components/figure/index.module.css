@@ -141,9 +141,8 @@
       }
 
       h2 {
-        --min: 1rem;
-        --val: 1.5vw;
-        --max: 1.4rem;
+        --min-fs: 1;
+        --max-fs: 1.3;
 
         color: #fff;
         font-weight: 600;

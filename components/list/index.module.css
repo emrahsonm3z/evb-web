@@ -58,9 +58,8 @@
       padding: 7px 0;
 
       .field {
-        --min: 1rem;
-        --val: 1.5vw;
-        --max: 1.2rem;
+        --min-fs: 0.95;
+        --max-fs: 1.12;
 
         font-weight: 600;
         color: #3f4254;

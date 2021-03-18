@@ -28,7 +28,7 @@ const Homepage = ({ t, lang }) => (
       <VisionSlider />
     </section>
     <section className={styles.section}>
-      <Parallax lang={lang} />
+      <Parallax />
     </section>
     <section className={styles.section} id="ourservices">
       <Tasks />

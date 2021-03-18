@@ -1,10 +1,11 @@
 :root {
-  --c-primary-100: #dbffc6;
   --c-primary: #63a140;
   --c-primary-hover: #426f28;
+  --c-primary-100: #dbffc6;
   --c-primary-300: #1b5613;
   --c-primary-500: #164b0f;
   --c-text-color: #353834;
+  --c-text-color-50: var(--c-gray-700);
   --c-border-color: rgb(230, 236, 240);
   --c-black: #000;
   --c-white: #fff;

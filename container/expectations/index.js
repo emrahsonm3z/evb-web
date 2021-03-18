@@ -14,7 +14,7 @@ function Expectations({ t }) {
             <h2>{t('Expectations.Title')}</h2>
             <span>{t('Expectations.Content')}</span>
             <ul>
-              {[1, 2, 3, 4, 5, 6].map((item) => (
+              {[1, 2, 3, 4, 5, 6, 7].map((item) => (
                 <li key={item}>
                   <span>{t(`Expectations.Items.${item}`)}</span>
                 </li>

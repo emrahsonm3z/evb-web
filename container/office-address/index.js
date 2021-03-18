@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
 import styles from './index.module.css'
@@ -8,24 +8,22 @@ import SubTitle from '../../components/title/subtitle'
 import { withTranslation, i18n } from '../../i18n'
 
 import { OFFICES } from '../../constants'
+import GlobalContext from '../../store'
 
 function OfficeAddresses({ t, lang }) {
-  const [locale, setLocale] = useState(lang)
-  useEffect(() => {
-    setLocale(i18n.language)
-  }, [i18n.language])
+  const { language } = useContext(GlobalContext)
 
   return (
     <div className="container">
       <SubTitle title={t('OurOffices')} />
       <div className={styles.grid}>
         {OFFICES.map((office) => (
-          <div key={office.city[locale]} className={styles.item}>
+          <div key={office.city[language]} className={styles.item}>
             <div className={styles.content}>
               <Figure
                 src={office.bg}
-                title={office.city[locale]}
-                alt={office.city[locale]}
+                title={office.city[language]}
+                alt={office.city[language]}
                 address={office.address}
               />
             </div>

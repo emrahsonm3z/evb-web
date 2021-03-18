@@ -45,19 +45,11 @@ function HeroSlider({ t }) {
         >
           <div className={styles.overlay}></div>
           <div className={cn(['container', styles.inner])}>
-            <h1 className={styles.title}>
+            <h3 className={styles.title}>
               <Trans components={{ b: <b /> }}>
                 {t(`Hero.Items.${item.id}.Title`)}
               </Trans>
-            </h1>
-            <button
-              className={styles.btn}
-              onClick={() => {
-                router.push('/apply')
-              }}
-            >
-              {t(`Hero.Items.${item.id}.Button`)}
-            </button>
+            </h3>
           </div>
         </div>
       ))}

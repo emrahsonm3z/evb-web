@@ -5,7 +5,8 @@
 
   .content {
     max-width: 450px;
-    padding: 40px 0;
+    padding: 40px 10px;
+    font-weight: 500;
 
     .title {
       color: var(--c-primary);

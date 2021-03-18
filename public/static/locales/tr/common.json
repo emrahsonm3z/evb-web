@@ -17,51 +17,71 @@
   "Hero": {
     "Items": {
       "1": {
-        "Title": "BİR İŞTEN<b> DAHA FAZLASI</b>",
-        "Button": "KATILMAK İSTER MİSİNİZ?"
+        "Title": "<b>Modern tasarımlı, huzurlu ve güvenli</b> bir çalışma ortamında olmak ister misiniz?"
       },
       "2": {
-        "Title": "BİR İŞTEN<b> DAHA FAZLASI</b>",
-        "Button": "KATILMAK İSTER MİSİNİZ?"
+        "Title": "<b>EVB  ailesinin</b> bir parçası olmak ister misiniz?"
       },
       "3": {
-        "Title": "BİR İŞTEN<b> DAHA FAZLASI</b>",
-        "Button": "KATILMAK İSTER MİSİNİZ?"
+        "Title": "Müşteri Hizmetleri Temsilciliği alanında mesleki donanımızı en iyi şekilde oluşturacak <b>eğitim programımıza katılmak ister misiniz?</b>"
+      },
+      "4": {
+        "Title": "Her geçen gün artan kaliteli hizmet anlayışı ile <b>başarılarımızı birlikte kutlamak ister misiniz?</b>"
       }
     }
   },
   "VisionContainer": {
-    "Info": "<p> <b> 2015'ten beri telekomünikasyon sektöründe başarılı bir hizmet şirketi olan Evb: </b> Beş yerde çalışma sunuyoruz. Her çalışan, konumunu bir veya sınırsız bir süre için değiştirmeyi seçmekte özgürdür. </p> <p> Toplamda her gün şirket ve müşterilerimiz için çalışan 450'den fazla çalışanımız var. Olumlu bir çalışma ortamı yaratmak ve motivasyonumuzu her zaman yüksek tutmak bizim için önemlidir. Bu nedenle, nerede olursanız olun her zaman iyi olduğunuzdan emin oluyoruz. </p>",
+    "Info": "<p>2015 yılından  bu yana Müşteri Hizmetleri alanında başarı kazanan evb, beş ayrı şubede faaliyet göstermektedir.</p>",
     "Items": {
       "1": {
         "Title": "Vizyon",
-        "Content": "<span> Bir yol gösterici ve rehber olarak müşteri memnuniyetinin geleceğini el ele geliştirmeye devam edeceğiz. Günlük yaşamlarında dikkate değer katma değeri olan insanlara ulaşıyoruz. Birlikte hareket ediyoruz. </span>"
+        "Content": "<h3> Vizyon </h3> <span> ‘’Müşteri Memnuniyetinin Geleceğine’’; bir deniz feneri gibi hep birlikte ışık tutuyoruz. Saygı, eşitlik, bağlılık, sorumluluk ve güvenilirlik ilkeleri ile müşterilerimizin yaşamlarına farkedilebilir bir değer katıyoruz. Tüm bunları yaparken gücümüzü birliğimizden alıyoruz. Biz hep birlikte güçlüyüz.’’ </span>"
       },
       "2": {
         "Title": "Kalite",
-        "Content": "<h3> Çalışan memnuniyeti </h3> <span> Çalışan memnuniyetine odaklanarak hizmet kalitemizi ve çalışanlarımızın motivasyonunu sürekli olarak artırıyoruz. Ayrıca, meslektaşlarımızla her zaman kibar ve saygılı ilişkiler sürdürüyor ve herkese eşit şekilde uygulanan nesnel standartlar belirliyor, herkese aynı fırsatı sunuyor ve tüm meslektaşlarımızı eşit bir şekilde buluşturuyoruz. Çalışanlarımızın performansı ve başarısı birlikte değerlenir ve kutlanır. Çalışanlarımıza her zaman takdirle davranır ve diğer kültürel ihtiyaçlara saygı duyarız. </span> <h3> Müşteri memnuniyeti </h3> <span> Amacımız, müşterilerimizin ve müşterilerinin beklenti ve gereksinimlerini mümkün olan en iyi hizmet kalitesiyle karşılamaktır. Ek olarak, çalışanlarımızın yüksek müşteri memnuniyetine ulaşmada en önemli faktörlerden biri olduğunu kabul ettik. Bu nedenle, hizmetlerimizin sürekli iyileştirilmesi hizmetinde, çalışan gelişimi bizim için merkezi bir öneme sahiptir. </span>"
+        "Content": "<h3> Çalışan memnuniyeti </h3> <span> 400’ den fazla çalışanımız ile bu yolda hep güçleniyoruz. Bizler için çalışan memnuniyeti başarılı bir şirketin temel prensibi olmalıdır. Bu doğrultuda, çalışan motivasyonunu sürekli olarak arttırmayı hedefleriz. </span>"
       },
       "3": {
+        "Title": "Kalite",
+        "Content": "<h3> Müşteri memnuniyeti </h3> <span> Çalışan değerini bilir ‘’Müşteri Memnuniyeti’’ ni beraberinde getirdiğine inanırız. Ve hedeflenen hizmet kalitesi için çalışan gelişimini sürekli hale getiririz. </span>"
+      },
+      "4": {
         "Title": "Değerler",
-        "Content": "<h3> Saygı </h3> <span> Her zaman kibar ve tarafsız bir şekilde iletişim kurar ve herkesi eşit şekilde dinleriz. Başarılarımızı birlikte dört gözle bekliyoruz. </span> <h3> Adalet </h3> <span> Herkese aynı fırsatı sunuyoruz ve kimsenin lehine değiliz. Eleştiriye açığız ve kabul ediyoruz. </span> <h3> Bağlılık </h3> <span> Şirketimizi ve şirketimizin avantajlarını biliyor ve kötü zamanlarda bile şirketimizin arkasındayız. Olumlu bir tavrımız var. </span> <h3> Sorumluluk </h3> <span> Şirketimizin başarısından hepimiz müşterek olarak sorumluyuz. İşimizi biliyoruz. </span> <h3> Güvenilirlik </h3> <span> Meslektaşlarımız, diğer şirketler ve dünya için rol modeliyiz. Açıklamalarımızın arkasındayız. </span>"
+        "Content": "<h3> Saygı </h3> <span> Kurum kültürümüzün temelinde yer alan etkin iletişimin, organizasyonel gelişimimizde en değerli unsur olduğunu bilir; dinlemek, anlamak ve doğru adımı atmak için her zaman özen gösteririz. Nazik ve saygılı bir dil ile sorunlarımızı çözmeyi tercih ederiz. </span>"
+      },
+      "5": {
+        "Title": "Değerler",
+        "Content": "<h3> Eşitlik </h3> <span> Eşit fırsat ve haklar ile çalışma standartlarını belirler; çalışanlarımızın kariyer hedeflerine ulaşmalarında destek sağlarız. Çalışanlarımızın performansı ve başarısı birlikte değerlenir ve kutlanır. Çalışanlarımıza her zaman takdirle davranır ve kültürel ihtiyaçlarına saygı duyarız. </span> "
+      },
+      "6": {
+        "Title": "Değerler",
+        "Content": "<h3> Bağlılık </h3> <span> Bir şirketten daha fazlası olmanın verdiği güven ile tüm çalışan ve müşterilerimizin aidiyet duygusunu en üstte tutarız. </span>"
+      },
+      "7": {
+        "Title": "Değerler",
+        "Content": " <h3> Sorumluluk </h3> <span> Tüm bu prensipler çerçevesinde her bir çalışanımız aynı sorumluluk bilinci ile hareket eder ve işini sahiplenir. </span> "
+      },
+      "8": {
+        "Title": "Değerler",
+        "Content": "<h3> Güvenilirlik </h3> <span> Sahip olduğumuz tüm değerler dürüstlük ilkesi temelinde güçlenir. </span>"
       }
     }
   },
   "Tasks": {
     "Title": "Görevler",
-    "Content": "<p>İşiniz <b>1,5 milyon mevcut müşterimize</b> bakmaktır. <b>Kendi enerji şirketimizin hizmet sağlayıcısı</b> olduğumuz için, zamanınızın çoğunu indirimleri değiştirmek, sözleşmeleri feshetmek, tarifeleri değiştirmek ve faturaları açıklamak için harcayacaksınız. Ancak herhangi bir endişenizin olması gerekmez, çünkü her zaman yanınızda, her müşteri sorununu çözmede size destek olacak biri vardır. Ancak her zaman hizmet odaklı olmalısınız. İyi müşteri hizmetlerine çok değer veriyoruz.</p>"
+    "Content": "<p>Almanya da faaliyet gösteren enerji şirketlerimizin müşteri hizmetleri yönetimini, en iyi hizmet kalitesi ile sağlamak birincil görevimizdir. Sözleşme yenileme ya da iptalleri, fatura kontrolleri, tarife değişiklikleri, indirimler….vs. gibi iş süreçleri sizleri bekliyor. Bu süreçler boyunca her zaman yanınızda destek olabilecek uzman kişiler ile işinizi güven ve iç rahatlığı ile gerçekleştiriyor olacaksınız. </p>"
   },
   "MoreThanAJob": {
     "Title": "Bir işten daha fazlası",
     "Content": "EVB'nin iş yerinizden daha fazlası olduğunu çabucak anlayacaksınız. Sadece günlük işlerinizi yapmanız beklenmiyor, aynı zamanda çok sayıda aktiviteye, eğitim kurslarına ve çeşitli projelere de katılabilirsiniz."
   },
   "IntensiveTraining": {
-    "Title": "Çalışanlar ve yöneticiler için yoğun eğitim",
-    "Content": "Çalışmaya başlamadan önce, sekiz haftalık bir temel eğitim kursunu tamamlayacaksınız. Sadece uygun olduğunuzda başlayabilirsiniz. Elbette eğitim süresinin tamamı da ödenecektir."
+    "Title": "Çalışanlar ve yöneticiler için eğitim",
+    "Content": "İşe başlamadan önce 8 haftalık kapsamlı bir mesleki eğitim programı sizleri bekliyor olacak. Mesleki yaşamınızı sürekli olarak geliştirecek şekilde programlanmış eğitimlerle gelişmeye ve ilerlemeye devam ediyor olacaksınız. Güncellenen sistem bilgileri, alınan terfiler sonrası sahip olunması gereken yetkinlikler, birim değişiklikleri… vb. durumlarda her daim düzenlenen spesifik eğitimlerle mesleki donanımınızın gücünü arttırıyor olacağız."
   },
   "Team": {
-    "Title": "Müşterilerimize ve çalışanlarımıza karşı adalet",
-    "Content": "Herkese hak ettikleri saygıyı göstermeye, yönetici ya da katip olmasına bakılmaksızın herkese eşit davranmaya, sorumluluk almaya ve aynı zamanda başkalarına kendilerini yönetici olarak kanıtlama fırsatı vermek için sorumluluktan vazgeçmeye özel bir özen gösteriyoruz. Sadece EVB'ye sadakat ve güvenilirlik bekliyoruz."
+    "Title": "Başarılarımız",
+    "Content": "TÜV standartları doğrultusunda sektörün öncüsü olmayı hedefler; müşterilerimize kalıcı ve hızlı çözüm üretmek için elimizden gelenin en iyisini yapmaya gayret ederiz. Ve sektörde her geçen gün artan başarılarımızı birlikte alkışlarız."
   },
   "Faqs": {
     "Items": {
@@ -71,32 +91,37 @@
       },
       "2": {
         "Title": "Mola",
-        "Content": "<span> Toplam dört vardiyamız var. Vardiyalar her zaman adil ve adil bir şekilde dağıtılır. Herkes bir ay içinde çalışır, her zaman çalışma saatleri, tüm molalar dahildir. </span> <span> 1: 08:00 - 17:00 </span> <span> 2: 09:00 - 18:00 </span> "
+        "Content": "<span> Günlük dinlenmek için 1 saat 40 dakika mola hakkınız var. Bir saat öğle yemeği molanız ve kalan 40 dakikada kahve eşliğinde  dinlenme şansınız olacak. </span> "
       },
       "3": {
         "Title": "Yemek desteği",
-        "Content": "<span> Toplam dört vardiyamız var. Vardiyalar her zaman adil ve adil bir şekilde dağıtılır. Herkes her zaman bir ay içinde çalışır </span>"
+        "Content": "<span>Öğle yemeği seçenekleriniz oldukça çeşitli. Multinet kartınıza, aramıza katılır katılmaz günlük 25,25 TL değerinde yemek hakedişiniz yüklenmiş olacak. </span>"
       },
       "4": {
         "Title": "Bonus",
-        "Content": "<span> Maaşınıza ek olarak, mükemmel performansınız ve olumlu müşteri geri bildirimleriniz için temel maaşınızın% 20.00'a kadarını ikramiye olarak alacaksınız. Ayrıca ofise her zaman zamanında gelirseniz bir katılım bonusu alacaksınız. / span> "
+        "Content": "<span>Maaşınıza ek olarak, performansınız ve olumlu müşteri geri bildirimleriniz için temel maaşınızın % 20 oranı kadarını ikramiye olarak alacaksınız. İş planınıza göre disiplinli çalışmanız sonucu devamlılık primi de kazanmış olacaksınız. / span> "
       },
       "5": {
         "Title": "Fazla mesai",
         "Content": "<span> Gerekirse, fazla mesai yapmak isteyip istemediğinizi özgürce belirleyebilirsiniz. İş hacmine bağlı olarak, fazla mesai 1.5 veya 2.0 faktörü ile hesaplanır. Önemli! Her ödeme daima sizin olacaktır Net ödenir. </span> "
+      },
+      "6": {
+        "Title": "Özel Sağlık Sigortası",
+        "Content": "<span> Şirket bünyesinde 3 ayınızı doldurmuş iseniz yılda 8 kez ayakta tedavi, yatarak sınırsız tedavi imkanları SGK anlaşmalı tüm özel hastanelerde sizi bekliyor olacak.. </span> "
       }
     }
   },
   "Expectations": {
     "Title": "Sizden beklentilerimiz",
-    "Content": "Gördüğünüz gibi size çok şey sunuyoruz, ancak sizden de yüksek beklentilerimiz var.",
+    "Content": "Aramıza katılmak için aşağıdaki beklentilere uygun olduğunuzu düşünüyor iseniz başvurularınızı bekleriz..",
     "Items": {
       "1": "Hizmet odaklı çalışabiliyor musunuz?",
-      "2": "Bir bilgisayarı çalıştırabiliyor musunuz ve ayrıca MS Office'e aşina mısınız?",
-      "3": "Konuşmayı ve yazmayı seviyorsun.",
-      "4": "Almanca hem yazılı hem de sözlü olarak iletişim kurabiliyor musunuz?",
-      "5": "Belirli süreçleri öğrenip uygulayabiliyor musunuz?",
-      "6": "Sorumluluk sahibi misiniz ve her zaman elinizden gelenin en iyisini yapmaya mı çalışıyorsunuz?"
+      "2": "Bilgisayar kullanımınız var mı ve ayrıca MS Office programlarına aşina mısınız?",
+      "3": "Konuşmayı ve yazmayı seviyor musunuz?",
+      "4": "Almanca hem yazılı hem de sözlü olarak anadil seviyesinde iletişim kurabiliyor musunuz?",
+      "5": "Öğrenme yeteneğinize güveniyor musunuz?",
+      "6": "Sorumluluk sahibi misiniz ve her zaman elinizden gelenin en iyisini yapmaya mı çalışıyorsunuz?",
+      "7": "Her zaman gelişmeye açık mısınız?"
     }
   },
   "Copyright": "Telif hakkı",

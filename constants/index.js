@@ -59,6 +59,10 @@ const HERO_SLIDER_ITEMS = [
   {
     id: 3,
     className: 'slide3'
+  },
+  {
+    id: 4,
+    className: 'slide4'
   }
 ]
 
@@ -144,7 +148,7 @@ const CITIES_WE_ARE_IN = {
   de: ['İzmir', 'İstanbul Europa', 'İstanbul Asien', 'Ankara', 'Antalya']
 }
 
-const NUMBER_OF_EMPLOYEE = '450+'
+const NUMBER_OF_EMPLOYEE = '400+'
 const NUMBER_OF_CUSTOMER = '1,5 M'
 
 const FAQS_SLIDER_ITEMS = [
@@ -167,6 +171,10 @@ const FAQS_SLIDER_ITEMS = [
   {
     id: 5,
     className: 'overtime'
+  },
+  {
+    id: 6,
+    className: 'privateHealthInsurance'
   }
 ]
 
