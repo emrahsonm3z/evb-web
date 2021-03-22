@@ -35,7 +35,11 @@
   }
 
   .slide4 {
-    background-image: url("/assets/slider3.jpg");
+    background-image: url("/assets/slider4.jpg");
+
+    @media (--m) {
+      background-position: 60% center !important;
+    }
   }
 
   .carousel-cell {
@@ -43,7 +47,9 @@
     height: var(--height);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right center;
+
+    /* background-position: center; */
 
     .inner {
       position: relative;
