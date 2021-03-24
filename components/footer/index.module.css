@@ -107,6 +107,11 @@
           grid-template-columns: repeat(2, 1fr);
         }
 
+        .link {
+          display: flex;
+          flex-flow: column nowrap;
+        }
+
         .info {
           display: flex;
           flex-flow: row nowrap;
@@ -117,6 +122,11 @@
             height: 1.3rem;
             width: 1.3rem;
             margin-right: 12px;
+          }
+
+          a {
+            text-decoration: underline;
+            padding: 10px 0;
           }
 
           span,

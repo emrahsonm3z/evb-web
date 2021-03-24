@@ -9,7 +9,7 @@ import styles from './index.module.css'
 import { withTranslation } from '../../i18n'
 
 import { CONTACT_INFORMATIONS, SOCIAL_MEDIAS } from '../../constants'
-import { Download } from '../icons'
+import { Download, Shield, TermAccept } from '../icons'
 
 function Footer({ t }) {
   const router = useRouter()
@@ -50,17 +50,33 @@ function Footer({ t }) {
                     <span>{item.Text}</span>
                   </div>
                 ))}
-                <div className={styles.info}>
-                  <Download />
-                  <a
-                    href="docs/ilgili-kisi-basvuru-form.docx"
-                    download={`EVB ENERJİ VE BİLİŞİM  - ${t(
-                      'ContactApplicationForm'
-                    )}.docx`}
-                    className={styles['contact-apply-form']}
-                  >
-                    {t('ContactApplicationForm')}
-                  </a>
+                <div className={styles.link}>
+                  <div className={styles.info}>
+                    <Download />
+                    <a
+                      href="docs/ilgili-kisi-basvuru-form.docx"
+                      download={`EVB ENERJİ VE BİLİŞİM  - ${t(
+                        'ContactApplicationForm'
+                      )}.docx`}
+                      className={styles['contact-apply-form']}
+                    >
+                      {t('ContactApplicationForm')}
+                    </a>
+                  </div>
+                  <div className={styles.info}>
+                    <TermAccept />
+
+                    <Link href="/term-of-use">
+                      <a>{t('TermOfUse')}</a>
+                    </Link>
+                  </div>
+                  <div className={styles.info}>
+                    <Shield />
+
+                    <Link href="/privacy-policy">
+                      <a>{t('PrivacyPolicy')}</a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,7 +102,7 @@ function Footer({ t }) {
           <span className={styles['bottom-text']}>
             {t('Copyright')} © EVB ENERJİ VE BİLİŞİM evb.com.tr
           </span>
-          <span className={styles['bottom-text']}>
+          {/* <span className={styles['bottom-text']}>
             <Link href="/term-of-use">
               <a>{t('TermOfUse')}</a>
             </Link>{' '}
@@ -94,7 +110,7 @@ function Footer({ t }) {
             <Link href="/privacy-policy">
               <a>{t('PrivacyPolicy')}</a>
             </Link>
-          </span>
+          </span> */}
         </div>
       </div>
     </footer>

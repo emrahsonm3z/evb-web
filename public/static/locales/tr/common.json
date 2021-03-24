@@ -73,7 +73,7 @@
   },
   "MoreThanAJob": {
     "Title": "Bir işten daha fazlası",
-    "Content": "EVB'nin iş yerinizden daha fazlası olduğunu çabucak anlayacaksınız. Sadece günlük işlerinizi yapmanız beklenmiyor, aynı zamanda çok sayıda aktiviteye, eğitim kurslarına ve çeşitli projelere de katılabilirsiniz."
+    "Content": "<p>İş faaliyetlerinin yanı sıra , Lösev , Orman Vakfı, Sokak Hayvanları Projesi, Deprem Yardımlaşma Faaliyetleri ( Erzincan…vb.) gibi konularda hep aktif rol oynayarak sosyal projeler ile fayda sağlamanın mutluluğununu da paylaşıyoruz.</p><p><strong>Tüm bunların yanı sıra eğlenmeyi de seviyoruz.</strong></p><p>Her yıl düzenlenen yılbaşı partilerimiz, organizasyonel tatil planları, bisiklet turları, doğa yürüyüşleri ve pikniklerimizde de beraber olmayı sürdürüyoruz.</p>"
   },
   "IntensiveTraining": {
     "Title": "Çalışanlar ve yöneticiler için eğitim",
@@ -86,8 +86,8 @@
   "Faqs": {
     "Items": {
       "1": {
-        "Title": "Çalışma saatleriniz ve vardiyalarınız",
-        "Content": "<span> Toplam dört vardiyamız var. Vardiyalar her zaman adil ve adil bir şekilde dağıtılır. Herkes bir ayda farklı bir vardiyada dönüşümlü olarak çalışır. Tüm molalar, belirtilen çalışma saatlerine dahildir. </span> <span> 1: 08:00 - 17:00 </span> <span> 2: 09:00 - 18:00 </span> <span> 3: 10:00 - 19:00 </span> <span> 4: 11:00 - 20:00 </span> "
+        "Title": "Çalışma saatleriniz ve planlama",
+        "Content": "<span> Toplam dört ayrı çalışma programı var. İş planlamaları tüm çalışanlara adil bir şekilde oluşturulur. </span> <span> 1: 08:00 - 17:00 </span> <span> 2: 09:00 - 18:00 </span> <span> 3: 10:00 - 19:00 </span> <span> 4: 11:00 - 20:00 </span> "
       },
       "2": {
         "Title": "Mola",
@@ -99,11 +99,11 @@
       },
       "4": {
         "Title": "Bonus",
-        "Content": "<span>Maaşınıza ek olarak, performansınız ve olumlu müşteri geri bildirimleriniz için temel maaşınızın % 20 oranı kadarını ikramiye olarak alacaksınız. İş planınıza göre disiplinli çalışmanız sonucu devamlılık primi de kazanmış olacaksınız. / span> "
+        "Content": "<span>Maaşınıza ek olarak, performansınız ve olumlu müşteri geri bildirimlerinize göre  net maaşınızın en yüksek  % 20 oranına kadar prim alma şansınız olacak. Buna ek olarak; iş planınıza göre disiplinli çalışmanız sonucu devamlılık primi de kazanmış olacaksınız. / span> "
       },
       "5": {
         "Title": "Fazla mesai",
-        "Content": "<span> Gerekirse, fazla mesai yapmak isteyip istemediğinizi özgürce belirleyebilirsiniz. İş hacmine bağlı olarak, fazla mesai 1.5 veya 2.0 faktörü ile hesaplanır. Önemli! Her ödeme daima sizin olacaktır Net ödenir. </span> "
+        "Content": "<span> Fazla mesai yaparak kazancınızı kendiniz belirleyebilirsiniz. Ve bu kazanç mevzuatın üzerinde avantıjlı bir şekilde ödeniyor olacak. </span> "
       },
       "6": {
         "Title": "Özel Sağlık Sigortası",
